@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:soap12enc="http://www.w3.org/2003/05/soap-encoding" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://ws.dgie.banxico.org.mx" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsr="http://www.openuri.org/2002/10/soap/reliability/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:conv="http://www.openuri.org/2002/04/wsdl/conversation/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://ws.dgie.banxico.org.mx" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types />
+  <message name="inflacionBanxico" />
+  <message name="inflacionBanxicoResponse">
+    <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:string" />
+  </message>
+  <message name="reservasInternacionalesBanxico" />
+  <message name="reservasInternacionalesBanxicoResponse">
+    <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:string" />
+  </message>
+  <message name="tasasDeInteresBanxico" />
+  <message name="tasasDeInteresBanxicoResponse">
+    <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:string" />
+  </message>
+  <message name="tiposDeCambioBanxico" />
+  <message name="tiposDeCambioBanxicoResponse">
+    <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:string" />
+  </message>
+  <message name="udisBanxico" />
+  <message name="udisBanxicoResponse">
+    <part xmlns:partns="http://www.w3.org/2001/XMLSchema" name="result" type="partns:string" />
+  </message>
+  <portType name="DgieWSPort">
+    <operation name="inflacionBanxico">
+      <input message="tns:inflacionBanxico" />
+      <output message="tns:inflacionBanxicoResponse" />
+    </operation>
+    <operation name="reservasInternacionalesBanxico">
+      <input message="tns:reservasInternacionalesBanxico" />
+      <output message="tns:reservasInternacionalesBanxicoResponse" />
+    </operation>
+    <operation name="tasasDeInteresBanxico">
+      <input message="tns:tasasDeInteresBanxico" />
+      <output message="tns:tasasDeInteresBanxicoResponse" />
+    </operation>
+    <operation name="tiposDeCambioBanxico">
+      <input message="tns:tiposDeCambioBanxico" />
+      <output message="tns:tiposDeCambioBanxicoResponse" />
+    </operation>
+    <operation name="udisBanxico">
+      <input message="tns:udisBanxico" />
+      <output message="tns:udisBanxicoResponse" />
+    </operation>
+  </portType>
+  <binding name="DgieWSPort" type="tns:DgieWSPort">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <operation name="inflacionBanxico">
+      <soap:operation soapAction="" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="http://ws.dgie.banxico.org.mx" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="http://ws.dgie.banxico.org.mx" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="reservasInternacionalesBanxico">
+      <soap:operation soapAction="" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="http://ws.dgie.banxico.org.mx" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="http://ws.dgie.banxico.org.mx" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="tasasDeInteresBanxico">
+      <soap:operation soapAction="" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="http://ws.dgie.banxico.org.mx" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="http://ws.dgie.banxico.org.mx" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="tiposDeCambioBanxico">
+      <soap:operation soapAction="" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="http://ws.dgie.banxico.org.mx" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="http://ws.dgie.banxico.org.mx" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+    <operation name="udisBanxico">
+      <soap:operation soapAction="" style="rpc" />
+      <input>
+        <soap:body use="encoded" namespace="http://ws.dgie.banxico.org.mx" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </input>
+      <output>
+        <soap:body use="encoded" namespace="http://ws.dgie.banxico.org.mx" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </output>
+    </operation>
+  </binding>
+  <service name="DgieWS">
+    <port name="DgieWSPort" binding="tns:DgieWSPort">
+      <soap:address location="http://www.banxico.org.mx:80/DgieWSWeb/DgieWS" />
+    </port>
+  </service>
+</definitions>

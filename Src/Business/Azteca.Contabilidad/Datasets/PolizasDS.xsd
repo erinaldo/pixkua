@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PolizasDS" targetNamespace="http://tempuri.org/PolizasDS.xsd" xmlns:mstns="http://tempuri.org/PolizasDS.xsd" xmlns="http://tempuri.org/PolizasDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="PixkuaConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PixkuaConnectionString1 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Azteca.Business.Contabilidad.My.MySettings.GlobalReference.Default.PixkuaConnectionString1" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="SQL2008R2_314978_pixkuaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SQL2008R2_314978_pixkuaConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Azteca.Business.Contabilidad.My.MySettings.GlobalReference.Default.SQL2008R2_314978_pixkuaConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PolizasDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="PolizasDS" msprop:Generator_UserDSName="PolizasDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PolizasDet" msprop:Generator_TableClassName="PolizasDetDataTable" msprop:Generator_TableVarName="tablePolizasDet" msprop:Generator_TablePropName="PolizasDet" msprop:Generator_RowDeletingName="PolizasDetRowDeleting" msprop:Generator_UserTableName="PolizasDet" msprop:Generator_RowChangingName="PolizasDetRowChanging" msprop:Generator_RowEvHandlerName="PolizasDetRowChangeEventHandler" msprop:Generator_RowDeletedName="PolizasDetRowDeleted" msprop:Generator_RowEvArgName="PolizasDetRowChangeEvent" msprop:Generator_RowChangedName="PolizasDetRowChanged" msprop:Generator_RowClassName="PolizasDetRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdPolizaDet" msprop:Generator_ColumnVarNameInTable="columnIdPolizaDet" msprop:Generator_ColumnPropNameInRow="IdPolizaDet" msprop:Generator_ColumnPropNameInTable="IdPolizaDetColumn" msprop:Generator_UserColumnName="IdPolizaDet">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="18" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IdVistaContableTit" msprop:Generator_ColumnVarNameInTable="columnIdVistaContableTit" msprop:Generator_ColumnPropNameInRow="IdVistaContableTit" msprop:Generator_ColumnPropNameInTable="IdVistaContableTitColumn" msprop:Generator_UserColumnName="IdVistaContableTit" type="xs:int" />
+              <xs:element name="IdReferencia" msprop:Generator_ColumnVarNameInTable="columnIdReferencia" msprop:Generator_ColumnPropNameInRow="IdReferencia" msprop:Generator_ColumnPropNameInTable="IdReferenciaColumn" msprop:Generator_UserColumnName="IdReferencia">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="18" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Referencia" msprop:Generator_ColumnVarNameInTable="columnReferencia" msprop:Generator_ColumnPropNameInRow="Referencia" msprop:Generator_ColumnPropNameInTable="ReferenciaColumn" msprop:Generator_UserColumnName="Referencia">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IdCuenta" msprop:Generator_ColumnVarNameInTable="columnIdCuenta" msprop:Generator_ColumnPropNameInRow="IdCuenta" msprop:Generator_ColumnPropNameInTable="IdCuentaColumn" msprop:Generator_UserColumnName="IdCuenta" type="xs:int" />
+              <xs:element name="Observaciones" msprop:Generator_ColumnVarNameInTable="columnObservaciones" msprop:Generator_ColumnPropNameInRow="Observaciones" msprop:Generator_ColumnPropNameInTable="ObservacionesColumn" msprop:Generator_UserColumnName="Observaciones">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cargo" msprop:Generator_ColumnVarNameInTable="columnCargo" msprop:Generator_ColumnPropNameInRow="Cargo" msprop:Generator_ColumnPropNameInTable="CargoColumn" msprop:Generator_UserColumnName="Cargo" type="xs:decimal" />
+              <xs:element name="Abono" msprop:Generator_ColumnVarNameInTable="columnAbono" msprop:Generator_ColumnPropNameInRow="Abono" msprop:Generator_ColumnPropNameInTable="AbonoColumn" msprop:Generator_UserColumnName="Abono" type="xs:decimal" />
+              <xs:element name="Orden" msprop:Generator_ColumnVarNameInTable="columnOrden" msprop:Generator_ColumnPropNameInRow="Orden" msprop:Generator_ColumnPropNameInTable="OrdenColumn" msprop:Generator_UserColumnName="Orden" type="xs:short" />
+              <xs:element name="IdSegmento" msprop:Generator_ColumnVarNameInTable="columnIdSegmento" msprop:Generator_ColumnPropNameInRow="IdSegmento" msprop:Generator_ColumnPropNameInTable="IdSegmentoColumn" msprop:Generator_UserColumnName="IdSegmento" type="xs:int" />
+              <xs:element name="Cuenta" msprop:Generator_ColumnVarNameInTable="columnCuenta" msprop:Generator_ColumnPropNameInRow="Cuenta" msprop:Generator_ColumnPropNameInTable="CuentaColumn" msprop:Generator_UserColumnName="Cuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="CuentaName" msprop:Generator_ColumnVarNameInTable="columnCuentaName" msprop:Generator_ColumnPropNameInRow="CuentaName" msprop:Generator_ColumnPropNameInTable="CuentaNameColumn" msprop:Generator_UserColumnName="CuentaName" type="xs:string" minOccurs="0" />
+              <xs:element name="Segmento" msprop:Generator_ColumnVarNameInTable="columnSegmento" msprop:Generator_ColumnPropNameInRow="Segmento" msprop:Generator_ColumnPropNameInTable="SegmentoColumn" msprop:Generator_UserColumnName="Segmento" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

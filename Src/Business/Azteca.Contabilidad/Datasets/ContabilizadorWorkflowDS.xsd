@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ContabilizadorWorkflowDS" targetNamespace="http://tempuri.org/ContabilizadorWorkflowDS.xsd" xmlns:mstns="http://tempuri.org/ContabilizadorWorkflowDS.xsd" xmlns="http://tempuri.org/ContabilizadorWorkflowDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="PixkuaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PixkuaConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Azteca.Business.Contabilidad.My.MySettings.GlobalReference.Default.PixkuaConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ContabilizadorWorkflowDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ContabilizadorWorkflowDS" msprop:Generator_UserDSName="ContabilizadorWorkflowDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="WorkflowContable" msprop:Generator_TableClassName="WorkflowContableDataTable" msprop:Generator_TableVarName="tableWorkflowContable" msprop:Generator_TablePropName="WorkflowContable" msprop:Generator_RowDeletingName="WorkflowContableRowDeleting" msprop:Generator_UserTableName="WorkflowContable" msprop:Generator_RowChangingName="WorkflowContableRowChanging" msprop:Generator_RowEvHandlerName="WorkflowContableRowChangeEventHandler" msprop:Generator_RowDeletedName="WorkflowContableRowDeleted" msprop:Generator_RowEvArgName="WorkflowContableRowChangeEvent" msprop:Generator_RowChangedName="WorkflowContableRowChanged" msprop:Generator_RowClassName="WorkflowContableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdWorkflow" msprop:Generator_ColumnVarNameInTable="columnIdWorkflow" msprop:Generator_ColumnPropNameInRow="IdWorkflow" msprop:Generator_ColumnPropNameInTable="IdWorkflowColumn" msprop:Generator_UserColumnName="IdWorkflow" type="xs:int" />
+              <xs:element name="IdDocumentoTipo" msprop:Generator_ColumnVarNameInTable="columnIdDocumentoTipo" msprop:Generator_ColumnPropNameInRow="IdDocumentoTipo" msprop:Generator_ColumnPropNameInTable="IdDocumentoTipoColumn" msprop:Generator_UserColumnName="IdDocumentoTipo" type="xs:int" />
+              <xs:element name="IdStatus" msprop:Generator_ColumnVarNameInTable="columnIdStatus" msprop:Generator_ColumnPropNameInRow="IdStatus" msprop:Generator_ColumnPropNameInTable="IdStatusColumn" msprop:Generator_UserColumnName="IdStatus" type="xs:int" />
+              <xs:element name="Secuencia" msprop:Generator_ColumnVarNameInTable="columnSecuencia" msprop:Generator_ColumnPropNameInRow="Secuencia" msprop:Generator_ColumnPropNameInTable="SecuenciaColumn" msprop:Generator_UserColumnName="Secuencia" type="xs:short" />
+              <xs:element name="IdContabilizacionDocumentoDet" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnIdContabilizacionDocumentoDet" msprop:Generator_ColumnPropNameInRow="IdContabilizacionDocumentoDet" msprop:Generator_ColumnPropNameInTable="IdContabilizacionDocumentoDetColumn" msprop:Generator_UserColumnName="IdContabilizacionDocumentoDet" type="xs:int" minOccurs="0" />
+              <xs:element name="IdRacTit" msprop:Generator_ColumnVarNameInTable="columnIdRacTit" msprop:Generator_ColumnPropNameInRow="IdRacTit" msprop:Generator_ColumnPropNameInTable="IdRacTitColumn" msprop:Generator_UserColumnName="IdRacTit" type="xs:int" minOccurs="0" />
+              <xs:element name="Rac" msprop:Generator_ColumnVarNameInTable="columnRac" msprop:Generator_ColumnPropNameInRow="Rac" msprop:Generator_ColumnPropNameInTable="RacColumn" msprop:Generator_UserColumnName="Rac" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:WorkflowContable" />
+      <xs:field xpath="mstns:IdWorkflow" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

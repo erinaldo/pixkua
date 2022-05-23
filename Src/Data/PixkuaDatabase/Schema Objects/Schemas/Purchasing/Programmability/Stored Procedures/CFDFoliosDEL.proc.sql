@@ -1,0 +1,7 @@
+﻿CREATE PROCEDURE [Purchasing].[CFDFoliosDEL]
+AS
+	SET NOCOUNT ON
+	
+	TRUNCATE TABLE Purchasing.CFDFolios
+
+

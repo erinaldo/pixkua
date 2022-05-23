@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataConfiguration>
+  <!--Cadena de conexión y proveedor de la base de datos. -->
+  <ConnectionString>Data Source=.;Initial Catalog=Pixkua;Integrated Security=SSPI;</ConnectionString>
+  <DataProvider>sql</DataProvider>
+  <!--Configuración de paginación de conjuntos-->
+  <Paging>
+    <SupportServerPaging>False</SupportServerPaging>
+    <PageSize>50</PageSize>
+  </Paging>
+  <!--Códigos de error de la BD-->
+  <ErrorCodes>
+    <ForeignKeyError>547</ForeignKeyError>
+    <UniqueError>2601</UniqueError>
+    <CustomError>50000</CustomError>
+  </ErrorCodes>
+</DataConfiguration>

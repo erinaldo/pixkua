@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Ventas", "Ventas\Ventas.rptproj", "{242191E5-F129-448E-A97D-E9B300B7CDF8}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Compras", "Compras\Compras.rptproj", "{524F6084-A90D-4CD2-A588-22875E8FD999}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Inventario", "Inventario\Inventario.rptproj", "{9B5AD778-845D-44F4-9FB3-AE220CB8C72C}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://corpsvrdc:8080/tfs/DefaultCollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Ventas\\Ventas.rptproj
+		SccProjectName1 = Ventas
+		SccLocalPath1 = Ventas
+		SccProjectUniqueName2 = Compras\\Compras.rptproj
+		SccProjectName2 = Compras
+		SccLocalPath2 = Compras
+		SccProjectUniqueName3 = Inventario\\Inventario.rptproj
+		SccProjectName3 = Inventario
+		SccLocalPath3 = Inventario
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{242191E5-F129-448E-A97D-E9B300B7CDF8}.Debug|Default.ActiveCfg = Debug
+		{242191E5-F129-448E-A97D-E9B300B7CDF8}.Debug|Default.Build.0 = DebugLocal
+		{242191E5-F129-448E-A97D-E9B300B7CDF8}.Debug|Default.Deploy.0 = DebugLocal
+		{242191E5-F129-448E-A97D-E9B300B7CDF8}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{242191E5-F129-448E-A97D-E9B300B7CDF8}.DebugLocal|Default.Build.0 = DebugLocal
+		{242191E5-F129-448E-A97D-E9B300B7CDF8}.Release|Default.ActiveCfg = Release
+		{242191E5-F129-448E-A97D-E9B300B7CDF8}.Release|Default.Build.0 = Release
+		{242191E5-F129-448E-A97D-E9B300B7CDF8}.Release|Default.Deploy.0 = Release
+		{524F6084-A90D-4CD2-A588-22875E8FD999}.Debug|Default.ActiveCfg = DebugLocal
+		{524F6084-A90D-4CD2-A588-22875E8FD999}.Debug|Default.Build.0 = DebugLocal
+		{524F6084-A90D-4CD2-A588-22875E8FD999}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{524F6084-A90D-4CD2-A588-22875E8FD999}.DebugLocal|Default.Build.0 = DebugLocal
+		{524F6084-A90D-4CD2-A588-22875E8FD999}.Release|Default.ActiveCfg = Release
+		{524F6084-A90D-4CD2-A588-22875E8FD999}.Release|Default.Build.0 = Release
+		{524F6084-A90D-4CD2-A588-22875E8FD999}.Release|Default.Deploy.0 = Release
+		{9B5AD778-845D-44F4-9FB3-AE220CB8C72C}.Debug|Default.ActiveCfg = DebugLocal
+		{9B5AD778-845D-44F4-9FB3-AE220CB8C72C}.Debug|Default.Build.0 = DebugLocal
+		{9B5AD778-845D-44F4-9FB3-AE220CB8C72C}.Debug|Default.Deploy.0 = DebugLocal
+		{9B5AD778-845D-44F4-9FB3-AE220CB8C72C}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{9B5AD778-845D-44F4-9FB3-AE220CB8C72C}.DebugLocal|Default.Build.0 = DebugLocal
+		{9B5AD778-845D-44F4-9FB3-AE220CB8C72C}.DebugLocal|Default.Deploy.0 = DebugLocal
+		{9B5AD778-845D-44F4-9FB3-AE220CB8C72C}.Release|Default.ActiveCfg = Release
+		{9B5AD778-845D-44F4-9FB3-AE220CB8C72C}.Release|Default.Build.0 = Release
+		{9B5AD778-845D-44F4-9FB3-AE220CB8C72C}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

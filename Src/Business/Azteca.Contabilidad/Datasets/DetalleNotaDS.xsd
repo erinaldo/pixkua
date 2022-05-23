@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DetalleNotaDS" targetNamespace="http://tempuri.org/DetalleNotaDS.xsd" xmlns:mstns="http://tempuri.org/DetalleNotaDS.xsd" xmlns="http://tempuri.org/DetalleNotaDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="PixkuaConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PixkuaConnectionString2 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Azteca.Business.Contabilidad.My.MySettings.GlobalReference.Default.PixkuaConnectionString2" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DetalleNotaDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DetalleNotaDS" msprop:Generator_UserDSName="DetalleNotaDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Detalle" msprop:Generator_TableClassName="DetalleDataTable" msprop:Generator_TableVarName="tableDetalle" msprop:Generator_TablePropName="Detalle" msprop:Generator_RowDeletingName="DetalleRowDeleting" msprop:Generator_UserTableName="Detalle" msprop:Generator_RowChangingName="DetalleRowChanging" msprop:Generator_RowEvHandlerName="DetalleRowChangeEventHandler" msprop:Generator_RowDeletedName="DetalleRowDeleted" msprop:Generator_RowEvArgName="DetalleRowChangeEvent" msprop:Generator_RowChangedName="DetalleRowChanged" msprop:Generator_RowClassName="DetalleRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdNotaConcepto" msprop:Generator_ColumnVarNameInTable="columnIdNotaConcepto" msprop:Generator_ColumnPropNameInRow="IdNotaConcepto" msprop:Generator_ColumnPropNameInTable="IdNotaConceptoColumn" msprop:Generator_UserColumnName="IdNotaConcepto" type="xs:int" />
+              <xs:element name="Concepto" msprop:Generator_ColumnVarNameInTable="columnConcepto" msprop:Generator_ColumnPropNameInRow="Concepto" msprop:Generator_ColumnPropNameInTable="ConceptoColumn" msprop:Generator_UserColumnName="Concepto" type="xs:string" default="" />
+              <xs:element name="Monto" msprop:Generator_ColumnVarNameInTable="columnMonto" msprop:Generator_ColumnPropNameInRow="Monto" msprop:Generator_ColumnPropNameInTable="MontoColumn" msprop:Generator_UserColumnName="Monto" type="xs:decimal" default="0" />
+              <xs:element name="IdImpuestoTras1" msprop:Generator_ColumnVarNameInTable="columnIdImpuestoTras1" msprop:Generator_ColumnPropNameInRow="IdImpuestoTras1" msprop:Generator_ColumnPropNameInTable="IdImpuestoTras1Column" msprop:Generator_UserColumnName="IdImpuestoTras1" type="xs:int" default="0" />
+              <xs:element name="IdImpuestoTras2" msprop:Generator_ColumnVarNameInTable="columnIdImpuestoTras2" msprop:Generator_ColumnPropNameInRow="IdImpuestoTras2" msprop:Generator_ColumnPropNameInTable="IdImpuestoTras2Column" msprop:Generator_UserColumnName="IdImpuestoTras2" type="xs:int" default="0" />
+              <xs:element name="IdImpuestoTras3" msprop:Generator_ColumnVarNameInTable="columnIdImpuestoTras3" msprop:Generator_ColumnPropNameInRow="IdImpuestoTras3" msprop:Generator_ColumnPropNameInTable="IdImpuestoTras3Column" msprop:Generator_UserColumnName="IdImpuestoTras3" type="xs:int" default="0" />
+              <xs:element name="PorcImpTras1" msprop:Generator_ColumnVarNameInTable="columnPorcImpTras1" msprop:Generator_ColumnPropNameInRow="PorcImpTras1" msprop:Generator_ColumnPropNameInTable="PorcImpTras1Column" msprop:Generator_UserColumnName="PorcImpTras1" type="xs:decimal" default="0" />
+              <xs:element name="PorcImpTras2" msprop:Generator_ColumnVarNameInTable="columnPorcImpTras2" msprop:Generator_ColumnPropNameInRow="PorcImpTras2" msprop:Generator_ColumnPropNameInTable="PorcImpTras2Column" msprop:Generator_UserColumnName="PorcImpTras2" type="xs:decimal" default="0" />
+              <xs:element name="PorcImpTras3" msprop:Generator_ColumnVarNameInTable="columnPorcImpTras3" msprop:Generator_ColumnPropNameInRow="PorcImpTras3" msprop:Generator_ColumnPropNameInTable="PorcImpTras3Column" msprop:Generator_UserColumnName="PorcImpTras3" type="xs:decimal" default="0" />
+              <xs:element name="MontoImpTras1" msprop:Generator_ColumnVarNameInTable="columnMontoImpTras1" msprop:Generator_ColumnPropNameInRow="MontoImpTras1" msprop:Generator_ColumnPropNameInTable="MontoImpTras1Column" msprop:Generator_UserColumnName="MontoImpTras1" type="xs:decimal" default="0" />
+              <xs:element name="MontoImpTras2" msprop:Generator_ColumnVarNameInTable="columnMontoImpTras2" msprop:Generator_ColumnPropNameInRow="MontoImpTras2" msprop:Generator_ColumnPropNameInTable="MontoImpTras2Column" msprop:Generator_UserColumnName="MontoImpTras2" type="xs:decimal" default="0" />
+              <xs:element name="MontoImpTras3" msprop:Generator_ColumnVarNameInTable="columnMontoImpTras3" msprop:Generator_ColumnPropNameInRow="MontoImpTras3" msprop:Generator_ColumnPropNameInTable="MontoImpTras3Column" msprop:Generator_UserColumnName="MontoImpTras3" type="xs:decimal" default="0" />
+              <xs:element name="IdImpuestoRet1" msprop:Generator_ColumnVarNameInTable="columnIdImpuestoRet1" msprop:Generator_ColumnPropNameInRow="IdImpuestoRet1" msprop:Generator_ColumnPropNameInTable="IdImpuestoRet1Column" msprop:Generator_UserColumnName="IdImpuestoRet1" type="xs:int" default="0" />
+              <xs:element name="IdImpuestoRet2" msprop:Generator_ColumnVarNameInTable="columnIdImpuestoRet2" msprop:Generator_ColumnPropNameInRow="IdImpuestoRet2" msprop:Generator_ColumnPropNameInTable="IdImpuestoRet2Column" msprop:Generator_UserColumnName="IdImpuestoRet2" type="xs:int" default="0" />
+              <xs:element name="IdImpuestoRet3" msprop:Generator_ColumnVarNameInTable="columnIdImpuestoRet3" msprop:Generator_ColumnPropNameInRow="IdImpuestoRet3" msprop:Generator_ColumnPropNameInTable="IdImpuestoRet3Column" msprop:Generator_UserColumnName="IdImpuestoRet3" type="xs:int" default="0" />
+              <xs:element name="PorcImpRet1" msprop:Generator_ColumnVarNameInTable="columnPorcImpRet1" msprop:Generator_ColumnPropNameInRow="PorcImpRet1" msprop:Generator_ColumnPropNameInTable="PorcImpRet1Column" msprop:Generator_UserColumnName="PorcImpRet1" type="xs:decimal" default="0" />
+              <xs:element name="PorcImpRet2" msprop:Generator_ColumnVarNameInTable="columnPorcImpRet2" msprop:Generator_ColumnPropNameInRow="PorcImpRet2" msprop:Generator_ColumnPropNameInTable="PorcImpRet2Column" msprop:Generator_UserColumnName="PorcImpRet2" type="xs:decimal" default="0" />
+              <xs:element name="PorcImpRet3" msprop:Generator_ColumnVarNameInTable="columnPorcImpRet3" msprop:Generator_ColumnPropNameInRow="PorcImpRet3" msprop:Generator_ColumnPropNameInTable="PorcImpRet3Column" msprop:Generator_UserColumnName="PorcImpRet3" type="xs:decimal" default="0" />
+              <xs:element name="MontoImpRet1" msprop:Generator_ColumnVarNameInTable="columnMontoImpRet1" msprop:Generator_ColumnPropNameInRow="MontoImpRet1" msprop:Generator_ColumnPropNameInTable="MontoImpRet1Column" msprop:Generator_UserColumnName="MontoImpRet1" type="xs:decimal" default="0" />
+              <xs:element name="MontoImpRet2" msprop:Generator_ColumnVarNameInTable="columnMontoImpRet2" msprop:Generator_ColumnPropNameInRow="MontoImpRet2" msprop:Generator_ColumnPropNameInTable="MontoImpRet2Column" msprop:Generator_UserColumnName="MontoImpRet2" type="xs:decimal" default="0" />
+              <xs:element name="MontoImpRet3" msprop:Generator_ColumnVarNameInTable="columnMontoImpRet3" msprop:Generator_ColumnPropNameInRow="MontoImpRet3" msprop:Generator_ColumnPropNameInTable="MontoImpRet3Column" msprop:Generator_UserColumnName="MontoImpRet3" type="xs:decimal" default="0" />
+              <xs:element name="Referencia" msprop:Generator_ColumnVarNameInTable="columnReferencia" msprop:Generator_ColumnPropNameInRow="Referencia" msprop:Generator_ColumnPropNameInTable="ReferenciaColumn" msprop:Generator_UserColumnName="Referencia" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="CodigoConcepto" msprop:Generator_ColumnVarNameInTable="columnCodigoConcepto" msprop:Generator_ColumnPropNameInRow="CodigoConcepto" msprop:Generator_ColumnPropNameInTable="CodigoConceptoColumn" msprop:Generator_UserColumnName="CodigoConcepto" default="">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CuentaContable" msprop:Generator_ColumnVarNameInTable="columnCuentaContable" msprop:Generator_ColumnPropNameInRow="CuentaContable" msprop:Generator_ColumnPropNameInTable="CuentaContableColumn" msprop:Generator_UserColumnName="CuentaContable" default="">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ConceptoLibre" msprop:Generator_ColumnVarNameInTable="columnConceptoLibre" msprop:Generator_ColumnPropNameInRow="ConceptoLibre" msprop:Generator_ColumnPropNameInTable="ConceptoLibreColumn" msprop:Generator_UserColumnName="ConceptoLibre" type="xs:boolean" default="false" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Detalle" />
+      <xs:field xpath="mstns:IdNotaConcepto" />
+      <xs:field xpath="mstns:Concepto" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

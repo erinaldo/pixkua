@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TallasDS" targetNamespace="http://tempuri.org/TallasDS.xsd" xmlns:mstns="http://tempuri.org/TallasDS.xsd" xmlns="http://tempuri.org/TallasDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TallasDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="TallasDS" msprop:Generator_UserDSName="TallasDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Tallas" msprop:Generator_TableClassName="TallasDataTable" msprop:Generator_TableVarName="tableTallas" msprop:Generator_TablePropName="Tallas" msprop:Generator_RowDeletingName="TallasRowDeleting" msprop:Generator_UserTableName="Tallas" msprop:Generator_RowChangingName="TallasRowChanging" msprop:Generator_RowEvHandlerName="TallasRowChangeEventHandler" msprop:Generator_RowDeletedName="TallasRowDeleted" msprop:Generator_RowEvArgName="TallasRowChangeEvent" msprop:Generator_RowChangedName="TallasRowChanged" msprop:Generator_RowClassName="TallasRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdTalla" msprop:Generator_ColumnVarNameInTable="columnIdTalla" msprop:Generator_ColumnPropNameInRow="IdTalla" msprop:Generator_ColumnPropNameInTable="IdTallaColumn" msprop:Generator_UserColumnName="IdTalla" type="xs:int" default="0" />
+              <xs:element name="Nombre" msprop:Generator_ColumnVarNameInTable="columnNombre" msprop:Generator_ColumnPropNameInRow="Nombre" msprop:Generator_ColumnPropNameInTable="NombreColumn" msprop:Generator_UserColumnName="Nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Abreviatura" msprop:Generator_ColumnVarNameInTable="columnAbreviatura" msprop:Generator_ColumnPropNameInRow="Abreviatura" msprop:Generator_ColumnPropNameInTable="AbreviaturaColumn" msprop:Generator_UserColumnName="Abreviatura" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataConfiguration>
+  <!--Cadena de conexión y proveedor de la base de datos. -->
+  <ConnectionString>Data Source=.\SQLSERVER2014;Initial Catalog=PixkuaTony;Integrated Security=SSPI;Pooling=False;</ConnectionString>
+  <!--ConnectionString>
+    Server=tcp:gpcorpdes02.database.windows.net,1433;Initial Catalog=Pixkua;Persist Security Info=False;User ID={vmoreno};Password={estellano_1};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
+    </ConnectionString-->
+  <DataProvider>sql</DataProvider>
+  <!--Configuración de paginación de conjuntos-->
+  <Paging>
+    <SupportServerPaging>False</SupportServerPaging>
+    <PageSize>50</PageSize>
+  </Paging>
+  <!--Códigos de error de la BD-->
+  <ErrorCodes>
+    <ForeignKeyError>547</ForeignKeyError>
+    <UniqueError>2601</UniqueError>
+    <CustomError>50000</CustomError>
+  </ErrorCodes>
+</DataConfiguration>

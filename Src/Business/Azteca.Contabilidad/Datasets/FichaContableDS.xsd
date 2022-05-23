@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FichaContableDS" targetNamespace="http://tempuri.org/FichaContableDS.xsd" xmlns:mstns="http://tempuri.org/FichaContableDS.xsd" xmlns="http://tempuri.org/FichaContableDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="PixcuaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="PixcuaConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Azteca.Contabilidad.My.MySettings.GlobalReference.Default.PixcuaConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FichaContableDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="FichaContableDS" msprop:Generator_DataSetName="FichaContableDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FichaContable" msprop:Generator_UserTableName="FichaContable" msprop:Generator_RowDeletedName="FichaContableRowDeleted" msprop:Generator_RowChangedName="FichaContableRowChanged" msprop:Generator_RowClassName="FichaContableRow" msprop:Generator_RowChangingName="FichaContableRowChanging" msprop:Generator_RowEvArgName="FichaContableRowChangeEvent" msprop:Generator_RowEvHandlerName="FichaContableRowChangeEventHandler" msprop:Generator_TableClassName="FichaContableDataTable" msprop:Generator_TableVarName="tableFichaContable" msprop:Generator_RowDeletingName="FichaContableRowDeleting" msprop:Generator_TablePropName="FichaContable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdFichaContable" msprop:Generator_UserColumnName="IdFichaContable" msprop:Generator_ColumnVarNameInTable="columnIdFichaContable" msprop:Generator_ColumnPropNameInRow="IdFichaContable" msprop:Generator_ColumnPropNameInTable="IdFichaContableColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Codigo" msprop:Generator_UserColumnName="Codigo" msprop:Generator_ColumnVarNameInTable="columnCodigo" msprop:Generator_ColumnPropNameInRow="Codigo" msprop:Generator_ColumnPropNameInTable="CodigoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fecha" msprop:Generator_UserColumnName="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IdRacTit" msprop:Generator_UserColumnName="IdRacTit" msprop:Generator_ColumnVarNameInTable="columnIdRacTit" msprop:Generator_ColumnPropNameInRow="IdRacTit" msprop:Generator_ColumnPropNameInTable="IdRacTitColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoPersona" msprop:Generator_UserColumnName="TipoPersona" msprop:Generator_ColumnVarNameInTable="columnTipoPersona" msprop:Generator_ColumnPropNameInRow="TipoPersona" msprop:Generator_ColumnPropNameInTable="TipoPersonaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IdPersona" msprop:Generator_UserColumnName="IdPersona" msprop:Generator_ColumnVarNameInTable="columnIdPersona" msprop:Generator_ColumnPropNameInRow="IdPersona" msprop:Generator_ColumnPropNameInTable="IdPersonaColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Cantidad" msprop:Generator_UserColumnName="Cantidad" msprop:Generator_ColumnVarNameInTable="columnCantidad" msprop:Generator_ColumnPropNameInRow="Cantidad" msprop:Generator_ColumnPropNameInTable="CantidadColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Observaciones" msprop:Generator_UserColumnName="Observaciones" msprop:Generator_ColumnPropNameInRow="Observaciones" msprop:Generator_ColumnVarNameInTable="columnObservaciones" msprop:Generator_ColumnPropNameInTable="ObservacionesColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IdStatus" msprop:Generator_UserColumnName="IdStatus" msprop:Generator_ColumnVarNameInTable="columnIdStatus" msprop:Generator_ColumnPropNameInRow="IdStatus" msprop:Generator_ColumnPropNameInTable="IdStatusColumn" type="xs:int" />
+              <xs:element name="IdSucursal" msprop:Generator_UserColumnName="IdSucursal" msprop:Generator_ColumnVarNameInTable="columnIdSucursal" msprop:Generator_ColumnPropNameInRow="IdSucursal" msprop:Generator_ColumnPropNameInTable="IdSucursalColumn" type="xs:int" />
+              <xs:element name="CreateDate" msprop:Generator_UserColumnName="CreateDate" msprop:Generator_ColumnVarNameInTable="columnCreateDate" msprop:Generator_ColumnPropNameInRow="CreateDate" msprop:Generator_ColumnPropNameInTable="CreateDateColumn" type="xs:dateTime" />
+              <xs:element name="LastUpdate" msprop:Generator_UserColumnName="LastUpdate" msprop:Generator_ColumnVarNameInTable="columnLastUpdate" msprop:Generator_ColumnPropNameInRow="LastUpdate" msprop:Generator_ColumnPropNameInTable="LastUpdateColumn" type="xs:dateTime" />
+              <xs:element name="PCUpdate" msprop:Generator_UserColumnName="PCUpdate" msprop:Generator_ColumnVarNameInTable="columnPCUpdate" msprop:Generator_ColumnPropNameInRow="PCUpdate" msprop:Generator_ColumnPropNameInTable="PCUpdateColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UserCreate" msprop:Generator_UserColumnName="UserCreate" msprop:Generator_ColumnVarNameInTable="columnUserCreate" msprop:Generator_ColumnPropNameInRow="UserCreate" msprop:Generator_ColumnPropNameInTable="UserCreateColumn" type="xs:int" />
+              <xs:element name="UserUpdate" msprop:Generator_UserColumnName="UserUpdate" msprop:Generator_ColumnVarNameInTable="columnUserUpdate" msprop:Generator_ColumnPropNameInRow="UserUpdate" msprop:Generator_ColumnPropNameInTable="UserUpdateColumn" type="xs:int" />
+              <xs:element name="Actor" msprop:Generator_UserColumnName="Actor" msprop:Generator_ColumnVarNameInTable="columnActor" msprop:Generator_ColumnPropNameInRow="Actor" msprop:Generator_ColumnPropNameInTable="ActorColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TipoPoliza" msprop:Generator_UserColumnName="TipoPoliza" msprop:Generator_ColumnVarNameInTable="columnTipoPoliza" msprop:Generator_ColumnPropNameInRow="TipoPoliza" msprop:Generator_ColumnPropNameInTable="TipoPolizaColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="RAC" msprop:Generator_UserColumnName="RAC" msprop:Generator_ColumnVarNameInTable="columnRAC" msprop:Generator_ColumnPropNameInRow="RAC" msprop:Generator_ColumnPropNameInTable="RACColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

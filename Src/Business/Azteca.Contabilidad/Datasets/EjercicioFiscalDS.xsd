@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EjercicioFiscalDS" targetNamespace="http://tempuri.org/EjercicioFiscalDS.xsd" xmlns:mstns="http://tempuri.org/EjercicioFiscalDS.xsd" xmlns="http://tempuri.org/EjercicioFiscalDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="SQL2008R2_314978_pixkuaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SQL2008R2_314978_pixkuaConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Azteca.Business.Contabilidad.My.MySettings.GlobalReference.Default.SQL2008R2_314978_pixkuaConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EjercicioFiscalDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="EjercicioFiscalDS" msprop:Generator_UserDSName="EjercicioFiscalDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Periodos" msprop:Generator_TableClassName="PeriodosDataTable" msprop:Generator_TableVarName="tablePeriodos" msprop:Generator_TablePropName="Periodos" msprop:Generator_RowDeletingName="PeriodosRowDeleting" msprop:Generator_UserTableName="Periodos" msprop:Generator_RowChangingName="PeriodosRowChanging" msprop:Generator_RowEvHandlerName="PeriodosRowChangeEventHandler" msprop:Generator_RowDeletedName="PeriodosRowDeleted" msprop:Generator_RowEvArgName="PeriodosRowChangeEvent" msprop:Generator_RowChangedName="PeriodosRowChanged" msprop:Generator_RowClassName="PeriodosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Mes" msprop:Generator_ColumnVarNameInTable="columnMes" msprop:Generator_ColumnPropNameInRow="Mes" msprop:Generator_ColumnPropNameInTable="MesColumn" msprop:Generator_UserColumnName="Mes" type="xs:int" />
+              <xs:element name="Activo" msprop:Generator_ColumnVarNameInTable="columnActivo" msprop:Generator_ColumnPropNameInRow="Activo" msprop:Generator_ColumnPropNameInTable="ActivoColumn" msprop:Generator_UserColumnName="Activo" type="xs:short" />
+              <xs:element name="Periodo" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPeriodo" msprop:Generator_ColumnPropNameInRow="Periodo" msprop:Generator_ColumnPropNameInTable="PeriodoColumn" msprop:Generator_UserColumnName="Periodo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Status" msprop:Generator_TableClassName="StatusDataTable" msprop:Generator_TableVarName="tableStatus" msprop:Generator_TablePropName="Status" msprop:Generator_RowDeletingName="StatusRowDeleting" msprop:Generator_UserTableName="Status" msprop:Generator_RowChangingName="StatusRowChanging" msprop:Generator_RowEvHandlerName="StatusRowChangeEventHandler" msprop:Generator_RowDeletedName="StatusRowDeleted" msprop:Generator_RowEvArgName="StatusRowChangeEvent" msprop:Generator_RowChangedName="StatusRowChanged" msprop:Generator_RowClassName="StatusRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdStatus" msdata:Caption="Activo" msprop:Generator_ColumnVarNameInTable="columnIdStatus" msprop:Generator_ColumnPropNameInRow="IdStatus" msprop:Generator_ColumnPropNameInTable="IdStatusColumn" msprop:Generator_UserColumnName="IdStatus" type="xs:short" />
+              <xs:element name="Status" msdata:ReadOnly="true" msdata:Caption="Periodo" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

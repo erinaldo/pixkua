@@ -1,0 +1,105 @@
+﻿-- =============================================
+-- Author: RCO
+-- Create date: 02-dic-2011
+-- Description:	Agrega o modifica la información de OrdenesDet
+-- =============================================
+CREATE PROCEDURE [Purchasing].[OrdenesDetUPD]
+	@IdOrdenTit AS char(18),
+	@Fecha AS datetime,
+	@IdArticuloStock AS int,
+	@IdServicio AS int,
+	@Observaciones AS varchar(254),
+	@Cantidad AS decimal(19,4),
+	@Recibido AS decimal(19,4),
+	@IdUnidadMedida AS int,
+	@CostoUnitario AS decimal(19,4),
+	@IdPresupuesto AS int,
+	@IdCategoriaPresupuestal AS int,
+	@IdRequisicion AS char(18),
+	@FechaRequisicion AS datetime,
+	@PorcDescuento1 AS decimal(7,6),
+	@PorcDescuento2 AS decimal(7,6),
+	@PorcDescuento3 AS decimal(7,6),
+	@PorcDescuento4 AS decimal(7,6),
+	@PorcDescuento5 AS decimal(7,6),
+	@MontoDesc1 AS decimal(19,4),
+	@MontoDesc2 AS decimal(19,4),
+	@MontoDesc3 AS decimal(19,4),
+	@MontoDesc4 AS decimal(19,4),
+	@MontoDesc5 AS decimal(19,4),
+	@IdImpuesto1 AS int,
+	@IdImpuesto2 AS int,
+	@IdImpuesto3 AS int,
+	@IdImpuesto4 AS int,
+	@IdImpuesto5 AS int,
+	@PorcImpTras1 AS decimal(7,6),
+	@PorcImpTras2 AS decimal(7,6),
+	@PorcImpTras3 AS decimal(7,6),
+	@PorcImpTras4 AS decimal(7,6),
+	@PorcImpTras5 AS decimal(7,6),
+	@MontoImpTras1 AS decimal(19,4),
+	@MontoImpTras2 AS decimal(19,4),
+	@MontoImpTras3 AS decimal(19,4),
+	@MontoImpTras4 AS decimal(19,4),
+	@MontoImpTras5 AS decimal(19,4),
+	@IdRetencion1 AS int,
+	@IdRetencion2 AS int,
+	@IdRetencion3 AS int,
+	@IdRetencion4 AS int,
+	@IdRetencion5 AS int,
+	@PorcImpRet1 AS decimal(7,6),
+	@PorcImpRet2 AS decimal(7,6),
+	@PorcImpRet3 AS decimal(7,6),
+	@PorcImpRet4 AS decimal(7,6),
+	@PorcImpRet5 AS decimal(7,6),
+	@MontoImpRet1 AS decimal(19,4),
+	@MontoImpRet2 AS decimal(19,4),
+	@MontoImpRet3 AS decimal(19,4),
+	@MontoImpRet4 AS decimal(19,4),
+	@MontoImpRet5 AS decimal(19,4),
+	@Flete AS decimal(19,4)
+AS
+	SET NOCOUNT ON
+		
+	IF NOT EXISTS(SELECT IdOrdenTit FROM Purchasing.OrdenesDet WHERE IdOrdenTit=@IdOrdenTit AND Fecha=@Fecha AND IdArticuloStock=@IdArticuloStock AND IdServicio=@IdServicio)
+	BEGIN		
+		INSERT INTO Purchasing.OrdenesDet(IdOrdenTit, Fecha, IdArticuloStock, IdServicio, 
+			Observaciones, Cantidad, Recibido, IdUnidadMedida, CostoUnitario, IdPresupuesto, IdCategoriaPresupuestal, 
+			IdRequisicion, FechaRequisicion, PorcDescuento1, PorcDescuento2, PorcDescuento3, PorcDescuento4, PorcDescuento5, 
+			MontoDesc1, MontoDesc2, MontoDesc3, MontoDesc4, MontoDesc5, 
+			IdImpuesto1, IdImpuesto2, IdImpuesto3, IdImpuesto4, IdImpuesto5, 
+			PorcImpTras1, PorcImpTras2, PorcImpTras3, PorcImpTras4, PorcImpTras5, 
+			MontoImpTras1, MontoImpTras2, MontoImpTras3, MontoImpTras4, MontoImpTras5, 
+			IdRetencion1, IdRetencion2, IdRetencion3, IdRetencion4, IdRetencion5, 
+			PorcImpRet1, PorcImpRet2, PorcImpRet3, PorcImpRet4, PorcImpRet5, 
+			MontoImpRet1, MontoImpRet2, MontoImpRet3, MontoImpRet4, MontoImpRet5, Flete)
+		VALUES (@IdOrdenTit, @Fecha, @IdArticuloStock, @IdServicio, 
+			@Observaciones, @Cantidad, @Recibido, @IdUnidadMedida, @CostoUnitario, @IdPresupuesto, @IdCategoriaPresupuestal, 
+			@IdRequisicion, @FechaRequisicion, @PorcDescuento1, @PorcDescuento2, @PorcDescuento3, @PorcDescuento4, @PorcDescuento5, 
+			@MontoDesc1, @MontoDesc2, @MontoDesc3, @MontoDesc4, @MontoDesc5, 
+			@IdImpuesto1, @IdImpuesto2, @IdImpuesto3, @IdImpuesto4, @IdImpuesto5, 
+			@PorcImpTras1, @PorcImpTras2, @PorcImpTras3, @PorcImpTras4, @PorcImpTras5, 
+			@MontoImpTras1, @MontoImpTras2, @MontoImpTras3, @MontoImpTras4, @MontoImpTras5, 
+			@IdRetencion1, @IdRetencion2, @IdRetencion3, @IdRetencion4, @IdRetencion5, 
+			@PorcImpRet1, @PorcImpRet2, @PorcImpRet3, @PorcImpRet4, @PorcImpRet5, 
+			@MontoImpRet1, @MontoImpRet2, @MontoImpRet3, @MontoImpRet4, @MontoImpRet5, @Flete)
+	END
+	ELSE
+		UPDATE Purchasing.OrdenesDet SET Observaciones=@Observaciones, Cantidad=@Cantidad, Recibido=@Recibido, 
+			IdUnidadMedida=@IdUnidadMedida, CostoUnitario=@CostoUnitario, IdPresupuesto=@IdPresupuesto, 
+			IdCategoriaPresupuestal=@IdCategoriaPresupuestal, IdRequisicion=@IdRequisicion, 
+			FechaRequisicion=@FechaRequisicion, PorcDescuento1=@PorcDescuento1, PorcDescuento2=@PorcDescuento2, 
+			PorcDescuento3=@PorcDescuento3, PorcDescuento4=@PorcDescuento4, PorcDescuento5=@PorcDescuento5, 
+			MontoDesc1=@MontoDesc1, MontoDesc2=@MontoDesc2, MontoDesc3=@MontoDesc3, MontoDesc4=@MontoDesc4, 
+			MontoDesc5=@MontoDesc5, IdImpuesto1=@IdImpuesto1, IdImpuesto2=@IdImpuesto2, IdImpuesto3=@IdImpuesto3, 
+			IdImpuesto4=@IdImpuesto4, IdImpuesto5=@IdImpuesto5, PorcImpTras1=@PorcImpTras1, PorcImpTras2=@PorcImpTras2, 
+			PorcImpTras3=@PorcImpTras3, PorcImpTras4=@PorcImpTras4, PorcImpTras5=@PorcImpTras5, 
+			MontoImpTras1=@MontoImpTras1, MontoImpTras2=@MontoImpTras2, MontoImpTras3=@MontoImpTras3, 
+			MontoImpTras4=@MontoImpTras4, MontoImpTras5=@MontoImpTras5, IdRetencion1=@IdRetencion1, 
+			IdRetencion2=@IdRetencion2, IdRetencion3=@IdRetencion3, IdRetencion4=@IdRetencion4, 
+			IdRetencion5=@IdRetencion5, PorcImpRet1=@PorcImpRet1, PorcImpRet2=@PorcImpRet2, PorcImpRet3=@PorcImpRet3, 
+			PorcImpRet4=@PorcImpRet4, PorcImpRet5=@PorcImpRet5, MontoImpRet1=@MontoImpRet1, MontoImpRet2=@MontoImpRet2, 
+			MontoImpRet3=@MontoImpRet3, MontoImpRet4=@MontoImpRet4, MontoImpRet5=@MontoImpRet5, Flete=@Flete
+		WHERE IdOrdenTit=@IdOrdenTit AND Fecha=@Fecha AND IdArticuloStock=@IdArticuloStock AND IdServicio=@IdServicio
+
+

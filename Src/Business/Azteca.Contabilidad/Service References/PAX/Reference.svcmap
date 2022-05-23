@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="88e84f4f-9264-49f2-a5e7-c0312521865c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://test.paxfacturacion.com.mx:453/webservices/wcfRecepcion.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="wcfRecepcion.xsd" MetadataType="Schema" ID="e5c5531f-5fca-4f7b-937e-5498b6c8667c" SourceId="1" SourceUrl="https://test.paxfacturacion.com.mx:453/webservices/wcfRecepcion.svc?xsd=xsd0" />
+    <MetadataFile FileName="wcfRecepcion.wsdl" MetadataType="Wsdl" ID="3662ba59-98e1-4d86-b77c-bb286c062c75" SourceId="1" SourceUrl="https://test.paxfacturacion.com.mx:453/webservices/wcfRecepcion.svc?wsdl" />
+    <MetadataFile FileName="wcfRecepcion1.xsd" MetadataType="Schema" ID="a4c6aa76-2640-46c6-afa4-74c2116c85a1" SourceId="1" SourceUrl="https://test.paxfacturacion.com.mx:453/webservices/wcfRecepcion.svc?xsd=xsd1" />
+    <MetadataFile FileName="wcfRecepcion.disco" MetadataType="Disco" ID="030c7f04-6461-43b1-abc2-347c95575c35" SourceId="1" SourceUrl="https://test.paxfacturacion.com.mx:453/webservices/wcfRecepcion.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

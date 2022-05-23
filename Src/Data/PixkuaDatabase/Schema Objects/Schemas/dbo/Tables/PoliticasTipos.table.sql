@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[PoliticasTipos](
+	[IdPoliticaTipo] [int] NOT NULL,
+	[Tipo] [varchar](32) NOT NULL,
+ CONSTRAINT [PK_PoliticasTipos] PRIMARY KEY CLUSTERED 
+(
+	[IdPoliticaTipo] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+

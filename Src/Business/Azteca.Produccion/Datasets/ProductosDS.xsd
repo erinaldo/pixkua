@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ProductosDS" targetNamespace="http://tempuri.org/ProductosDS.xsd" xmlns:mstns="http://tempuri.org/ProductosDS.xsd" xmlns="http://tempuri.org/ProductosDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="PixkuaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PixkuaConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Azteca.Business.Produccion.My.MySettings.GlobalReference.Default.PixkuaConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ProductosDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ProductosDS" msprop:Generator_UserDSName="ProductosDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Insumos" msprop:Generator_TableClassName="InsumosDataTable" msprop:Generator_TableVarName="tableInsumos" msprop:Generator_TablePropName="Insumos" msprop:Generator_RowDeletingName="InsumosRowDeleting" msprop:Generator_UserTableName="Insumos" msprop:Generator_RowChangingName="InsumosRowChanging" msprop:Generator_RowEvHandlerName="InsumosRowChangeEventHandler" msprop:Generator_RowDeletedName="InsumosRowDeleted" msprop:Generator_RowEvArgName="InsumosRowChangeEvent" msprop:Generator_RowChangedName="InsumosRowChanged" msprop:Generator_RowClassName="InsumosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdInsumo" msprop:Generator_ColumnVarNameInTable="columnIdInsumo" msprop:Generator_ColumnPropNameInRow="IdInsumo" msprop:Generator_ColumnPropNameInTable="IdInsumoColumn" msprop:Generator_UserColumnName="IdInsumo" type="xs:int" />
+              <xs:element name="Codigo" msprop:Generator_ColumnVarNameInTable="columnCodigo" msprop:Generator_ColumnPropNameInRow="Codigo" msprop:Generator_ColumnPropNameInTable="CodigoColumn" msprop:Generator_UserColumnName="Codigo" type="xs:string" minOccurs="0" />
+              <xs:element name="Insumo" msprop:Generator_ColumnVarNameInTable="columnInsumo" msprop:Generator_ColumnPropNameInRow="Insumo" msprop:Generator_ColumnPropNameInTable="InsumoColumn" msprop:Generator_UserColumnName="Insumo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IdUnidadMedida" msprop:Generator_ColumnVarNameInTable="columnIdUnidadMedida" msprop:Generator_ColumnPropNameInRow="IdUnidadMedida" msprop:Generator_ColumnPropNameInTable="IdUnidadMedidaColumn" msprop:Generator_UserColumnName="IdUnidadMedida" type="xs:int" />
+              <xs:element name="Cantidad" msprop:Generator_ColumnVarNameInTable="columnCantidad" msprop:Generator_ColumnPropNameInRow="Cantidad" msprop:Generator_ColumnPropNameInTable="CantidadColumn" msprop:Generator_UserColumnName="Cantidad" type="xs:decimal" default="1" />
+              <xs:element name="IdMetaAlmacen" msprop:Generator_ColumnVarNameInTable="columnIdMetaAlmacen" msprop:Generator_ColumnPropNameInRow="IdMetaAlmacen" msprop:Generator_ColumnPropNameInTable="IdMetaAlmacenColumn" msprop:Generator_UserColumnName="IdMetaAlmacen" type="xs:int" default="0" />
+              <xs:element name="PorcMerma" msprop:Generator_ColumnVarNameInTable="columnPorcMerma" msprop:Generator_ColumnPropNameInRow="PorcMerma" msprop:Generator_ColumnPropNameInTable="PorcMermaColumn" msprop:Generator_UserColumnName="PorcMerma" type="xs:decimal" default="0" />
+              <xs:element name="Opcional" msprop:Generator_ColumnVarNameInTable="columnOpcional" msprop:Generator_ColumnPropNameInRow="Opcional" msprop:Generator_ColumnPropNameInTable="OpcionalColumn" msprop:Generator_UserColumnName="Opcional" type="xs:boolean" default="false" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="InsumosOpcionales" msprop:Generator_TableClassName="InsumosOpcionalesDataTable" msprop:Generator_TableVarName="tableInsumosOpcionales" msprop:Generator_TablePropName="InsumosOpcionales" msprop:Generator_RowDeletingName="InsumosOpcionalesRowDeleting" msprop:Generator_UserTableName="InsumosOpcionales" msprop:Generator_RowChangingName="InsumosOpcionalesRowChanging" msprop:Generator_RowEvHandlerName="InsumosOpcionalesRowChangeEventHandler" msprop:Generator_RowDeletedName="InsumosOpcionalesRowDeleted" msprop:Generator_RowEvArgName="InsumosOpcionalesRowChangeEvent" msprop:Generator_RowChangedName="InsumosOpcionalesRowChanged" msprop:Generator_RowClassName="InsumosOpcionalesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdInsumo" msprop:Generator_ColumnVarNameInTable="columnIdInsumo" msprop:Generator_ColumnPropNameInRow="IdInsumo" msprop:Generator_ColumnPropNameInTable="IdInsumoColumn" msprop:Generator_UserColumnName="IdInsumo" type="xs:int" />
+              <xs:element name="Insumo" msprop:Generator_ColumnVarNameInTable="columnInsumo" msprop:Generator_ColumnPropNameInRow="Insumo" msprop:Generator_ColumnPropNameInTable="InsumoColumn" msprop:Generator_UserColumnName="Insumo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Ensablados" msprop:Generator_TableClassName="EnsabladosDataTable" msprop:Generator_TableVarName="tableEnsablados" msprop:Generator_TablePropName="Ensablados" msprop:Generator_RowDeletingName="EnsabladosRowDeleting" msprop:Generator_UserTableName="Ensablados" msprop:Generator_RowChangingName="EnsabladosRowChanging" msprop:Generator_RowEvHandlerName="EnsabladosRowChangeEventHandler" msprop:Generator_RowDeletedName="EnsabladosRowDeleted" msprop:Generator_RowEvArgName="EnsabladosRowChangeEvent" msprop:Generator_RowChangedName="EnsabladosRowChanged" msprop:Generator_RowClassName="EnsabladosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdSubProducto" msdata:Caption="IdInsumo" msprop:Generator_ColumnVarNameInTable="columnIdSubProducto" msprop:Generator_ColumnPropNameInRow="IdSubProducto" msprop:Generator_ColumnPropNameInTable="IdSubProductoColumn" msprop:Generator_UserColumnName="IdSubProducto" type="xs:int" />
+              <xs:element name="Codigo" msprop:Generator_ColumnVarNameInTable="columnCodigo" msprop:Generator_ColumnPropNameInRow="Codigo" msprop:Generator_ColumnPropNameInTable="CodigoColumn" msprop:Generator_UserColumnName="Codigo" type="xs:string" minOccurs="0" />
+              <xs:element name="Producto" msdata:Caption="Insumo" msprop:Generator_ColumnVarNameInTable="columnProducto" msprop:Generator_ColumnPropNameInRow="Producto" msprop:Generator_ColumnPropNameInTable="ProductoColumn" msprop:Generator_UserColumnName="Producto">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IdUnidadMedida" msprop:Generator_ColumnVarNameInTable="columnIdUnidadMedida" msprop:Generator_ColumnPropNameInRow="IdUnidadMedida" msprop:Generator_ColumnPropNameInTable="IdUnidadMedidaColumn" msprop:Generator_UserColumnName="IdUnidadMedida" type="xs:int" />
+              <xs:element name="Cantidad" msprop:Generator_ColumnVarNameInTable="columnCantidad" msprop:Generator_ColumnPropNameInRow="Cantidad" msprop:Generator_ColumnPropNameInTable="CantidadColumn" msprop:Generator_UserColumnName="Cantidad" type="xs:decimal" default="1" />
+              <xs:element name="IdMetaAlmacen" msprop:Generator_ColumnVarNameInTable="columnIdMetaAlmacen" msprop:Generator_ColumnPropNameInRow="IdMetaAlmacen" msprop:Generator_ColumnPropNameInTable="IdMetaAlmacenColumn" msprop:Generator_UserColumnName="IdMetaAlmacen" type="xs:int" default="0" />
+              <xs:element name="PorcMerma" msprop:Generator_ColumnVarNameInTable="columnPorcMerma" msprop:Generator_ColumnPropNameInRow="PorcMerma" msprop:Generator_ColumnPropNameInTable="PorcMermaColumn" msprop:Generator_UserColumnName="PorcMerma" type="xs:decimal" default="0" />
+              <xs:element name="Opcional" msprop:Generator_ColumnVarNameInTable="columnOpcional" msprop:Generator_ColumnPropNameInRow="Opcional" msprop:Generator_ColumnPropNameInTable="OpcionalColumn" msprop:Generator_UserColumnName="Opcional" type="xs:boolean" default="false" />
+              <xs:element name="OrdenSeparada" msprop:Generator_ColumnVarNameInTable="columnOrdenSeparada" msprop:Generator_ColumnPropNameInRow="OrdenSeparada" msprop:Generator_ColumnPropNameInTable="OrdenSeparadaColumn" msprop:Generator_UserColumnName="OrdenSeparada" type="xs:boolean" default="false" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Insumos" />
+      <xs:field xpath="mstns:IdInsumo" />
+    </xs:unique>
+    <xs:unique name="InsumosOpcionales_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:InsumosOpcionales" />
+      <xs:field xpath="mstns:IdInsumo" />
+    </xs:unique>
+    <xs:unique name="Ensablados_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Ensablados" />
+      <xs:field xpath="mstns:IdSubProducto" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

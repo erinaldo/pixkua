@@ -1,0 +1,13 @@
+﻿CREATE TABLE [Inventory].[TurnosAreas](
+	[IdTurnoArea] [int] IDENTITY(1,1) NOT NULL,
+	[IdArea] [int] NOT NULL,
+	[IdTurno] [int] NOT NULL,
+	[Secuencia] [int] NOT NULL,
+ CONSTRAINT [PK_TurnosAreas] PRIMARY KEY CLUSTERED 
+(
+	[IdArea] ASC,
+	[IdTurno] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CentrosConsumoDS" targetNamespace="http://tempuri.org/CentrosConsumoDS.xsd" xmlns:mstns="http://tempuri.org/CentrosConsumoDS.xsd" xmlns="http://tempuri.org/CentrosConsumoDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CentrosConsumoDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="CentrosConsumoDS" msprop:Generator_UserDSName="CentrosConsumoDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Mesas" msprop:Generator_TableClassName="MesasDataTable" msprop:Generator_TableVarName="tableMesas" msprop:Generator_TablePropName="Mesas" msprop:Generator_RowDeletingName="MesasRowDeleting" msprop:Generator_UserTableName="Mesas" msprop:Generator_RowChangingName="MesasRowChanging" msprop:Generator_RowEvHandlerName="MesasRowChangeEventHandler" msprop:Generator_RowDeletedName="MesasRowDeleted" msprop:Generator_RowEvArgName="MesasRowChangeEvent" msprop:Generator_RowChangedName="MesasRowChanged" msprop:Generator_RowClassName="MesasRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdMesa" msdata:Caption="IdArticulo" msprop:Generator_ColumnVarNameInTable="columnIdMesa" msprop:Generator_ColumnPropNameInRow="IdMesa" msprop:Generator_ColumnPropNameInTable="IdMesaColumn" msprop:Generator_UserColumnName="IdMesa" type="xs:int" />
+              <xs:element name="Mesa" msdata:Caption="Articulo" msprop:Generator_ColumnVarNameInTable="columnMesa" msprop:Generator_ColumnPropNameInRow="Mesa" msprop:Generator_ColumnPropNameInTable="MesaColumn" msprop:Generator_UserColumnName="Mesa">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Mesas" />
+      <xs:field xpath="mstns:IdMesa" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

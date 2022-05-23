@@ -1,0 +1,587 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B02E0F94-62A3-4923-A9D7-204B72F76584}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Azteca.Windows.My.MyApplication</StartupObject>
+    <RootNamespace>Azteca.Windows</RootNamespace>
+    <AssemblyName>Pixkua</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ApplicationIcon>LogoPixkua_64.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>http://localhost/CIBackOffice/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Pixkua.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42032,42036,42353,42354,42355</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Pixkua.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42032,42036,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>Pixkua.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42032,42036,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Pixkua.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>Pixkua.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42017,42018,42019,42032,42036,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Pixkua.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>Pixkua.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42032,42036,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Pixkua.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>Pixkua.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42017,42018,42019,42032,42036,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Pixkua.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Azteca.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0bd42f9ebf43d5a0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Bin\Azteca.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Azteca.Kernel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2f0e2a7189bd23d5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Bin\Azteca.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Azteca.Windows, Version=4.0.0.0, Culture=neutral, PublicKeyToken=853c38b2b8ea5830, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Bin\Azteca.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Command.4, Version=4.0.20142.19707, Culture=neutral, PublicKeyToken=e808566f358766d8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\AppData\Local\Microsoft\VisualStudio\10.0\ProjectAssemblies\xfaefuwr01\C1.Win.C1Command.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Editor.4, Version=4.0.20142.213, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Bin\C1.Win.C1Editor.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Ribbon.4, Version=4.0.20142.582, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1Ribbon.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1TrueDBGrid.4, Version=4.0.20142.61400, Culture=neutral, PublicKeyToken=75ae3fb0e2b1e0da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1TrueDBGrid.4.dll</HintPath>
+    </Reference>
+    <Reference Include="ChilkatDotNet4, Version=9.1.1.0, Culture=neutral, PublicKeyToken=eb5fc1fc52ef09bd, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Bin\ChilkatDotNet4.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Azteca.Kernel.Security" />
+    <Import Include="Azteca.Windows.Forms" />
+    <Import Include="Azteca.Windows.Forms.Security" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.Designer.vb">
+      <DependentUpon>AboutForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="ChurchManagerForm.Designer.vb">
+      <DependentUpon>ChurchManagerForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChurchManagerForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigRemoteConecctionForm.designer.vb">
+      <DependentUpon>ConfigRemoteConecctionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigRemoteConecctionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerForm.designer.vb">
+      <DependentUpon>ManagerForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuIcons.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MenuIcons.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Registry.vb" />
+    <Compile Include="SplashForm.Designer.vb">
+      <DependentUpon>SplashForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StrucItem.vb" />
+    <Compile Include="TestClass.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChurchManagerForm.resx">
+      <DependentUpon>ChurchManagerForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigRemoteConecctionForm.resx">
+      <DependentUpon>ConfigRemoteConecctionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerForm.resx">
+      <DependentUpon>ManagerForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuIcons.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MenuIcons.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\licenses_.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SplashForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos\AdminCajas.png" />
+    <None Include="Iconos\AdminFacturas.png" />
+    <None Include="Iconos\AdminTurnos.png" />
+    <None Include="Iconos\Almacenes.png" />
+    <None Include="Iconos\Articulos.png" />
+    <None Include="Iconos\balance.png" />
+    <None Include="Iconos\Balance_Config.png" />
+    <None Include="Iconos\Caja.png" />
+    <None Include="Iconos\Cajero.png" />
+    <None Include="Iconos\Calendario.png" />
+    <None Include="Iconos\Categorias.png" />
+    <None Include="Iconos\CentralCompras.png" />
+    <None Include="Iconos\Certificados.png" />
+    <None Include="Iconos\CFD.png" />
+    <None Include="Iconos\ChangePwd.png" />
+    <None Include="Iconos\Clasificaciones.png" />
+    <None Include="Iconos\Clientes.png" />
+    <None Include="Iconos\Compras.png" />
+    <None Include="Iconos\Conceptos.png" />
+    <None Include="Iconos\Configuracion.png" />
+    <None Include="Iconos\Contabilidad.png" />
+    <None Include="Iconos\ContabilizacionDoctos.png" />
+    <None Include="Iconos\ControlPanel.png" />
+    <None Include="Iconos\CorteInventario.png" />
+    <None Include="Iconos\Cuenta.png" />
+    <None Include="Iconos\Departamentos.png" />
+    <None Include="Iconos\Divisas.png" />
+    <None Include="Iconos\Documentos.png" />
+    <None Include="Iconos\Download.png" />
+    <None Include="Iconos\Empleados.png" />
+    <None Include="Iconos\Empresas.png" />
+    <None Include="Iconos\Entidades.png" />
+    <None Include="Iconos\EstatusDocumentos.png" />
+    <None Include="Iconos\EstCom.png" />
+    <None Include="Iconos\EventLog.png" />
+    <None Include="Iconos\FormasPago.png" />
+    <None Include="Iconos\Formatos.png" />
+    <None Include="Iconos\Gastos.png" />
+    <None Include="Iconos\GeneradorOrdenes.png" />
+    <None Include="Iconos\Grupos.png" />
+    <None Include="Iconos\Impresora.png" />
+    <None Include="Iconos\Impuestos.png" />
+    <None Include="Iconos\Informe.png" />
+    <None Include="Iconos\Inventario.png" />
+    <None Include="Iconos\Licencias.png" />
+    <None Include="Iconos\ListaDescuentos.png" />
+    <None Include="Iconos\ListaPrecios.png" />
+    <None Include="Iconos\Marcas.png" />
+    <None Include="Iconos\Modulos.png" />
+    <None Include="Iconos\Movimientos.png" />
+    <None Include="Iconos\Nomina.png" />
+    <None Include="Iconos\Orden.png" />
+    <None Include="Iconos\Paises.png" />
+    <None Include="Iconos\PastelSegmento.png" />
+    <None Include="Iconos\Periodos.png" />
+    <None Include="Iconos\Poblaciones.png" />
+    <None Include="Iconos\Politicas.png" />
+    <None Include="Iconos\Presupuestos.png" />
+    <None Include="Iconos\Procesos.png" />
+    <None Include="Iconos\Produccion.png" />
+    <None Include="Iconos\Proveedores.png" />
+    <None Include="Iconos\Puestos.png" />
+    <None Include="Iconos\RecepcionFacturas.png" />
+    <None Include="Iconos\Regiones.png" />
+    <None Include="Iconos\Remitentes.png" />
+    <None Include="Iconos\Requisicion.png" />
+    <None Include="Iconos\Restaurante.png" />
+    <None Include="Iconos\Retenciones.png" />
+    <None Include="Iconos\Security.png" />
+    <None Include="Iconos\SegNegocio.png" />
+    <None Include="Iconos\Sellar.png" />
+    <None Include="Iconos\Servicios.png" />
+    <None Include="Iconos\SMTPServers.png" />
+    <None Include="Iconos\Sucursales.png" />
+    <None Include="Iconos\Tesoreria.png" />
+    <None Include="Iconos\TiposCambio.png" />
+    <None Include="Iconos\Traspasos.png" />
+    <None Include="Iconos\Turnos.png" />
+    <None Include="Iconos\UnidadesMedida.png" />
+    <None Include="Iconos\UnidadesNegocio.png" />
+    <None Include="Iconos\Usuarios.png" />
+    <None Include="Iconos\Vendedor.png" />
+    <None Include="Iconos\Ventas.png" />
+    <None Include="Iconos\VistaContable.png" />
+    <None Include="Iconos\WorkflowSecurity.png" />
+    <None Include="Iconos\ZonasCompra.png" />
+    <None Include="Iconos\ZonasVenta.png" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empr.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\img05.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\registroIncidencias.png" />
+    <None Include="Resources\GrupoAreaSurtido.png" />
+    <None Include="Resources\PlanSurtido.png" />
+    <None Include="Resources\AreaSurtido.png" />
+    <None Include="Resources\CDU.png" />
+    <None Include="Resources\Criptas.PNG" />
+    <None Include="Resources\Confirmaciones.png" />
+    <None Include="Resources\Bautismos.png" />
+    <None Include="Resources\Traslados.png" />
+    <None Include="Resources\Comuniones.png" />
+    <None Include="Resources\Matrimonios.png" />
+    <None Include="Resources\Defunciones.png" />
+    <None Include="Resources\Bautismo.png" />
+    <None Include="Resources\parroquias.png" />
+    <None Include="Resources\confirmacion.png" />
+    <None Include="Resources\IglesiaCatolica.png" />
+    <None Include="Resources\Solicitante.png" />
+    <None Include="Resources\Sacerdote.png" />
+    <None Include="Resources\iglesia.png" />
+    <None Include="Resources\if_mail_send_48779.png" />
+    <None Include="Resources\TiposArticulos.png" />
+    <None Include="Resources\FamiliasArticulos.png" />
+    <None Include="Resources\UtilitarioCostos_64x64.png" />
+    <None Include="Resources\Beneficiario_64.png" />
+    <None Include="Resources\Bancos_64.png" />
+    <None Include="Resources\Cheque_64.png" />
+    <None Include="Resources\niche_32.png" />
+    <None Include="DataConfig.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Iconos\AdminOrdenes.png" />
+    <Content Include="Iconos\Ensambles.png" />
+    <Content Include="Iconos\Incidencias.png" />
+    <Content Include="Iconos\OrdenesTrabajo.png" />
+    <Content Include="Iconos\UtilitarioCostos.png" />
+    <Content Include="LogoPixkua_64.ico" />
+    <None Include="Resources\help.png" />
+    <None Include="Resources\industry_next32.png" />
+    <None Include="Resources\security_level_next_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Azteca.UrreaWin\Azteca.UrreaWin.vbproj">
+      <Project>{A64C66D3-2130-49A4-BBC4-1F7F08B9FD4F}</Project>
+      <Name>Azteca.UrreaWin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Azteca.Urrea\Azteca.Urrea.vbproj">
+      <Project>{48857044-DD2F-4CA5-807A-B0FD30A987B6}</Project>
+      <Name>Azteca.Urrea</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business\Azteca.Compras\Azteca.Compras.vbproj">
+      <Project>{8C6F3791-CBB7-44E7-8C3B-8E1495F1EC8F}</Project>
+      <Name>Azteca.Compras</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business\Azteca.Contabilidad\Azteca.Contabilidad.vbproj">
+      <Project>{75ED1D01-3442-4B05-AD47-97B6F110F26C}</Project>
+      <Name>Azteca.Contabilidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business\Azteca.Iglesia\Azteca.Iglesia.vbproj">
+      <Project>{09C6E812-8155-43B1-BADE-67ED2033156D}</Project>
+      <Name>Azteca.Iglesia</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business\Azteca.Inventario\Azteca.Inventario.vbproj">
+      <Project>{087998EE-E2BD-4E50-9BA0-C05685376605}</Project>
+      <Name>Azteca.Inventario</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business\Azteca.Medicina\Azteca.Medicina.vbproj">
+      <Project>{7AA4AE5E-61FE-4F26-A913-3CBCBCCF0C98}</Project>
+      <Name>Azteca.Medicina</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business\Azteca.Produccion\Azteca.Produccion.vbproj">
+      <Project>{99DB08AE-EED9-476C-8E2C-F97108ECEF39}</Project>
+      <Name>Azteca.Produccion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business\Azteca.Restaurante\Azteca.Restaurante.vbproj">
+      <Project>{3374FCE4-CAE8-47B3-AEB7-78CBB1612DA6}</Project>
+      <Name>Azteca.Restaurante</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business\Azteca.RH\Azteca.RH.vbproj">
+      <Project>{E89F3B47-B01B-48A1-B15F-22D52D5E02BE}</Project>
+      <Name>Azteca.RH</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business\Azteca.Tesoreria\Azteca.Tesoreria.vbproj">
+      <Project>{458FE4D1-5894-48BB-B992-80E684ADE93D}</Project>
+      <Name>Azteca.Tesoreria</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business\Azteca.Ventas\Azteca.Ventas.vbproj">
+      <Project>{E0EEADE3-DCD4-494A-BAE0-061E925E5FA6}</Project>
+      <Name>Azteca.Ventas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Azteca.ComprasWin\Azteca.ComprasWin.vbproj">
+      <Project>{ED4AF569-0A61-4A25-87B8-CBBC73AF4B26}</Project>
+      <Name>Azteca.ComprasWin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Azteca.ContabilidadWin\Azteca.ContabilidadWin.vbproj">
+      <Project>{37569F66-589D-4F78-B58D-03FA24F41DCA}</Project>
+      <Name>Azteca.ContabilidadWin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Azteca.GeneralWin\Azteca.GeneralWin.vbproj">
+      <Project>{A76BD560-BB99-4FA9-BBD2-33633F550704}</Project>
+      <Name>Azteca.GeneralWin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Azteca.IglesiaWin\Azteca.IglesiaWin.vbproj">
+      <Project>{289CB340-E22A-4E03-83A9-DCF50CE977CA}</Project>
+      <Name>Azteca.IglesiaWin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Azteca.InventarioWin\Azteca.InventarioWin.vbproj">
+      <Project>{1617300B-E0EF-4D64-B98A-0CD5CB9C3B4B}</Project>
+      <Name>Azteca.InventarioWin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Azteca.MedicinaWin\Azteca.MedicinaWin.vbproj">
+      <Project>{9C7B6566-1418-4D5C-B61E-1B78166FD211}</Project>
+      <Name>Azteca.MedicinaWin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Azteca.ProduccionWin\Azteca.ProduccionWin.vbproj">
+      <Project>{EB1C9041-5BC0-4728-B9BD-996E740ADC48}</Project>
+      <Name>Azteca.ProduccionWin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Azteca.RestauranteWin\Azteca.RestauranteWin.vbproj">
+      <Project>{68E27671-A7E0-4528-BB39-36790BDF345C}</Project>
+      <Name>Azteca.RestauranteWin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Azteca.RHWin\Azteca.RHWin.vbproj">
+      <Project>{FA2AC258-5543-4E7E-BEF9-C7C6CB86BA6A}</Project>
+      <Name>Azteca.RHWin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Azteca.TesoreriaWin\Azteca.TesoreriaWin.vbproj">
+      <Project>{2FBC1F7A-530C-4288-9841-E4211FCDBC05}</Project>
+      <Name>Azteca.TesoreriaWin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Azteca.VentasWin\Azteca.VentasWin.vbproj">
+      <Project>{3FD8D595-BD1E-4B0D-9309-D82E74A29B6F}</Project>
+      <Name>Azteca.VentasWin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

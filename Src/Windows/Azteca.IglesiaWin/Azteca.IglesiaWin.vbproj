@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{289CB340-E22A-4E03-83A9-DCF50CE977CA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Azteca.Windows.Iglesia</RootNamespace>
+    <AssemblyName>Azteca.IglesiaWin</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Azteca.IglesiaWin.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Azteca.IglesiaWin.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Azteca.Kernel">
+      <HintPath>..\..\..\Bin\Azteca.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Azteca.Windows">
+      <HintPath>..\..\..\Bin\Azteca.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Command.4, Version=4.0.20142.19707, Culture=neutral, PublicKeyToken=e808566f358766d8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1Command.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Editor.4, Version=4.0.20142.213, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1Editor.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.4, Version=4.6.20142.835, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1FlexGrid.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Input.4, Version=4.0.20142.33409, Culture=neutral, PublicKeyToken=7e7ff60f0c214f9a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1Input.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1List.4, Version=4.1.20142.301, Culture=neutral, PublicKeyToken=6b24f8f981dbd7bc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1List.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Ribbon.4, Version=4.0.20142.582, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1Ribbon.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Schedule.4, Version=4.0.20142.293, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1Schedule.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1TrueDBGrid.4, Version=4.0.20142.61400, Culture=neutral, PublicKeyToken=75ae3fb0e2b1e0da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4\C1.Win.C1TrueDBGrid.4.dll</HintPath>
+    </Reference>
+    <Reference Include="ChilkatDotNet4">
+      <HintPath>..\..\..\Bin\ChilkatDotNet4.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Azteca.Business.Iglesia" />
+    <Import Include="Azteca.Kernel.BusinessStructure" />
+    <Import Include="Azteca.Kernel.Security" />
+    <Import Include="Azteca.Windows" />
+    <Import Include="Azteca.Windows.Controls" />
+    <Import Include="Azteca.Windows.Forms" />
+    <Import Include="Azteca.Windows.General" />
+    <Import Include="Azteca.Windows.Iglesia" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Catalogos\ParroquiasForm.Designer.vb">
+      <DependentUpon>ParroquiasForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\ParroquiasForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\SacerdotesForm.Designer.vb">
+      <DependentUpon>SacerdotesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\SacerdotesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\SolicitantesForm.Designer.vb">
+      <DependentUpon>SolicitantesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\SolicitantesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles\BautismoSelector.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\ParroquiaSelector.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\SacerdotesComboBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\SacerdoteSelector.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\SolicitanteSelector.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\BautismoForm.Designer.vb">
+      <DependentUpon>BautismoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\BautismoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\ComunionForm.Designer.vb">
+      <DependentUpon>ComunionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\ComunionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\ConfirmacionForm.Designer.vb">
+      <DependentUpon>ConfirmacionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\ConfirmacionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\CriptaForm.Designer.vb">
+      <DependentUpon>CriptaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\CriptaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\DefuncionForm.Designer.vb">
+      <DependentUpon>DefuncionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\DefuncionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\MatrimonioForm.Designer.vb">
+      <DependentUpon>MatrimonioForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\MatrimonioForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\TrasladoForm.Designer.vb">
+      <DependentUpon>TrasladoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\TrasladoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Catalogos\ParroquiasForm.resx">
+      <DependentUpon>ParroquiasForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\SacerdotesForm.resx">
+      <DependentUpon>SacerdotesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\SolicitantesForm.resx">
+      <DependentUpon>SolicitantesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\ActaBautismoRPT.rdlc" />
+    <EmbeddedResource Include="Informes\ActaConfirmacionRPT.rdlc" />
+    <EmbeddedResource Include="Informes\ActaMatrimonioRPT.rdlc" />
+    <EmbeddedResource Include="Informes\ConstanciaMatrimonioRPT.rdlc" />
+    <EmbeddedResource Include="Informes\ActaComunionRPT.rdlc" />
+    <EmbeddedResource Include="Informes\ActaFormatoLimpio.rdlc" />
+    <EmbeddedResource Include="Informes\ConstanciaComunionRPT.rdlc" />
+    <EmbeddedResource Include="Informes\ConstanciaBautismoRPT.rdlc" />
+    <EmbeddedResource Include="Informes\CriptasRPT.rdlc" />
+    <EmbeddedResource Include="Informes\TrasladoRPT.rdlc" />
+    <EmbeddedResource Include="Mantenimientos\BautismoForm.resx">
+      <DependentUpon>BautismoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\ComunionForm.resx">
+      <DependentUpon>ComunionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\ConfirmacionForm.resx">
+      <DependentUpon>ConfirmacionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\CriptaForm.resx">
+      <DependentUpon>CriptaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\DefuncionForm.resx">
+      <DependentUpon>DefuncionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\MatrimonioForm.resx">
+      <DependentUpon>MatrimonioForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\TrasladoForm.resx">
+      <DependentUpon>TrasladoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Copy of licenses.licx" />
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\licenses_.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\Azteca.Business.Iglesia.InformesDS.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Business\Azteca.Iglesia\Azteca.Iglesia.vbproj">
+      <Project>{09C6E812-8155-43B1-BADE-67ED2033156D}</Project>
+      <Name>Azteca.Iglesia</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fileprint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_22x22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\constancia.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{276B2019-A677-4CAC-B86B-A65E23530F19}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Azteca.Windows.Ventas.Retail.My.MyApplication</StartupObject>
+    <RootNamespace>Azteca.Windows.Ventas.Retail</RootNamespace>
+    <AssemblyName>POSRetail</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>POSRetail.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>POSRetail.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>POSRetail.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\POSRetail.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>POSRetail.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\POSRetail.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>LogoPixkua_64.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>POSRetail.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\POSRetail.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>POSRetail.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\POSRetail.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Azteca.Kernel, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Bin\Azteca.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Azteca.Windows, Version=4.0.0.0, Culture=neutral, PublicKeyToken=853c38b2b8ea5830, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Bin\Azteca.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1TrueDBGrid.4, Version=4.0.20122.61260, Culture=neutral, PublicKeyToken=75ae3fb0e2b1e0da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Bin\C1.Win.C1TrueDBGrid.4.dll</HintPath>
+    </Reference>
+    <Reference Include="ChilkatDotNet4, Version=9.1.1.0, Culture=neutral, PublicKeyToken=eb5fc1fc52ef09bd, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Bin\ChilkatDotNet4.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Azteca.Business.Ventas" />
+    <Import Include="Azteca.Windows.Forms" />
+    <Import Include="Microsoft.Reporting.WinForms" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.IO" />
+    <Import Include="System.Threading.Tasks" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="ClienteExpressSelector.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\PictureButton.Designer.vb">
+      <DependentUpon>PictureButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\PictureButton.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cuadros de dialgo\AbrirCajaForm.designer.vb">
+      <DependentUpon>AbrirCajaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cuadros de dialgo\AbrirCajaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuadros de dialgo\ArticulosSlideForm.Designer.vb">
+      <DependentUpon>ArticulosSlideForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cuadros de dialgo\ArticulosSlideForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuadros de dialgo\CerrarCajaForm.Designer.vb">
+      <DependentUpon>CerrarCajaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cuadros de dialgo\CerrarCajaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuadros de dialgo\CobranzaForm.Designer.vb">
+      <DependentUpon>CobranzaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cuadros de dialgo\CobranzaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuadros de dialgo\DescuentoForm.Designer.vb">
+      <DependentUpon>DescuentoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cuadros de dialgo\DescuentoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuadros de dialgo\ediDescripcionForm.Designer.vb">
+      <DependentUpon>ediDescripcionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cuadros de dialgo\ediDescripcionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuadros de dialgo\EditCantidadForm.Designer.vb">
+      <DependentUpon>EditCantidadForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cuadros de dialgo\EditCantidadForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuadros de dialgo\editPrecioForm.Designer.vb">
+      <DependentUpon>editPrecioForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cuadros de dialgo\editPrecioForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuadros de dialgo\EstructuraVentaForm.Designer.vb">
+      <DependentUpon>EstructuraVentaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cuadros de dialgo\EstructuraVentaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuadros de dialgo\FacturarVentaForm.Designer.vb">
+      <DependentUpon>FacturarVentaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cuadros de dialgo\FacturarVentaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuadros de dialgo\TecladoNumerosForm.Designer.vb">
+      <DependentUpon>TecladoNumerosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cuadros de dialgo\TecladoNumerosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\Context.vb" />
+    <Compile Include="Cuadros de dialgo\selClienteForm.Designer.vb">
+      <DependentUpon>selClienteForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cuadros de dialgo\selClienteForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PolicyBuffer.vb" />
+    <Compile Include="PuntoVentaForm.Designer.vb">
+      <DependentUpon>PuntoVentaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PuntoVentaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashForm.Designer.vb">
+      <DependentUpon>SplashForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controles\PictureButton.resx">
+      <DependentUpon>PictureButton.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuadros de dialgo\AbrirCajaForm.resx">
+      <DependentUpon>AbrirCajaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuadros de dialgo\ArticulosSlideForm.resx">
+      <DependentUpon>ArticulosSlideForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuadros de dialgo\CerrarCajaForm.resx">
+      <DependentUpon>CerrarCajaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuadros de dialgo\CobranzaForm.resx">
+      <DependentUpon>CobranzaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuadros de dialgo\DescuentoForm.resx">
+      <DependentUpon>DescuentoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuadros de dialgo\ediDescripcionForm.resx">
+      <DependentUpon>ediDescripcionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuadros de dialgo\EditCantidadForm.resx">
+      <DependentUpon>EditCantidadForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuadros de dialgo\editPrecioForm.resx">
+      <DependentUpon>editPrecioForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuadros de dialgo\EstructuraVentaForm.resx">
+      <DependentUpon>EstructuraVentaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuadros de dialgo\FacturarVentaForm.resx">
+      <DependentUpon>FacturarVentaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuadros de dialgo\selClienteForm.resx">
+      <DependentUpon>selClienteForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuadros de dialgo\TecladoNumerosForm.resx">
+      <DependentUpon>TecladoNumerosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\CorteCajaRPT.rdlc" />
+    <EmbeddedResource Include="Informes\TicketVenta.rdlc" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PuntoVentaForm.resx">
+      <DependentUpon>PuntoVentaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashForm.resx">
+      <DependentUpon>SplashForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\Azteca.Business.Ventas.InformesDS+VentaDataTable.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Business\Azteca.Contabilidad\Azteca.Contabilidad.vbproj">
+      <Project>{75ED1D01-3442-4B05-AD47-97B6F110F26C}</Project>
+      <Name>Azteca.Contabilidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business\Azteca.Inventario\Azteca.Inventario.vbproj">
+      <Project>{087998EE-E2BD-4E50-9BA0-C05685376605}</Project>
+      <Name>Azteca.Inventario</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business\Azteca.Medicina\Azteca.Medicina.vbproj">
+      <Project>{7AA4AE5E-61FE-4F26-A913-3CBCBCCF0C98}</Project>
+      <Name>Azteca.Medicina</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business\Azteca.RH\Azteca.RH.vbproj">
+      <Project>{E89F3B47-B01B-48A1-B15F-22D52D5E02BE}</Project>
+      <Name>Azteca.RH</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business\Azteca.Ventas\Azteca.Ventas.vbproj">
+      <Project>{E0EEADE3-DCD4-494A-BAE0-061E925E5FA6}</Project>
+      <Name>Azteca.Ventas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Azteca.ContabilidadWin\Azteca.ContabilidadWin.vbproj">
+      <Project>{37569F66-589D-4F78-B58D-03FA24F41DCA}</Project>
+      <Name>Azteca.ContabilidadWin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Azteca.GeneralWin\Azteca.GeneralWin.vbproj">
+      <Project>{A76BD560-BB99-4FA9-BBD2-33633F550704}</Project>
+      <Name>Azteca.GeneralWin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Azteca.InventarioWin\Azteca.InventarioWin.vbproj">
+      <Project>{1617300B-E0EF-4D64-B98A-0CD5CB9C3B4B}</Project>
+      <Name>Azteca.InventarioWin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Azteca.MedicinaWin\Azteca.MedicinaWin.vbproj">
+      <Project>{9C7B6566-1418-4D5C-B61E-1B78166FD211}</Project>
+      <Name>Azteca.MedicinaWin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Azteca.RHWin\Azteca.RHWin.vbproj">
+      <Project>{FA2AC258-5543-4E7E-BEF9-C7C6CB86BA6A}</Project>
+      <Name>Azteca.RHWin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Azteca.VentasWin\Azteca.VentasWin.vbproj">
+      <Project>{3FD8D595-BD1E-4B0D-9309-D82E74A29B6F}</Project>
+      <Name>Azteca.VentasWin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="LogoPixkua_64.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

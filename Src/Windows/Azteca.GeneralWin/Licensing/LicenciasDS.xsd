@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LicenciasDS" targetNamespace="http://tempuri.org/LicenciasDS.xsd" xmlns:mstns="http://tempuri.org/LicenciasDS.xsd" xmlns="http://tempuri.org/LicenciasDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LicenciasDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="LicenciasDS" msprop:Generator_UserDSName="LicenciasDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Licencias" msprop:Generator_TableClassName="LicenciasDataTable" msprop:Generator_TableVarName="tableLicencias" msprop:Generator_TablePropName="Licencias" msprop:Generator_RowDeletingName="LicenciasRowDeleting" msprop:Generator_UserTableName="Licencias" msprop:Generator_RowChangingName="LicenciasRowChanging" msprop:Generator_RowEvHandlerName="LicenciasRowChangeEventHandler" msprop:Generator_RowDeletedName="LicenciasRowDeleted" msprop:Generator_RowEvArgName="LicenciasRowChangeEvent" msprop:Generator_RowChangedName="LicenciasRowChanged" msprop:Generator_RowClassName="LicenciasRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Modulo" msprop:Generator_ColumnVarNameInTable="columnModulo" msprop:Generator_ColumnPropNameInRow="Modulo" msprop:Generator_ColumnPropNameInTable="ModuloColumn" msprop:Generator_UserColumnName="Modulo" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="CodigoRegistro" msprop:Generator_ColumnVarNameInTable="columnCodigoRegistro" msprop:Generator_ColumnPropNameInRow="CodigoRegistro" msprop:Generator_ColumnPropNameInTable="CodigoRegistroColumn" msprop:Generator_UserColumnName="CodigoRegistro" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="Licencia" msprop:Generator_ColumnVarNameInTable="columnLicencia" msprop:Generator_ColumnPropNameInRow="Licencia" msprop:Generator_ColumnPropNameInTable="LicenciaColumn" msprop:Generator_UserColumnName="Licencia" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="Estatus" msprop:Generator_ColumnVarNameInTable="columnEstatus" msprop:Generator_ColumnPropNameInRow="Estatus" msprop:Generator_ColumnPropNameInTable="EstatusColumn" msprop:Generator_UserColumnName="Estatus" type="xs:int" default="0" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

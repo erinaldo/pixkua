@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{087998EE-E2BD-4E50-9BA0-C05685376605}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Azteca.Business.Inventario</RootNamespace>
+    <AssemblyName>Azteca.Inventario</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Azteca.Inventario.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Azteca.Inventario.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>Azteca.Inventario.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Azteca.Inventario.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>Azteca.Inventario.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Azteca.Inventario.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>Azteca.Inventario.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Azteca.Inventario.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>Azteca.Inventario.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Azteca.Inventario.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Azteca.Data">
+      <HintPath>..\..\..\Bin\Azteca.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Azteca.Kernel, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Azteca.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Azteca.Data" />
+    <Import Include="Azteca.Kernel.BusinessStructure" />
+    <Import Include="Azteca.Kernel.Search" />
+    <Import Include="Azteca.Kernel.Security" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Catalogos\Almacen.Designer.vb">
+      <DependentUpon>Almacen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Almacen.vb" />
+    <Compile Include="Catalogos\Area.Designer.vb">
+      <DependentUpon>Area.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Area.vb" />
+    <Compile Include="Catalogos\ArticuloStock.Designer.vb">
+      <DependentUpon>ArticuloStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\ArticuloStock.vb" />
+    <Compile Include="Catalogos\ClasificacionConcepto.Designer.vb">
+      <DependentUpon>ClasificacionConcepto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\ClasificacionConcepto.vb" />
+    <Compile Include="Catalogos\Color.Designer.vb">
+      <DependentUpon>Color.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Color.vb" />
+    <Compile Include="Catalogos\Concepto.Designer.vb">
+      <DependentUpon>Concepto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Concepto.vb" />
+    <Compile Include="Catalogos\CorteInfo.vb" />
+    <Compile Include="Catalogos\ArticuloCostoInfo.vb" />
+    <Compile Include="Catalogos\Etiqueta.vb" />
+    <Compile Include="Catalogos\Familia.Designer.vb">
+      <DependentUpon>Familia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Familia.vb" />
+    <Compile Include="Catalogos\GrupoClasificaciones.Designer.vb">
+      <DependentUpon>GrupoClasificaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\GrupoClasificaciones.vb" />
+    <Compile Include="Catalogos\MetaAlmacen.Designer.vb">
+      <DependentUpon>MetaAlmacen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\MetaAlmacen.vb" />
+    <Compile Include="Catalogos\Pasillo.Designer.vb">
+      <DependentUpon>Pasillo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Pasillo.vb" />
+    <Compile Include="Catalogos\Regleta.Designer.vb">
+      <DependentUpon>Regleta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Regleta.vb" />
+    <Compile Include="Catalogos\StockInfo.vb" />
+    <Compile Include="Catalogos\Talla.Designer.vb">
+      <DependentUpon>Talla.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Talla.vb" />
+    <Compile Include="Catalogos\Tipo.Designer.vb">
+      <DependentUpon>Tipo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Tipo.vb" />
+    <Compile Include="Catalogos\TipoUnidadMedida.Designer.vb">
+      <DependentUpon>TipoUnidadMedida.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\TipoUnidadMedida.vb" />
+    <Compile Include="Catalogos\Turno.Designer.vb">
+      <DependentUpon>Turno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Turno.vb" />
+    <Compile Include="Catalogos\Ubicacion.Designer.vb">
+      <DependentUpon>Ubicacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Ubicacion.vb" />
+    <Compile Include="Catalogos\UbicacionTipo.Designer.vb">
+      <DependentUpon>UbicacionTipo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\UbicacionTipo.vb" />
+    <Compile Include="Catalogos\UnidadMedida.Designer.vb">
+      <DependentUpon>UnidadMedida.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\UnidadMedida.vb" />
+    <Compile Include="Datasets\AreasDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AreasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\ClasificacionesDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClasificacionesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DetalleMovimientoDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DetalleMovimientoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DetalleTraspasoDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DetalleTraspasoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\dsEtiqueta.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEtiqueta.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\InformesDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InformesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\TallasDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TallasDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\UnidadesMedidaDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UnidadesMedidaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\UsuarioAccesosDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UsuarioAccesosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\UtilitarioCostosDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UtilitarioCostosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Documentos\Movimiento.Designer.vb">
+      <DependentUpon>Movimiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Documentos\Movimiento.vb" />
+    <Compile Include="Documentos\Traspaso.Designer.vb">
+      <DependentUpon>Traspaso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Documentos\Traspaso.vb" />
+    <Compile Include="Empaquetado.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Datasets\AreasDS.xsc">
+      <DependentUpon>AreasDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\AreasDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AreasDS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Datasets\AreasDS.xss">
+      <DependentUpon>AreasDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ClasificacionesDS.xsc">
+      <DependentUpon>ClasificacionesDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ClasificacionesDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ClasificacionesDS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Datasets\ClasificacionesDS.xss">
+      <DependentUpon>ClasificacionesDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DetalleMovimientoDS.xsc">
+      <DependentUpon>DetalleMovimientoDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DetalleMovimientoDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DetalleMovimientoDS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Datasets\DetalleMovimientoDS.xss">
+      <DependentUpon>DetalleMovimientoDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DetalleTraspasoDS.xsc">
+      <DependentUpon>DetalleTraspasoDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DetalleTraspasoDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DetalleTraspasoDS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Datasets\DetalleTraspasoDS.xss">
+      <DependentUpon>DetalleTraspasoDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\dsEtiqueta.xsc">
+      <DependentUpon>dsEtiqueta.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\dsEtiqueta.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEtiqueta.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Datasets\dsEtiqueta.xss">
+      <DependentUpon>dsEtiqueta.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\InformesDS.xsc">
+      <DependentUpon>InformesDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\InformesDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InformesDS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Datasets\InformesDS.xss">
+      <DependentUpon>InformesDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\TallasDS.xsc">
+      <DependentUpon>TallasDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\TallasDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TallasDS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Datasets\TallasDS.xss">
+      <DependentUpon>TallasDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\UnidadesMedidaDS.xsc">
+      <DependentUpon>UnidadesMedidaDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\UnidadesMedidaDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UnidadesMedidaDS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Datasets\UnidadesMedidaDS.xss">
+      <DependentUpon>UnidadesMedidaDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\UsuarioAccesosDS.xsc">
+      <DependentUpon>UsuarioAccesosDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\UsuarioAccesosDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UsuarioAccesosDS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\UsuarioAccesosDS.xss">
+      <DependentUpon>UsuarioAccesosDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\UtilitarioCostosDS.xsc">
+      <DependentUpon>UtilitarioCostosDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\UtilitarioCostosDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Include="Datasets\UtilitarioCostosDS.xss">
+      <DependentUpon>UtilitarioCostosDS.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\InformesDS.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

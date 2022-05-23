@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SucursalesConfigDS" targetNamespace="http://tempuri.org/SucursalesConfigDS.xsd" xmlns:mstns="http://tempuri.org/SucursalesConfigDS.xsd" xmlns="http://tempuri.org/SucursalesConfigDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SucursalesConfigDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SucursalesConfigDS" msprop:Generator_UserDSName="SucursalesConfigDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Sucursales" msprop:Generator_TableClassName="SucursalesDataTable" msprop:Generator_TableVarName="tableSucursales" msprop:Generator_TablePropName="Sucursales" msprop:Generator_RowDeletingName="SucursalesRowDeleting" msprop:Generator_UserTableName="Sucursales" msprop:Generator_RowChangingName="SucursalesRowChanging" msprop:Generator_RowEvHandlerName="SucursalesRowChangeEventHandler" msprop:Generator_RowDeletedName="SucursalesRowDeleted" msprop:Generator_RowEvArgName="SucursalesRowChangeEvent" msprop:Generator_RowChangedName="SucursalesRowChanged" msprop:Generator_RowClassName="SucursalesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdSucursal" msprop:Generator_ColumnVarNameInTable="columnIdSucursal" msprop:Generator_ColumnPropNameInRow="IdSucursal" msprop:Generator_ColumnPropNameInTable="IdSucursalColumn" msprop:Generator_UserColumnName="IdSucursal" type="xs:int" default="0" />
+              <xs:element name="Nombre" msprop:Generator_ColumnVarNameInTable="columnNombre" msprop:Generator_ColumnPropNameInRow="Nombre" msprop:Generator_ColumnPropNameInTable="NombreColumn" msprop:Generator_UserColumnName="Nombre" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="IdFormatoNotaCredito" msprop:Generator_ColumnVarNameInTable="columnIdFormatoNotaCredito" msprop:Generator_ColumnPropNameInRow="IdFormatoNotaCredito" msprop:Generator_ColumnPropNameInTable="IdFormatoNotaCreditoColumn" msprop:Generator_UserColumnName="IdFormatoNotaCredito" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="IdFormatoNotaCargo" msprop:Generator_ColumnVarNameInTable="columnIdFormatoNotaCargo" msprop:Generator_ColumnPropNameInRow="IdFormatoNotaCargo" msprop:Generator_ColumnPropNameInTable="IdFormatoNotaCargoColumn" msprop:Generator_UserColumnName="IdFormatoNotaCargo" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="IdSerieNotasCargo" msprop:Generator_ColumnVarNameInTable="columnIdSerieNotasCargo" msprop:Generator_ColumnPropNameInRow="IdSerieNotasCargo" msprop:Generator_ColumnPropNameInTable="IdSerieNotasCargoColumn" msprop:Generator_UserColumnName="IdSerieNotasCargo" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="IdSerieNotasCredito" msprop:Generator_ColumnVarNameInTable="columnIdSerieNotasCredito" msprop:Generator_ColumnPropNameInRow="IdSerieNotasCredito" msprop:Generator_ColumnPropNameInTable="IdSerieNotasCreditoColumn" msprop:Generator_UserColumnName="IdSerieNotasCredito" type="xs:int" default="0" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Sucursales" />
+      <xs:field xpath="mstns:IdSucursal" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

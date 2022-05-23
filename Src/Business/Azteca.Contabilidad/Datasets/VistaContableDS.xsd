@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="VistaContableDS" targetNamespace="http://tempuri.org/VistaContableDS.xsd" xmlns:mstns="http://tempuri.org/VistaContableDS.xsd" xmlns="http://tempuri.org/VistaContableDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="PixkuaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PixkuaConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Azteca.Business.Contabilidad.My.MySettings.GlobalReference.Default.PixkuaConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="VistaContableDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="VistaContableDS" msprop:Generator_UserDSName="VistaContableDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Entidades" msprop:Generator_TableClassName="EntidadesDataTable" msprop:Generator_TableVarName="tableEntidades" msprop:Generator_TablePropName="Entidades" msprop:Generator_RowDeletingName="EntidadesRowDeleting" msprop:Generator_UserTableName="Entidades" msprop:Generator_RowChangingName="EntidadesRowChanging" msprop:Generator_RowEvHandlerName="EntidadesRowChangeEventHandler" msprop:Generator_RowDeletedName="EntidadesRowDeleted" msprop:Generator_RowEvArgName="EntidadesRowChangeEvent" msprop:Generator_RowChangedName="EntidadesRowChanged" msprop:Generator_RowClassName="EntidadesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Columna" msprop:Generator_ColumnVarNameInTable="columnColumna" msprop:Generator_ColumnPropNameInRow="Columna" msprop:Generator_ColumnPropNameInTable="ColumnaColumn" msprop:Generator_UserColumnName="Columna" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IdVistaContableEntidad" msprop:Generator_ColumnVarNameInTable="columnIdVistaContableEntidad" msprop:Generator_ColumnPropNameInRow="IdVistaContableEntidad" msprop:Generator_ColumnPropNameInTable="IdVistaContableEntidadColumn" msprop:Generator_UserColumnName="IdVistaContableEntidad" type="xs:int" minOccurs="0" />
+              <xs:element name="IdEntidad" msprop:Generator_ColumnVarNameInTable="columnIdEntidad" msprop:Generator_ColumnPropNameInRow="IdEntidad" msprop:Generator_ColumnPropNameInTable="IdEntidadColumn" msprop:Generator_UserColumnName="IdEntidad" type="xs:int" minOccurs="0" />
+              <xs:element name="Entidad" msprop:Generator_ColumnVarNameInTable="columnEntidad" msprop:Generator_ColumnPropNameInRow="Entidad" msprop:Generator_ColumnPropNameInTable="EntidadColumn" msprop:Generator_UserColumnName="Entidad" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Importes" msprop:Generator_TableClassName="ImportesDataTable" msprop:Generator_TableVarName="tableImportes" msprop:Generator_TablePropName="Importes" msprop:Generator_RowDeletingName="ImportesRowDeleting" msprop:Generator_UserTableName="Importes" msprop:Generator_RowChangingName="ImportesRowChanging" msprop:Generator_RowEvHandlerName="ImportesRowChangeEventHandler" msprop:Generator_RowDeletedName="ImportesRowDeleted" msprop:Generator_RowEvArgName="ImportesRowChangeEvent" msprop:Generator_RowChangedName="ImportesRowChanged" msprop:Generator_RowClassName="ImportesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Columna" msprop:Generator_ColumnVarNameInTable="columnColumna" msprop:Generator_ColumnPropNameInRow="Columna" msprop:Generator_ColumnPropNameInTable="ColumnaColumn" msprop:Generator_UserColumnName="Columna" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IdVistaContableImporte" msprop:Generator_ColumnVarNameInTable="columnIdVistaContableImporte" msprop:Generator_ColumnPropNameInRow="IdVistaContableImporte" msprop:Generator_ColumnPropNameInTable="IdVistaContableImporteColumn" msprop:Generator_UserColumnName="IdVistaContableImporte" type="xs:int" minOccurs="0" />
+              <xs:element name="IdImporte" msprop:Generator_ColumnVarNameInTable="columnIdImporte" msprop:Generator_ColumnPropNameInRow="IdImporte" msprop:Generator_ColumnPropNameInTable="IdImporteColumn" msprop:Generator_UserColumnName="IdImporte" type="xs:int" minOccurs="0" />
+              <xs:element name="Importe" msprop:Generator_ColumnVarNameInTable="columnImporte" msprop:Generator_ColumnPropNameInRow="Importe" msprop:Generator_ColumnPropNameInTable="ImporteColumn" msprop:Generator_UserColumnName="Importe" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

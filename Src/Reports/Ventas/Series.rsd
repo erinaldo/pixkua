@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition">
+  <DataSet Name="">
+    <Query>
+      <DataSourceReference>PixkuaOLTP</DataSourceReference>
+      <DataSetParameters>
+        <DataSetParameter Name="@IdEmpresa">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Int32</rd:DbType>
+        </DataSetParameter>
+      </DataSetParameters>
+      <CommandText>SELECT IdCFDSerie, Serie 
+FROM Accounting.CFDSeries
+WHERE IdEmpresa=@IdEmpresa
+ORDER BY Serie</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="IdCFDSerie">
+        <DataField>IdCFDSerie</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Serie">
+        <DataField>Serie</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

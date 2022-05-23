@@ -1,0 +1,48 @@
+﻿CREATE TABLE [Treasury].[ContrarecibosDet](
+	[IdContrareciboDet] [int] IDENTITY(1,1) NOT NULL,
+	[IdContrareciboTit] [char](18) NOT NULL,
+	[Fecha] [datetime] NOT NULL,
+	[CodigoConcepto] [varchar](32) NOT NULL,
+	[DecripcionConcepto] [varchar](128) NOT NULL,
+	[IdCuenta] [int] NOT NULL,
+	[Monto] [decimal](19, 4) NOT NULL,
+	[IdImpuesto1] [int] NOT NULL,
+	[IdImpuesto2] [int] NOT NULL,
+	[IdImpuesto3] [int] NOT NULL,
+	[IdImpuesto4] [int] NOT NULL,
+	[IdImpuesto5] [int] NOT NULL,
+	[PorcImpTras1] [decimal](7, 6) NOT NULL,
+	[PorcImpTras2] [decimal](7, 6) NOT NULL,
+	[PorcImpTras3] [decimal](7, 6) NOT NULL,
+	[PorcImpTras4] [decimal](7, 6) NOT NULL,
+	[PorcImpTras5] [decimal](7, 6) NOT NULL,
+	[MontoImpTras1] [decimal](19, 4) NOT NULL,
+	[MontoImpTras2] [decimal](19, 4) NOT NULL,
+	[MontoImpTras3] [decimal](19, 4) NOT NULL,
+	[MontoImpTras4] [decimal](19, 4) NOT NULL,
+	[MontoImpTras5] [decimal](19, 4) NOT NULL,
+	[IdRetencion1] [int] NOT NULL,
+	[IdRetencion2] [int] NOT NULL,
+	[IdRetencion3] [int] NOT NULL,
+	[IdRetencion4] [int] NOT NULL,
+	[IdRetencion5] [int] NOT NULL,
+	[PorcImpRet1] [decimal](7, 6) NOT NULL,
+	[PorcImpRet2] [decimal](7, 6) NOT NULL,
+	[PorcImpRet3] [decimal](7, 6) NOT NULL,
+	[PorcImpRet4] [decimal](7, 6) NOT NULL,
+	[PorcImpRet5] [decimal](7, 6) NOT NULL,
+	[MontoImpRet1] [decimal](19, 4) NOT NULL,
+	[MontoImpRet2] [decimal](19, 4) NOT NULL,
+	[MontoImpRet3] [decimal](19, 4) NOT NULL,
+	[MontoImpRet4] [decimal](19, 4) NOT NULL,
+	[MontoImpRet5] [decimal](19, 4) NOT NULL,
+ CONSTRAINT [PK_ContrarecibosDet] PRIMARY KEY CLUSTERED 
+(
+	[Fecha] ASC,
+	[IdContrareciboTit] ASC,
+	[CodigoConcepto] ASC,
+	[DecripcionConcepto] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+

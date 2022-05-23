@@ -1,0 +1,919 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{3FD8D595-BD1E-4B0D-9309-D82E74A29B6F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Azteca.Windows.Ventas</RootNamespace>
+    <AssemblyName>Azteca.VentasWin</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Azteca.VentasWin.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Azteca.VentasWin.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>Azteca.VentasWin.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Azteca.VentasWin.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>Azteca.VentasWin.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Azteca.VentasWin.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>Azteca.VentasWin.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Azteca.VentasWin.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>Azteca.VentasWin.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Azteca.VentasWin.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Azteca.Data, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Azteca.Kernel">
+      <HintPath>..\..\..\Bin\Azteca.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Azteca.Produccion">
+      <HintPath>..\..\Business\Azteca.Produccion\bin\x86\Debug\Azteca.Produccion.dll</HintPath>
+    </Reference>
+    <Reference Include="Azteca.Windows">
+      <HintPath>..\..\..\Bin\Azteca.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1BarCode.4, Version=4.0.20122.55, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Command.4, Version=4.0.20103.19465, Culture=neutral, PublicKeyToken=e808566f358766d8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.4, Version=4.6.20132.781, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Bin\C1.Win.C1FlexGrid.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Input.4, Version=4.0.20122.33281, Culture=neutral, PublicKeyToken=7e7ff60f0c214f9a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Bin\C1.Win.C1Input.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1InputPanel.4, Version=4.0.20103.108, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Ribbon.4, Version=4.0.20132.470, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Bin\C1.Win.C1Ribbon.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1TrueDBGrid.4, Version=4.0.20122.61260, Culture=neutral, PublicKeyToken=75ae3fb0e2b1e0da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Bin\C1.Win.C1TrueDBGrid.4.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Azteca.Business.Ventas" />
+    <Import Include="Azteca.Kernel.BusinessStructure" />
+    <Import Include="Azteca.Windows" />
+    <Import Include="Azteca.Windows.Controls" />
+    <Import Include="Azteca.Windows.Forms" />
+    <Import Include="Azteca.Windows.Forms.General" />
+    <Import Include="Microsoft.Reporting.WinForms" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Catalogos\ArticulosForm.Designer.vb">
+      <DependentUpon>ArticulosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\ArticulosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\CajasForm.Designer.vb">
+      <DependentUpon>CajasForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\CajasForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\CajerosForm.Designer.vb">
+      <DependentUpon>CajerosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\CajerosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\CausasDevolucionForm.Designer.vb">
+      <DependentUpon>CausasDevolucionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\CausasDevolucionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\ClasificacionesForm.Designer.vb">
+      <DependentUpon>ClasificacionesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\ClasificacionesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\ClienteExpressForm.Designer.vb">
+      <DependentUpon>ClienteExpressForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\ClienteExpressForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\ClientesForm.Designer.vb">
+      <DependentUpon>ClientesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\ClientesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\EstComercialForm.Designer.vb">
+      <DependentUpon>EstComercialForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\EstComercialForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\FormasPagoForm.Designer.vb">
+      <DependentUpon>FormasPagoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\FormasPagoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\ListaDescuentosForm.Designer.vb">
+      <DependentUpon>ListaDescuentosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\ListaDescuentosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\ListaPreciosForm.Designer.vb">
+      <DependentUpon>ListaPreciosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\ListaPreciosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\MarcasForm.Designer.vb">
+      <DependentUpon>MarcasForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\MarcasForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\MetodoPagoForm.Designer.vb">
+      <DependentUpon>MetodoPagoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\MetodoPagoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\RegionesForm.Designer.vb">
+      <DependentUpon>RegionesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\RegionesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\ServiciosForm.Designer.vb">
+      <DependentUpon>ServiciosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\ServiciosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\TerminalesForm.Designer.vb">
+      <DependentUpon>TerminalesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\TerminalesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\TiposPedidoForm.Designer.vb">
+      <DependentUpon>TiposPedidoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\TiposPedidoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\UnidadesNegocioForm.Designer.vb">
+      <DependentUpon>UnidadesNegocioForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\UnidadesNegocioForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\VendedoresForm.Designer.vb">
+      <DependentUpon>VendedoresForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\VendedoresForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\ZonasVentaForm.Designer.vb">
+      <DependentUpon>ZonasVentaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\ZonasVentaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles\ArticuloSelector.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\CajaCombobox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\CajerosCombobox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\CausaDevolucionComboBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\ClienteSelector.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\EstructuraComercialSelector.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\FormasPagoComboBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\GrupoDescuentosSelector.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\ListaPreciosSelector.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\MarcasComboBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\MetodoPagoComboBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\RegionesComboBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\ServicioSelector.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\TipoPedidoComboBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\VendedoresComboBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\VendedorSelector.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\VentaSelector.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\ZonasVentaComboBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cuadros de Dialogo\AbrirCajaForm.Designer.vb">
+      <DependentUpon>AbrirCajaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cuadros de Dialogo\AbrirCajaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuadros de Dialogo\AdminTallasColoresForm.Designer.vb">
+      <DependentUpon>AdminTallasColoresForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cuadros de Dialogo\AdminTallasColoresForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuadros de Dialogo\CobranzaForm.Designer.vb">
+      <DependentUpon>CobranzaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cuadros de Dialogo\CobranzaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuadros de Dialogo\DetalleCorteForm.Designer.vb">
+      <DependentUpon>DetalleCorteForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cuadros de Dialogo\DetalleCorteForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuadros de Dialogo\DestinatarioMailForm.Designer.vb">
+      <DependentUpon>DestinatarioMailForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cuadros de Dialogo\DestinatarioMailForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuadros de Dialogo\EditArticuloPresZonaForm.Designer.vb">
+      <DependentUpon>EditArticuloPresZonaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cuadros de Dialogo\EditArticuloPresZonaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuadros de Dialogo\EditArticuloZonaForm.Designer.vb">
+      <DependentUpon>EditArticuloZonaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cuadros de Dialogo\EditArticuloZonaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuadros de Dialogo\EditEmbarqueForm.Designer.vb">
+      <DependentUpon>EditEmbarqueForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cuadros de Dialogo\EditEmbarqueForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuadros de Dialogo\EditPartidaServicioForm.designer.vb">
+      <DependentUpon>EditPartidaServicioForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cuadros de Dialogo\EditPartidaServicioForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuadros de Dialogo\EditPrecioForm.Designer.vb">
+      <DependentUpon>EditPrecioForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cuadros de Dialogo\EditPrecioForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuadros de Dialogo\EditServicioZonaForm.Designer.vb">
+      <DependentUpon>EditServicioZonaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cuadros de Dialogo\EditServicioZonaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuadros de Dialogo\ImpresionCorteForm.Designer.vb">
+      <DependentUpon>ImpresionCorteForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cuadros de Dialogo\ImpresionCorteForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuadros de Dialogo\MetodoPagoSELForm.Designer.vb">
+      <DependentUpon>MetodoPagoSELForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cuadros de Dialogo\MetodoPagoSELForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuadros de Dialogo\NuevaFacturaGlobalForm.Designer.vb">
+      <DependentUpon>NuevaFacturaGlobalForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cuadros de Dialogo\NuevaFacturaGlobalForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuadros de Dialogo\SelectFormaPagoForm.Designer.vb">
+      <DependentUpon>SelectFormaPagoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cuadros de Dialogo\SelectFormaPagoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuadros de Dialogo\TecladoNumerosForm.Designer.vb">
+      <DependentUpon>TecladoNumerosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cuadros de Dialogo\TecladoNumerosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documentos\PedidosForm.Designer.vb">
+      <DependentUpon>PedidosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Documentos\PedidosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documentos\VentasForm.Designer.vb">
+      <DependentUpon>VentasForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Documentos\VentasForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\Context.vb" />
+    <Compile Include="Informes\FacturacionInformesCteForm.Designer.vb">
+      <DependentUpon>FacturacionInformesCteForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Informes\FacturacionInformesCteForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informes\FacturacionInformesForm.Designer.vb">
+      <DependentUpon>FacturacionInformesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Informes\FacturacionInformesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informes\FacturacionPorArticuloForm.Designer.vb">
+      <DependentUpon>FacturacionPorArticuloForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Informes\FacturacionPorArticuloForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informes\VentasGeneralForm.Designer.vb">
+      <DependentUpon>VentasGeneralForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Informes\VentasGeneralForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\AdminCajaInventariosForm.Designer.vb">
+      <DependentUpon>AdminCajaInventariosForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\AdminCajaInventariosForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\AdminFacturasForm.Designer.vb">
+      <DependentUpon>AdminFacturasForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\AdminFacturasForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\AdminCajasForm.Designer.vb">
+      <DependentUpon>AdminCajasForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\AdminCajasForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\AdminVentasForm.Designer.vb">
+      <DependentUpon>AdminVentasForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\AdminVentasForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\FacturaGlobalForm.Designer.vb">
+      <DependentUpon>FacturaGlobalForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\FacturaGlobalForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Catalogos\ArticulosForm.resx">
+      <DependentUpon>ArticulosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\CajasForm.resx">
+      <DependentUpon>CajasForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\CajerosForm.resx">
+      <DependentUpon>CajerosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\CausasDevolucionForm.resx">
+      <DependentUpon>CausasDevolucionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\ClasificacionesForm.resx">
+      <DependentUpon>ClasificacionesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\ClienteExpressForm.resx">
+      <DependentUpon>ClienteExpressForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\ClientesForm.resx">
+      <DependentUpon>ClientesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\EstComercialForm.resx">
+      <DependentUpon>EstComercialForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\FormasPagoForm.resx">
+      <DependentUpon>FormasPagoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\ListaDescuentosForm.resx">
+      <DependentUpon>ListaDescuentosForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\ListaPreciosForm.resx">
+      <DependentUpon>ListaPreciosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\MarcasForm.resx">
+      <DependentUpon>MarcasForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\MetodoPagoForm.resx">
+      <DependentUpon>MetodoPagoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\RegionesForm.resx">
+      <DependentUpon>RegionesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\ServiciosForm.resx">
+      <DependentUpon>ServiciosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\TerminalesForm.resx">
+      <DependentUpon>TerminalesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\TiposPedidoForm.resx">
+      <DependentUpon>TiposPedidoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\UnidadesNegocioForm.resx">
+      <DependentUpon>UnidadesNegocioForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\VendedoresForm.resx">
+      <DependentUpon>VendedoresForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\ZonasVentaForm.resx">
+      <DependentUpon>ZonasVentaForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuadros de Dialogo\AbrirCajaForm.resx">
+      <DependentUpon>AbrirCajaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuadros de Dialogo\AdminTallasColoresForm.resx">
+      <DependentUpon>AdminTallasColoresForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuadros de Dialogo\CobranzaForm.resx">
+      <DependentUpon>CobranzaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuadros de Dialogo\DetalleCorteForm.resx">
+      <DependentUpon>DetalleCorteForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuadros de Dialogo\DestinatarioMailForm.resx">
+      <DependentUpon>DestinatarioMailForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuadros de Dialogo\EditArticuloPresZonaForm.resx">
+      <DependentUpon>EditArticuloPresZonaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuadros de Dialogo\EditArticuloZonaForm.resx">
+      <DependentUpon>EditArticuloZonaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuadros de Dialogo\EditEmbarqueForm.resx">
+      <DependentUpon>EditEmbarqueForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuadros de Dialogo\EditPartidaServicioForm.resx">
+      <DependentUpon>EditPartidaServicioForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuadros de Dialogo\EditPrecioForm.resx">
+      <DependentUpon>EditPrecioForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuadros de Dialogo\EditServicioZonaForm.resx">
+      <DependentUpon>EditServicioZonaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuadros de Dialogo\ImpresionCorteForm.resx">
+      <DependentUpon>ImpresionCorteForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuadros de Dialogo\MetodoPagoSELForm.resx">
+      <DependentUpon>MetodoPagoSELForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuadros de Dialogo\NuevaFacturaGlobalForm.resx">
+      <DependentUpon>NuevaFacturaGlobalForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuadros de Dialogo\SelectFormaPagoForm.resx">
+      <DependentUpon>SelectFormaPagoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuadros de Dialogo\TecladoNumerosForm.resx">
+      <DependentUpon>TecladoNumerosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documentos\PedidosForm.resx">
+      <DependentUpon>PedidosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documentos\VentasForm.resx">
+      <DependentUpon>VentasForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\Orden_PLEC.rdlc" />
+    <EmbeddedResource Include="Informes\FacturacionInformesCteForm.resx">
+      <DependentUpon>FacturacionInformesCteForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\FacturacionInformesForm.resx">
+      <DependentUpon>FacturacionInformesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\FacturacionPeriodoRPT.rdlc" />
+    <EmbeddedResource Include="Informes\FacturacionPorArticuloForm.resx">
+      <DependentUpon>FacturacionPorArticuloForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\Factura_V3.rdlc" />
+    <EmbeddedResource Include="Informes\CorteCajaRPT.rdlc" />
+    <EmbeddedResource Include="Informes\Factura_V2.rdlc" />
+    <EmbeddedResource Include="Informes\FacturasList.rdlc" />
+    <EmbeddedResource Include="Informes\Orden.rdlc" />
+    <EmbeddedResource Include="Informes\FacturacionPorClienteRPT.rdlc" />
+    <EmbeddedResource Include="Informes\FacturacionPorArticuloRPT.rdlc" />
+    <EmbeddedResource Include="Informes\VentasGeneralForm.resx">
+      <DependentUpon>VentasGeneralForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informes\VentasGeneralRPT.rdlc" />
+    <EmbeddedResource Include="Mantenimientos\AdminCajaInventariosForm.resx">
+      <DependentUpon>AdminCajaInventariosForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\AdminCajasForm.resx">
+      <DependentUpon>AdminCajasForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\AdminFacturasForm.resx">
+      <DependentUpon>AdminFacturasForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\AdminVentasForm.resx">
+      <DependentUpon>AdminVentasForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\FacturaGlobalForm.resx">
+      <DependentUpon>FacturaGlobalForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\Azteca.Business.Ventas.InformesDS.datasource" />
+    <None Include="My Project\DataSources\Azteca.Kernel.Security.EmpresaInfo.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Business\Azteca.Contabilidad\Azteca.Contabilidad.vbproj">
+      <Project>{75ED1D01-3442-4B05-AD47-97B6F110F26C}</Project>
+      <Name>Azteca.Contabilidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business\Azteca.Inventario\Azteca.Inventario.vbproj">
+      <Project>{087998EE-E2BD-4E50-9BA0-C05685376605}</Project>
+      <Name>Azteca.Inventario</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business\Azteca.Medicina\Azteca.Medicina.vbproj">
+      <Project>{7AA4AE5E-61FE-4F26-A913-3CBCBCCF0C98}</Project>
+      <Name>Azteca.Medicina</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business\Azteca.RH\Azteca.RH.vbproj">
+      <Project>{E89F3B47-B01B-48A1-B15F-22D52D5E02BE}</Project>
+      <Name>Azteca.RH</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business\Azteca.Ventas\Azteca.Ventas.vbproj">
+      <Project>{E0EEADE3-DCD4-494A-BAE0-061E925E5FA6}</Project>
+      <Name>Azteca.Ventas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Azteca.ContabilidadWin\Azteca.ContabilidadWin.vbproj">
+      <Project>{37569F66-589D-4F78-B58D-03FA24F41DCA}</Project>
+      <Name>Azteca.ContabilidadWin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Azteca.InventarioWin\Azteca.InventarioWin.vbproj">
+      <Project>{1617300B-E0EF-4D64-B98A-0CD5CB9C3B4B}</Project>
+      <Name>Azteca.InventarioWin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Azteca.ProduccionWin\Azteca.ProduccionWin.vbproj">
+      <Project>{EB1C9041-5BC0-4728-B9BD-996E740ADC48}</Project>
+      <Name>Azteca.ProduccionWin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Azteca.RHWin\Azteca.RHWin.vbproj">
+      <Project>{FA2AC258-5543-4E7E-BEF9-C7C6CB86BA6A}</Project>
+      <Name>Azteca.RHWin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\news_subscribe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\irc_channel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Notepad 16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NuevoArticulo32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZonaAdd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zona.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZonaEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZonaDelete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditarArticulo32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EliminarArticulo32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditarServicio32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NuevoServicio32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditarServicio321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EliminarServicio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ServiceAdd_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ServiceRemove_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ServiceEdit_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Articulo_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArticuloAdd_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArticuloEdit_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArticuloRemove_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fileprint32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice_search32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice_zoom32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice_close32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zonas_Edit_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zonas_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zonas_add_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zonas_close_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContactAdd32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContactEdit32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContactRemove32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xml_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventory_categories_add_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\services_add_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice_mail_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unlock_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Informe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diskette_32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

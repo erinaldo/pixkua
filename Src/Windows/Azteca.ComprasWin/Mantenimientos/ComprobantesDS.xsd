@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ComprobantesDS" targetNamespace="http://tempuri.org/ComprobantesDS.xsd" xmlns:mstns="http://tempuri.org/ComprobantesDS.xsd" xmlns="http://tempuri.org/ComprobantesDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ComprobantesDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ComprobantesDS" msprop:Generator_UserDSName="ComprobantesDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Comprobantes" msprop:Generator_TableClassName="ComprobantesDataTable" msprop:Generator_TableVarName="tableComprobantes" msprop:Generator_TablePropName="Comprobantes" msprop:Generator_RowDeletingName="ComprobantesRowDeleting" msprop:Generator_RowChangingName="ComprobantesRowChanging" msprop:Generator_RowEvHandlerName="ComprobantesRowChangeEventHandler" msprop:Generator_RowDeletedName="ComprobantesRowDeleted" msprop:Generator_UserTableName="Comprobantes" msprop:Generator_RowChangedName="ComprobantesRowChanged" msprop:Generator_RowEvArgName="ComprobantesRowChangeEvent" msprop:Generator_RowClassName="ComprobantesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Archivo" msprop:Generator_ColumnVarNameInTable="columnArchivo" msprop:Generator_ColumnPropNameInRow="Archivo" msprop:Generator_ColumnPropNameInTable="ArchivoColumn" msprop:Generator_UserColumnName="Archivo" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_UserColumnName="Fecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Serie" msprop:Generator_ColumnVarNameInTable="columnSerie" msprop:Generator_ColumnPropNameInRow="Serie" msprop:Generator_ColumnPropNameInTable="SerieColumn" msprop:Generator_UserColumnName="Serie" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="Folio" msprop:Generator_ColumnVarNameInTable="columnFolio" msprop:Generator_ColumnPropNameInRow="Folio" msprop:Generator_ColumnPropNameInTable="FolioColumn" msprop:Generator_UserColumnName="Folio" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="UUID" msprop:Generator_ColumnVarNameInTable="columnUUID" msprop:Generator_ColumnPropNameInRow="UUID" msprop:Generator_ColumnPropNameInTable="UUIDColumn" msprop:Generator_UserColumnName="UUID" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="RFC" msprop:Generator_ColumnVarNameInTable="columnRFC" msprop:Generator_ColumnPropNameInRow="RFC" msprop:Generator_ColumnPropNameInTable="RFCColumn" msprop:Generator_UserColumnName="RFC" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="RazonSocial" msprop:Generator_ColumnVarNameInTable="columnRazonSocial" msprop:Generator_ColumnPropNameInRow="RazonSocial" msprop:Generator_ColumnPropNameInTable="RazonSocialColumn" msprop:Generator_UserColumnName="RazonSocial" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="SubTotal" msprop:Generator_ColumnVarNameInTable="columnSubTotal" msprop:Generator_ColumnPropNameInRow="SubTotal" msprop:Generator_ColumnPropNameInTable="SubTotalColumn" msprop:Generator_UserColumnName="SubTotal" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="ImpuestosRet" msprop:Generator_ColumnVarNameInTable="columnImpuestosRet" msprop:Generator_ColumnPropNameInRow="ImpuestosRet" msprop:Generator_ColumnPropNameInTable="ImpuestosRetColumn" msprop:Generator_UserColumnName="ImpuestosRet" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="ImpuestosTras" msprop:Generator_ColumnVarNameInTable="columnImpuestosTras" msprop:Generator_ColumnPropNameInRow="ImpuestosTras" msprop:Generator_ColumnPropNameInTable="ImpuestosTrasColumn" msprop:Generator_UserColumnName="ImpuestosTras" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_UserColumnName="Total" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="IdDivisa" msprop:Generator_ColumnVarNameInTable="columnIdDivisa" msprop:Generator_ColumnPropNameInRow="IdDivisa" msprop:Generator_ColumnPropNameInTable="IdDivisaColumn" msprop:Generator_UserColumnName="IdDivisa" type="xs:int" default="1" minOccurs="0" />
+              <xs:element name="TipoCambio" msprop:Generator_ColumnVarNameInTable="columnTipoCambio" msprop:Generator_ColumnPropNameInRow="TipoCambio" msprop:Generator_ColumnPropNameInTable="TipoCambioColumn" msprop:Generator_UserColumnName="TipoCambio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Valido" msprop:Generator_ColumnVarNameInTable="columnValido" msprop:Generator_ColumnPropNameInRow="Valido" msprop:Generator_ColumnPropNameInTable="ValidoColumn" msprop:Generator_UserColumnName="Valido" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="Estatus" msprop:Generator_ColumnVarNameInTable="columnEstatus" msprop:Generator_ColumnPropNameInRow="Estatus" msprop:Generator_ColumnPropNameInTable="EstatusColumn" msprop:Generator_UserColumnName="Estatus" type="xs:string" default="" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ArticulosDS" targetNamespace="http://tempuri.org/ArticulosDS.xsd" xmlns:mstns="http://tempuri.org/ArticulosDS.xsd" xmlns="http://tempuri.org/ArticulosDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="PixkuaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PixkuaConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Azteca.Business.Ventas.My.MySettings.GlobalReference.Default.PixkuaConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="PixkuaConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PixkuaConnectionString1 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Azteca.Business.Ventas.My.MySettings.GlobalReference.Default.PixkuaConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ArticulosDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ArticulosDS" msprop:Generator_UserDSName="ArticulosDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Presentaciones" msprop:Generator_TableClassName="PresentacionesDataTable" msprop:Generator_TableVarName="tablePresentaciones" msprop:Generator_TablePropName="Presentaciones" msprop:Generator_RowDeletingName="PresentacionesRowDeleting" msprop:Generator_UserTableName="Presentaciones" msprop:Generator_RowChangingName="PresentacionesRowChanging" msprop:Generator_RowEvHandlerName="PresentacionesRowChangeEventHandler" msprop:Generator_RowDeletedName="PresentacionesRowDeleted" msprop:Generator_RowEvArgName="PresentacionesRowChangeEvent" msprop:Generator_RowChangedName="PresentacionesRowChanged" msprop:Generator_RowClassName="PresentacionesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdArticuloStock" msprop:Generator_ColumnVarNameInTable="columnIdArticuloStock" msprop:Generator_ColumnPropNameInRow="IdArticuloStock" msprop:Generator_ColumnPropNameInTable="IdArticuloStockColumn" msprop:Generator_UserColumnName="IdArticuloStock" type="xs:int" />
+              <xs:element name="Codigo" msprop:Generator_ColumnVarNameInTable="columnCodigo" msprop:Generator_ColumnPropNameInRow="Codigo" msprop:Generator_ColumnPropNameInTable="CodigoColumn" msprop:Generator_UserColumnName="Codigo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nombre" msprop:Generator_ColumnVarNameInTable="columnNombre" msprop:Generator_ColumnPropNameInRow="Nombre" msprop:Generator_ColumnPropNameInTable="NombreColumn" msprop:Generator_UserColumnName="Nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IdUnidadMedida" msprop:Generator_ColumnVarNameInTable="columnIdUnidadMedida" msprop:Generator_ColumnPropNameInRow="IdUnidadMedida" msprop:Generator_ColumnPropNameInTable="IdUnidadMedidaColumn" msprop:Generator_UserColumnName="IdUnidadMedida" type="xs:int" />
+              <xs:element name="UnidadMedida" msprop:Generator_ColumnVarNameInTable="columnUnidadMedida" msprop:Generator_ColumnPropNameInRow="UnidadMedida" msprop:Generator_ColumnPropNameInTable="UnidadMedidaColumn" msprop:Generator_UserColumnName="UnidadMedida">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EAN" msprop:Generator_ColumnVarNameInTable="columnEAN" msprop:Generator_ColumnPropNameInRow="EAN" msprop:Generator_ColumnPropNameInTable="EANColumn" msprop:Generator_UserColumnName="EAN">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StockMax" msprop:Generator_ColumnVarNameInTable="columnStockMax" msprop:Generator_ColumnPropNameInRow="StockMax" msprop:Generator_ColumnPropNameInTable="StockMaxColumn" msprop:Generator_UserColumnName="StockMax" type="xs:decimal" />
+              <xs:element name="StockMin" msprop:Generator_ColumnVarNameInTable="columnStockMin" msprop:Generator_ColumnPropNameInRow="StockMin" msprop:Generator_ColumnPropNameInTable="StockMinColumn" msprop:Generator_UserColumnName="StockMin" type="xs:decimal" />
+              <xs:element name="PuntoReorden" msprop:Generator_ColumnVarNameInTable="columnPuntoReorden" msprop:Generator_ColumnPropNameInRow="PuntoReorden" msprop:Generator_ColumnPropNameInTable="PuntoReordenColumn" msprop:Generator_UserColumnName="PuntoReorden" type="xs:decimal" />
+              <xs:element name="IdStatus" msprop:Generator_ColumnVarNameInTable="columnIdStatus" msprop:Generator_ColumnPropNameInRow="IdStatus" msprop:Generator_ColumnPropNameInTable="IdStatusColumn" msprop:Generator_UserColumnName="IdStatus" type="xs:int" />
+              <xs:element name="Estatus" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEstatus" msprop:Generator_ColumnPropNameInRow="Estatus" msprop:Generator_ColumnPropNameInTable="EstatusColumn" msprop:Generator_UserColumnName="Estatus" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ArticulosVentaPOS" msprop:Generator_TableClassName="ArticulosVentaPOSDataTable" msprop:Generator_TableVarName="tableArticulosVentaPOS" msprop:Generator_TablePropName="ArticulosVentaPOS" msprop:Generator_RowDeletingName="ArticulosVentaPOSRowDeleting" msprop:Generator_UserTableName="ArticulosVentaPOS" msprop:Generator_RowChangingName="ArticulosVentaPOSRowChanging" msprop:Generator_RowEvHandlerName="ArticulosVentaPOSRowChangeEventHandler" msprop:Generator_RowDeletedName="ArticulosVentaPOSRowDeleted" msprop:Generator_RowEvArgName="ArticulosVentaPOSRowChangeEvent" msprop:Generator_RowChangedName="ArticulosVentaPOSRowChanged" msprop:Generator_RowClassName="ArticulosVentaPOSRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdArticuloStock" msprop:Generator_ColumnVarNameInTable="columnIdArticuloStock" msprop:Generator_ColumnPropNameInRow="IdArticuloStock" msprop:Generator_ColumnPropNameInTable="IdArticuloStockColumn" msprop:Generator_UserColumnName="IdArticuloStock" type="xs:int" />
+              <xs:element name="Codigo" msprop:Generator_ColumnVarNameInTable="columnCodigo" msprop:Generator_ColumnPropNameInRow="Codigo" msprop:Generator_ColumnPropNameInTable="CodigoColumn" msprop:Generator_UserColumnName="Codigo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Articulo" msprop:Generator_ColumnVarNameInTable="columnArticulo" msprop:Generator_ColumnPropNameInRow="Articulo" msprop:Generator_ColumnPropNameInTable="ArticuloColumn" msprop:Generator_UserColumnName="Articulo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IdUnidadMedida" msprop:Generator_ColumnVarNameInTable="columnIdUnidadMedida" msprop:Generator_ColumnPropNameInRow="IdUnidadMedida" msprop:Generator_ColumnPropNameInTable="IdUnidadMedidaColumn" msprop:Generator_UserColumnName="IdUnidadMedida" type="xs:int" />
+              <xs:element name="UMV" msprop:Generator_ColumnVarNameInTable="columnUMV" msprop:Generator_ColumnPropNameInRow="UMV" msprop:Generator_ColumnPropNameInTable="UMVColumn" msprop:Generator_UserColumnName="UMV">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TallasColores" msprop:Generator_TableClassName="TallasColoresDataTable" msprop:Generator_TableVarName="tableTallasColores" msprop:Generator_TablePropName="TallasColores" msprop:Generator_RowDeletingName="TallasColoresRowDeleting" msprop:Generator_UserTableName="TallasColores" msprop:Generator_RowChangingName="TallasColoresRowChanging" msprop:Generator_RowEvHandlerName="TallasColoresRowChangeEventHandler" msprop:Generator_RowDeletedName="TallasColoresRowDeleted" msprop:Generator_RowEvArgName="TallasColoresRowChangeEvent" msprop:Generator_RowChangedName="TallasColoresRowChanged" msprop:Generator_RowClassName="TallasColoresRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Codigo" msprop:Generator_ColumnVarNameInTable="columnCodigo" msprop:Generator_ColumnPropNameInRow="Codigo" msprop:Generator_ColumnPropNameInTable="CodigoColumn" msprop:Generator_UserColumnName="Codigo" type="xs:string" minOccurs="0" />
+              <xs:element name="IdTalla" msprop:Generator_ColumnVarNameInTable="columnIdTalla" msprop:Generator_ColumnPropNameInRow="IdTalla" msprop:Generator_ColumnPropNameInTable="IdTallaColumn" msprop:Generator_UserColumnName="IdTalla" type="xs:int" minOccurs="0" />
+              <xs:element name="Talla" msprop:Generator_ColumnVarNameInTable="columnTalla" msprop:Generator_ColumnPropNameInRow="Talla" msprop:Generator_ColumnPropNameInTable="TallaColumn" msprop:Generator_UserColumnName="Talla" type="xs:string" minOccurs="0" />
+              <xs:element name="IdColor" msprop:Generator_ColumnVarNameInTable="columnIdColor" msprop:Generator_ColumnPropNameInRow="IdColor" msprop:Generator_ColumnPropNameInTable="IdColorColumn" msprop:Generator_UserColumnName="IdColor" type="xs:int" minOccurs="0" />
+              <xs:element name="Color" msprop:Generator_ColumnVarNameInTable="columnColor" msprop:Generator_ColumnPropNameInRow="Color" msprop:Generator_ColumnPropNameInTable="ColorColumn" msprop:Generator_UserColumnName="Color" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Colores" msprop:Generator_TableClassName="ColoresDataTable" msprop:Generator_TableVarName="tableColores" msprop:Generator_TablePropName="Colores" msprop:Generator_RowDeletingName="ColoresRowDeleting" msprop:Generator_UserTableName="Colores" msprop:Generator_RowChangingName="ColoresRowChanging" msprop:Generator_RowEvHandlerName="ColoresRowChangeEventHandler" msprop:Generator_RowDeletedName="ColoresRowDeleted" msprop:Generator_RowEvArgName="ColoresRowChangeEvent" msprop:Generator_RowChangedName="ColoresRowChanged" msprop:Generator_RowClassName="ColoresRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdColor" msprop:Generator_ColumnVarNameInTable="columnIdColor" msprop:Generator_ColumnPropNameInRow="IdColor" msprop:Generator_ColumnPropNameInTable="IdColorColumn" msprop:Generator_UserColumnName="IdColor" type="xs:int" minOccurs="0" />
+              <xs:element name="Color" msprop:Generator_ColumnVarNameInTable="columnColor" msprop:Generator_ColumnPropNameInRow="Color" msprop:Generator_ColumnPropNameInTable="ColorColumn" msprop:Generator_UserColumnName="Color" type="xs:string" minOccurs="0" />
+              <xs:element name="CodigoColor" msprop:Generator_ColumnVarNameInTable="columnCodigoColor" msprop:Generator_ColumnPropNameInRow="CodigoColor" msprop:Generator_ColumnPropNameInTable="CodigoColorColumn" msprop:Generator_UserColumnName="CodigoColor" type="xs:string" minOccurs="0" />
+              <xs:element name="Sel" msprop:Generator_ColumnVarNameInTable="columnSel" msprop:Generator_ColumnPropNameInRow="Sel" msprop:Generator_ColumnPropNameInTable="SelColumn" msprop:Generator_UserColumnName="Sel" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Presentaciones" />
+      <xs:field xpath="mstns:IdArticuloStock" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

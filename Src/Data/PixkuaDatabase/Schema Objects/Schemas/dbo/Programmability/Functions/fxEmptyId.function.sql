@@ -1,0 +1,8 @@
+﻿CREATE FUNCTION [dbo].[fxEmptyId]()
+RETURNS uniqueidentifier
+AS
+BEGIN
+	RETURN '00000000-0000-0000-0000-000000000000'
+END
+
+

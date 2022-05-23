@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{87B5A195-5E31-4B87-8F77-0C86BDAEA766}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>PixkuaInvoice.My.MyApplication</StartupObject>
+    <RootNamespace>PixkuaInvoice</RootNamespace>
+    <AssemblyName>PixkuaInvoice</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>PixkuaInvoice.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PixkuaInvoice.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>PixkuaInvoice.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\PixkuaInvoice.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PixkuaInvoice.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\PixkuaInvoice.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>LogoPixkua_64.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>PixkuaInvoice.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\PixkuaInvoice.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>PixkuaInvoice.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\PixkuaInvoice.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Azteca.Data">
+      <HintPath>..\..\..\Bin\Azteca.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Azteca.Kernel">
+      <HintPath>..\..\..\Bin\Azteca.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Azteca.Windows">
+      <HintPath>..\..\..\Bin\Azteca.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Command.4, Version=4.0.20142.19707, Culture=neutral, PublicKeyToken=e808566f358766d8, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1Input.4, Version=4.0.20122.33281, Culture=neutral, PublicKeyToken=7e7ff60f0c214f9a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Bin\C1.Win.C1Input.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Ribbon.4, Version=4.0.20103.289, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1TrueDBGrid.4, Version=4.0.20122.61260, Culture=neutral, PublicKeyToken=75ae3fb0e2b1e0da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Bin\C1.Win.C1TrueDBGrid.4.dll</HintPath>
+    </Reference>
+    <Reference Include="ChilkatDotNet4, Version=9.1.1.0, Culture=neutral, PublicKeyToken=eb5fc1fc52ef09bd, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Bin\ChilkatDotNet4.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Azteca.Windows.Forms" />
+    <Import Include="Microsoft.Reporting.WinForms" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConfigRemoteConecctionForm.designer.vb">
+      <DependentUpon>ConfigRemoteConecctionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigRemoteConecctionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfiguracionInicialForm.Designer.vb">
+      <DependentUpon>ConfiguracionInicialForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfiguracionInicialForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Context.vb" />
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RegistroTimbradoForm.Designer.vb">
+      <DependentUpon>RegistroTimbradoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroTimbradoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registry.vb" />
+    <Compile Include="SplashForm.Designer.vb">
+      <DependentUpon>SplashForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\ArticulosAdminForm.Designer.vb">
+      <DependentUpon>ArticulosAdminForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\ArticulosAdminForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\ArticulosExpressForm.Designer.vb">
+      <DependentUpon>ArticulosExpressForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\ArticulosExpressForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\CertificadosAdminForm.Designer.vb">
+      <DependentUpon>CertificadosAdminForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\CertificadosAdminForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\ClienteExpressForm.Designer.vb">
+      <DependentUpon>ClienteExpressForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\ClienteExpressForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\ClienteExpressSelector.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ventas\ClientesAdminForm.Designer.vb">
+      <DependentUpon>ClientesAdminForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\ClientesAdminForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\EmpresaAdminForm.Designer.vb">
+      <DependentUpon>EmpresaAdminForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\EmpresaAdminForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\EmpresaExpressForm.Designer.vb">
+      <DependentUpon>EmpresaExpressForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\EmpresaExpressForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\ListaPreciosAdminForm.Designer.vb">
+      <DependentUpon>ListaPreciosAdminForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\ListaPreciosAdminForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\NotasAdminForm.Designer.vb">
+      <DependentUpon>NotasAdminForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\NotasAdminForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\ServiciosAdminForm.Designer.vb">
+      <DependentUpon>ServiciosAdminForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\ServiciosAdminForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\ServiciosExpressForm.Designer.vb">
+      <DependentUpon>ServiciosExpressForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\ServiciosExpressForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\UnidadesNegocioAdminForm.Designer.vb">
+      <DependentUpon>UnidadesNegocioAdminForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\UnidadesNegocioAdminForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\UnidadNegocioExpressForm.Designer.vb">
+      <DependentUpon>UnidadNegocioExpressForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\UnidadNegocioExpressForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\VentaExpresstForm.Designer.vb">
+      <DependentUpon>VentaExpresstForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\VentaExpresstForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\VentasExpressAdminForm.Designer.vb">
+      <DependentUpon>VentasExpressAdminForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\VentasExpressAdminForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ConfigRemoteConecctionForm.resx">
+      <DependentUpon>ConfigRemoteConecctionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfiguracionInicialForm.resx">
+      <DependentUpon>ConfiguracionInicialForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroTimbradoForm.resx">
+      <DependentUpon>RegistroTimbradoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashForm.resx">
+      <DependentUpon>SplashForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\ArticulosAdminForm.resx">
+      <DependentUpon>ArticulosAdminForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\ArticulosExpressForm.resx">
+      <DependentUpon>ArticulosExpressForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\CertificadosAdminForm.resx">
+      <DependentUpon>CertificadosAdminForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\ClienteExpressForm.resx">
+      <DependentUpon>ClienteExpressForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\ClientesAdminForm.resx">
+      <DependentUpon>ClientesAdminForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\EmpresaAdminForm.resx">
+      <DependentUpon>EmpresaAdminForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\EmpresaExpressForm.resx">
+      <DependentUpon>EmpresaExpressForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\ListaPreciosAdminForm.resx">
+      <DependentUpon>ListaPreciosAdminForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\NotasAdminForm.resx">
+      <DependentUpon>NotasAdminForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\Orden.rdlc" />
+    <EmbeddedResource Include="Ventas\ServiciosAdminForm.resx">
+      <DependentUpon>ServiciosAdminForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\ServiciosExpressForm.resx">
+      <DependentUpon>ServiciosExpressForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\UnidadesNegocioAdminForm.resx">
+      <DependentUpon>UnidadesNegocioAdminForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\UnidadNegocioExpressForm.resx">
+      <DependentUpon>UnidadNegocioExpressForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\VentaExpresstForm.resx">
+      <DependentUpon>VentaExpresstForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Business\Azteca.Compras\Azteca.Compras.vbproj">
+      <Project>{8C6F3791-CBB7-44E7-8C3B-8E1495F1EC8F}</Project>
+      <Name>Azteca.Compras</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business\Azteca.Contabilidad\Azteca.Contabilidad.vbproj">
+      <Project>{75ED1D01-3442-4B05-AD47-97B6F110F26C}</Project>
+      <Name>Azteca.Contabilidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business\Azteca.Inventario\Azteca.Inventario.vbproj">
+      <Project>{087998EE-E2BD-4E50-9BA0-C05685376605}</Project>
+      <Name>Azteca.Inventario</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business\Azteca.Ventas\Azteca.Ventas.vbproj">
+      <Project>{E0EEADE3-DCD4-494A-BAE0-061E925E5FA6}</Project>
+      <Name>Azteca.Ventas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Azteca.ComprasWin\Azteca.ComprasWin.vbproj">
+      <Project>{ED4AF569-0A61-4A25-87B8-CBBC73AF4B26}</Project>
+      <Name>Azteca.ComprasWin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Azteca.ContabilidadWin\Azteca.ContabilidadWin.vbproj">
+      <Project>{37569F66-589D-4F78-B58D-03FA24F41DCA}</Project>
+      <Name>Azteca.ContabilidadWin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Azteca.GeneralWin\Azteca.GeneralWin.vbproj">
+      <Project>{A76BD560-BB99-4FA9-BBD2-33633F550704}</Project>
+      <Name>Azteca.GeneralWin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Azteca.InventarioWin\Azteca.InventarioWin.vbproj">
+      <Project>{1617300B-E0EF-4D64-B98A-0CD5CB9C3B4B}</Project>
+      <Name>Azteca.InventarioWin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Azteca.VentasWin\Azteca.VentasWin.vbproj">
+      <Project>{3FD8D595-BD1E-4B0D-9309-D82E74A29B6F}</Project>
+      <Name>Azteca.VentasWin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LogoPixkua_64.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

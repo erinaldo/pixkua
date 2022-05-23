@@ -1,0 +1,518 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{E0EEADE3-DCD4-494A-BAE0-061E925E5FA6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Azteca.Business.Ventas</RootNamespace>
+    <AssemblyName>Azteca.Ventas</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Azteca.Ventas.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42032,42036</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Azteca.Ventas.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42032,42036</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>Azteca.Ventas.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42032,42036</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Azteca.Ventas.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>Azteca.Ventas.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42017,42018,42019,42032,42036</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Azteca.Ventas.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>Azteca.Ventas.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42032,42036</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Azteca.Ventas.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>Azteca.Ventas.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42017,42018,42019,42032,42036</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Azteca.Ventas.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Azteca.Data">
+      <HintPath>..\..\..\Bin\Azteca.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Azteca.Kernel">
+      <HintPath>..\..\..\Bin\Azteca.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1BarCode.4, Version=4.0.20142.71, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Bin\C1.Win.C1BarCode.4.dll</HintPath>
+    </Reference>
+    <Reference Include="ChilkatDotNet4">
+      <HintPath>..\..\..\Bin\ChilkatDotNet4.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Azteca.Data" />
+    <Import Include="Azteca.Kernel.BusinessStructure" />
+    <Import Include="Azteca.Kernel.Search" />
+    <Import Include="Azteca.Kernel.Security" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Catalogos\Articulo.Designer.vb">
+      <DependentUpon>Articulo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Articulo.vb" />
+    <Compile Include="Catalogos\ArticuloPresentacion.vb" />
+    <Compile Include="Catalogos\Caja.Designer.vb">
+      <DependentUpon>Caja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Caja.vb" />
+    <Compile Include="Catalogos\Cajero.Designer.vb">
+      <DependentUpon>Cajero.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Cajero.vb" />
+    <Compile Include="Catalogos\CausaDevolucion.Designer.vb">
+      <DependentUpon>CausaDevolucion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\CausaDevolucion.vb" />
+    <Compile Include="Catalogos\Cliente.Designer.vb">
+      <DependentUpon>Cliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Cliente.vb" />
+    <Compile Include="Catalogos\EstructuraComercial.Designer.vb">
+      <DependentUpon>EstructuraComercial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\EstructuraComercial.vb" />
+    <Compile Include="Catalogos\FormaPago.Designer.vb">
+      <DependentUpon>FormaPago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\FormaPago.vb" />
+    <Compile Include="Catalogos\GrupoClasificaciones.Designer.vb">
+      <DependentUpon>GrupoClasificaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\GrupoClasificaciones.vb" />
+    <Compile Include="Catalogos\GrupoDescuentos.Designer.vb">
+      <DependentUpon>GrupoDescuentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\GrupoDescuentos.vb" />
+    <Compile Include="Catalogos\ListaPrecios.Designer.vb">
+      <DependentUpon>ListaPrecios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\ListaPrecios.vb" />
+    <Compile Include="Catalogos\Marca.Designer.vb">
+      <DependentUpon>Marca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Marca.vb" />
+    <Compile Include="Catalogos\MetodoPago.Designer.vb">
+      <DependentUpon>MetodoPago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\MetodoPago.vb" />
+    <Compile Include="Catalogos\Region.Designer.vb">
+      <DependentUpon>Region.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Region.vb" />
+    <Compile Include="Catalogos\Servicio.Designer.vb">
+      <DependentUpon>Servicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Servicio.vb" />
+    <Compile Include="Catalogos\Terminal.Designer.vb">
+      <DependentUpon>Terminal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Terminal.vb" />
+    <Compile Include="Catalogos\TipoPedido.Designer.vb">
+      <DependentUpon>TipoPedido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\TipoPedido.vb" />
+    <Compile Include="Catalogos\UnidadNegocio.Designer.vb">
+      <DependentUpon>UnidadNegocio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\UnidadNegocio.vb" />
+    <Compile Include="Catalogos\Vendedor.Designer.vb">
+      <DependentUpon>Vendedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Vendedor.vb" />
+    <Compile Include="Catalogos\ZonaVenta.Designer.vb">
+      <DependentUpon>ZonaVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\ZonaVenta.vb" />
+    <Compile Include="Datasets\ArticulosDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArticulosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\CajaDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CajaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\ClasificacionesDS1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClasificacionesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\ClientesDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClientesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DetallePedidoDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DetallePedidoDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DetalleVentaDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DetalleVentaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\GrupoDescuentosDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GrupoDescuentosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\InformesDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InformesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\ListaPreciosDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListaPreciosDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\ZonasVentaDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZonasVentaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Documentos\Pedido.Designer.vb">
+      <DependentUpon>Pedido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Documentos\Pedido.vb" />
+    <Compile Include="Documentos\Venta.Designer.vb">
+      <DependentUpon>Venta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Documentos\Venta.vb" />
+    <Compile Include="General\CorteInfo.vb" />
+    <Compile Include="General\PrecioInfo.vb" />
+    <Compile Include="Interfaces\Interfaz.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Service References\ReportServer\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Datasets\ArticulosDS.xsc">
+      <DependentUpon>ArticulosDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ArticulosDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArticulosDS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Datasets\ArticulosDS.xss">
+      <DependentUpon>ArticulosDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\CajaDS.xsc">
+      <DependentUpon>CajaDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\CajaDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CajaDS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Datasets\CajaDS.xss">
+      <DependentUpon>CajaDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ClasificacionesDS.xsc">
+      <DependentUpon>ClasificacionesDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ClasificacionesDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ClasificacionesDS1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\ClasificacionesDS.xss">
+      <DependentUpon>ClasificacionesDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ClientesDS.xsc">
+      <DependentUpon>ClientesDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ClientesDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ClientesDS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Datasets\ClientesDS.xss">
+      <DependentUpon>ClientesDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DetallePedidoDS.xsc">
+      <DependentUpon>DetallePedidoDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DetallePedidoDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DetallePedidoDS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Datasets\DetallePedidoDS.xss">
+      <DependentUpon>DetallePedidoDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DetalleVentaDS.xsc">
+      <DependentUpon>DetalleVentaDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DetalleVentaDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DetalleVentaDS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Datasets\DetalleVentaDS.xss">
+      <DependentUpon>DetalleVentaDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\GrupoDescuentosDS.xsc">
+      <DependentUpon>GrupoDescuentosDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\GrupoDescuentosDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GrupoDescuentosDS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Datasets\GrupoDescuentosDS.xss">
+      <DependentUpon>GrupoDescuentosDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\InformesDS.xsc">
+      <DependentUpon>InformesDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\InformesDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InformesDS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Datasets\InformesDS.xss">
+      <DependentUpon>InformesDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ListaPreciosDS.xsc">
+      <DependentUpon>ListaPreciosDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ListaPreciosDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ListaPreciosDS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Datasets\ListaPreciosDS.xss">
+      <DependentUpon>ListaPreciosDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ZonasVentaDS.xsc">
+      <DependentUpon>ZonasVentaDS.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ZonasVentaDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ZonasVentaDS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Datasets\ZonasVentaDS.xss">
+      <DependentUpon>ZonasVentaDS.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\InformesDS.FacturacionDetalleDataTable.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\ReportServer\Azteca.Business.Ventas.ReportServer.DocumentMapNode.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ReportServer\Azteca.Business.Ventas.ReportServer.ExecutionHeader.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ReportServer\Azteca.Business.Ventas.ReportServer.ExecutionInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ReportServer\Azteca.Business.Ventas.ReportServer.ExecutionInfo2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ReportServer\Azteca.Business.Ventas.ReportServer.Extension.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ReportServer\Azteca.Business.Ventas.ReportServer.ServerInfoHeader.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ReportServer\Azteca.Business.Ventas.ReportServer.Warning.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ReportServer\ReportExecution2005.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Azteca.Contabilidad\Azteca.Contabilidad.vbproj">
+      <Project>{75ED1D01-3442-4B05-AD47-97B6F110F26C}</Project>
+      <Name>Azteca.Contabilidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Azteca.Inventario\Azteca.Inventario.vbproj">
+      <Project>{087998EE-E2BD-4E50-9BA0-C05685376605}</Project>
+      <Name>Azteca.Inventario</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Azteca.RH\Azteca.RH.vbproj">
+      <Project>{E89F3B47-B01B-48A1-B15F-22D52D5E02BE}</Project>
+      <Name>Azteca.RH</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ReportServer\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ReportServer\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ReportServer\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ReportServer\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ComandaDS" targetNamespace="http://tempuri.org/ComandaDS.xsd" xmlns:mstns="http://tempuri.org/ComandaDS.xsd" xmlns="http://tempuri.org/ComandaDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="PixkuaConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PixkuaConnectionString1 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Azteca.Business.Restaurante.My.MySettings.GlobalReference.Default.PixkuaConnectionString1" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="PixkuaConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PixkuaConnectionString2 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Azteca.Business.Restaurante.My.MySettings.GlobalReference.Default.PixkuaConnectionString2" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ComandaDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ComandaDS" msprop:Generator_UserDSName="ComandaDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="IngredientesExtra" msprop:Generator_TableClassName="IngredientesExtraDataTable" msprop:Generator_TableVarName="tableIngredientesExtra" msprop:Generator_TablePropName="IngredientesExtra" msprop:Generator_RowDeletingName="IngredientesExtraRowDeleting" msprop:Generator_UserTableName="IngredientesExtra" msprop:Generator_RowChangingName="IngredientesExtraRowChanging" msprop:Generator_RowEvHandlerName="IngredientesExtraRowChangeEventHandler" msprop:Generator_RowDeletedName="IngredientesExtraRowDeleted" msprop:Generator_RowEvArgName="IngredientesExtraRowChangeEvent" msprop:Generator_RowChangedName="IngredientesExtraRowChanged" msprop:Generator_RowClassName="IngredientesExtraRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdArticulo" msprop:Generator_ColumnVarNameInTable="columnIdArticulo" msprop:Generator_ColumnPropNameInRow="IdArticulo" msprop:Generator_ColumnPropNameInTable="IdArticuloColumn" msprop:Generator_UserColumnName="IdArticulo" type="xs:int" />
+              <xs:element name="Partida" msprop:Generator_ColumnVarNameInTable="columnPartida" msprop:Generator_ColumnPropNameInRow="Partida" msprop:Generator_ColumnPropNameInTable="PartidaColumn" msprop:Generator_UserColumnName="Partida" type="xs:int" />
+              <xs:element name="IdInsumo" msprop:Generator_ColumnVarNameInTable="columnIdInsumo" msprop:Generator_ColumnPropNameInRow="IdInsumo" msprop:Generator_ColumnPropNameInTable="IdInsumoColumn" msprop:Generator_UserColumnName="IdInsumo" type="xs:int" minOccurs="0" />
+              <xs:element name="Insumo" msprop:Generator_ColumnVarNameInTable="columnInsumo" msprop:Generator_ColumnPropNameInRow="Insumo" msprop:Generator_ColumnPropNameInTable="InsumoColumn" msprop:Generator_UserColumnName="Insumo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ComandaDet" msprop:Generator_TableClassName="ComandaDetDataTable" msprop:Generator_TableVarName="tableComandaDet" msprop:Generator_TablePropName="ComandaDet" msprop:Generator_RowDeletingName="ComandaDetRowDeleting" msprop:Generator_UserTableName="ComandaDet" msprop:Generator_RowChangingName="ComandaDetRowChanging" msprop:Generator_RowEvHandlerName="ComandaDetRowChangeEventHandler" msprop:Generator_RowDeletedName="ComandaDetRowDeleted" msprop:Generator_RowEvArgName="ComandaDetRowChangeEvent" msprop:Generator_RowChangedName="ComandaDetRowChanged" msprop:Generator_RowClassName="ComandaDetRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdArticulo" msprop:Generator_ColumnVarNameInTable="columnIdArticulo" msprop:Generator_ColumnPropNameInRow="IdArticulo" msprop:Generator_ColumnPropNameInTable="IdArticuloColumn" msprop:Generator_UserColumnName="IdArticulo" type="xs:int" />
+              <xs:element name="IdCentroProduccion" msprop:Generator_ColumnVarNameInTable="columnIdCentroProduccion" msprop:Generator_ColumnPropNameInRow="IdCentroProduccion" msprop:Generator_ColumnPropNameInTable="IdCentroProduccionColumn" msprop:Generator_UserColumnName="IdCentroProduccion" type="xs:int" />
+              <xs:element name="IdArticuloStock" msprop:Generator_ColumnVarNameInTable="columnIdArticuloStock" msprop:Generator_ColumnPropNameInRow="IdArticuloStock" msprop:Generator_ColumnPropNameInTable="IdArticuloStockColumn" msprop:Generator_UserColumnName="IdArticuloStock" type="xs:int" />
+              <xs:element name="Cantidad" msprop:Generator_ColumnVarNameInTable="columnCantidad" msprop:Generator_ColumnPropNameInRow="Cantidad" msprop:Generator_ColumnPropNameInTable="CantidadColumn" msprop:Generator_UserColumnName="Cantidad" type="xs:decimal" />
+              <xs:element name="Entregado" msprop:Generator_ColumnVarNameInTable="columnEntregado" msprop:Generator_ColumnPropNameInRow="Entregado" msprop:Generator_ColumnPropNameInTable="EntregadoColumn" msprop:Generator_UserColumnName="Entregado" type="xs:decimal" />
+              <xs:element name="Observaciones" msprop:Generator_ColumnVarNameInTable="columnObservaciones" msprop:Generator_ColumnPropNameInRow="Observaciones" msprop:Generator_ColumnPropNameInTable="ObservacionesColumn" msprop:Generator_UserColumnName="Observaciones">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Articulo" msprop:Generator_ColumnVarNameInTable="columnArticulo" msprop:Generator_ColumnPropNameInRow="Articulo" msprop:Generator_ColumnPropNameInTable="ArticuloColumn" msprop:Generator_UserColumnName="Articulo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PrecioUnitario" msprop:Generator_ColumnVarNameInTable="columnPrecioUnitario" msprop:Generator_ColumnPropNameInRow="PrecioUnitario" msprop:Generator_ColumnPropNameInTable="PrecioUnitarioColumn" msprop:Generator_UserColumnName="PrecioUnitario" type="xs:decimal" />
+              <xs:element name="IdImpuesto1" msprop:Generator_ColumnVarNameInTable="columnIdImpuesto1" msprop:Generator_ColumnPropNameInRow="IdImpuesto1" msprop:Generator_ColumnPropNameInTable="IdImpuesto1Column" msprop:Generator_UserColumnName="IdImpuesto1" type="xs:int" />
+              <xs:element name="IdImpuesto2" msprop:Generator_ColumnVarNameInTable="columnIdImpuesto2" msprop:Generator_ColumnPropNameInRow="IdImpuesto2" msprop:Generator_ColumnPropNameInTable="IdImpuesto2Column" msprop:Generator_UserColumnName="IdImpuesto2" type="xs:int" />
+              <xs:element name="IdImpuesto3" msprop:Generator_ColumnVarNameInTable="columnIdImpuesto3" msprop:Generator_ColumnPropNameInRow="IdImpuesto3" msprop:Generator_ColumnPropNameInTable="IdImpuesto3Column" msprop:Generator_UserColumnName="IdImpuesto3" type="xs:int" />
+              <xs:element name="PorImpto1" msprop:Generator_ColumnVarNameInTable="columnPorImpto1" msprop:Generator_ColumnPropNameInRow="PorImpto1" msprop:Generator_ColumnPropNameInTable="PorImpto1Column" msprop:Generator_UserColumnName="PorImpto1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PorImpto2" msprop:Generator_ColumnVarNameInTable="columnPorImpto2" msprop:Generator_ColumnPropNameInRow="PorImpto2" msprop:Generator_ColumnPropNameInTable="PorImpto2Column" msprop:Generator_UserColumnName="PorImpto2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PorImpto3" msprop:Generator_ColumnVarNameInTable="columnPorImpto3" msprop:Generator_ColumnPropNameInRow="PorImpto3" msprop:Generator_ColumnPropNameInTable="PorImpto3Column" msprop:Generator_UserColumnName="PorImpto3" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PrecioNeto" msprop:Generator_ColumnVarNameInTable="columnPrecioNeto" msprop:Generator_ColumnPropNameInRow="PrecioNeto" msprop:Generator_ColumnPropNameInTable="PrecioNetoColumn" msprop:Generator_UserColumnName="PrecioNeto" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint11" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ComandaDet" />
+      <xs:field xpath="mstns:IdArticulo" />
+      <xs:field xpath="mstns:IdCentroProduccion" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

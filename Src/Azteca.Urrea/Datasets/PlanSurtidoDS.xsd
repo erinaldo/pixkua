@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PlanSurtidoDS" targetNamespace="http://tempuri.org/PlanSurtidoDS.xsd" xmlns:mstns="http://tempuri.org/PlanSurtidoDS.xsd" xmlns="http://tempuri.org/PlanSurtidoDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PlanSurtidoDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="PlanSurtidoDS" msprop:Generator_UserDSName="PlanSurtidoDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PlanesCajasCompletas" msprop:Generator_TableClassName="PlanesCajasCompletasDataTable" msprop:Generator_TableVarName="tablePlanesCajasCompletas" msprop:Generator_TablePropName="PlanesCajasCompletas" msprop:Generator_RowDeletingName="PlanesCajasCompletasRowDeleting" msprop:Generator_RowChangingName="PlanesCajasCompletasRowChanging" msprop:Generator_RowEvHandlerName="PlanesCajasCompletasRowChangeEventHandler" msprop:Generator_RowDeletedName="PlanesCajasCompletasRowDeleted" msprop:Generator_UserTableName="PlanesCajasCompletas" msprop:Generator_RowChangedName="PlanesCajasCompletasRowChanged" msprop:Generator_RowEvArgName="PlanesCajasCompletasRowChangeEvent" msprop:Generator_RowClassName="PlanesCajasCompletasRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdPlanSurtidoLine" msprop:Generator_ColumnVarNameInTable="columnIdPlanSurtidoLine" msprop:Generator_ColumnPropNameInRow="IdPlanSurtidoLine" msprop:Generator_ColumnPropNameInTable="IdPlanSurtidoLineColumn" msprop:Generator_UserColumnName="IdPlanSurtidoLine" type="xs:int" minOccurs="0" />
+              <xs:element name="IdPlanSurtido" msprop:Generator_ColumnVarNameInTable="columnIdPlanSurtido" msprop:Generator_ColumnPropNameInRow="IdPlanSurtido" msprop:Generator_ColumnPropNameInTable="IdPlanSurtidoColumn" msprop:Generator_UserColumnName="IdPlanSurtido" type="xs:string" />
+              <xs:element name="IdGrupoAreaSurtido" msprop:Generator_ColumnVarNameInTable="columnIdGrupoAreaSurtido" msprop:Generator_ColumnPropNameInRow="IdGrupoAreaSurtido" msprop:Generator_ColumnPropNameInTable="IdGrupoAreaSurtidoColumn" msprop:Generator_UserColumnName="IdGrupoAreaSurtido" type="xs:int" />
+              <xs:element name="IdAreaSurtido" msprop:Generator_ColumnVarNameInTable="columnIdAreaSurtido" msprop:Generator_ColumnPropNameInRow="IdAreaSurtido" msprop:Generator_ColumnPropNameInTable="IdAreaSurtidoColumn" msprop:Generator_UserColumnName="IdAreaSurtido" type="xs:int" />
+              <xs:element name="GrupoArea" msprop:Generator_ColumnVarNameInTable="columnGrupoArea" msprop:Generator_ColumnPropNameInRow="GrupoArea" msprop:Generator_ColumnPropNameInTable="GrupoAreaColumn" msprop:Generator_UserColumnName="GrupoArea" type="xs:string" minOccurs="0" />
+              <xs:element name="AreaSurtido" msprop:Generator_ColumnVarNameInTable="columnAreaSurtido" msprop:Generator_ColumnPropNameInRow="AreaSurtido" msprop:Generator_ColumnPropNameInTable="AreaSurtidoColumn" msprop:Generator_UserColumnName="AreaSurtido" type="xs:string" minOccurs="0" />
+              <xs:element name="UsuarioAsignado" msprop:Generator_ColumnVarNameInTable="columnUsuarioAsignado" msprop:Generator_ColumnPropNameInRow="UsuarioAsignado" msprop:Generator_ColumnPropNameInTable="UsuarioAsignadoColumn" msprop:Generator_UserColumnName="UsuarioAsignado" type="xs:string" />
+              <xs:element name="CantCajaLineaOrdenado" msprop:Generator_ColumnVarNameInTable="columnCantCajaLineaOrdenado" msprop:Generator_ColumnPropNameInRow="CantCajaLineaOrdenado" msprop:Generator_ColumnPropNameInTable="CantCajaLineaOrdenadoColumn" msprop:Generator_UserColumnName="CantCajaLineaOrdenado" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CapacidadHoraXUsuario" msprop:Generator_ColumnVarNameInTable="columnCapacidadHoraXUsuario" msprop:Generator_ColumnPropNameInRow="CapacidadHoraXUsuario" msprop:Generator_ColumnPropNameInTable="CapacidadHoraXUsuarioColumn" msprop:Generator_UserColumnName="CapacidadHoraXUsuario" type="xs:int" minOccurs="0" />
+              <xs:element name="CantUsuarios" msprop:Generator_ColumnVarNameInTable="columnCantUsuarios" msprop:Generator_ColumnPropNameInRow="CantUsuarios" msprop:Generator_ColumnPropNameInTable="CantUsuariosColumn" msprop:Generator_UserColumnName="CantUsuarios" type="xs:int" minOccurs="0" />
+              <xs:element name="CantXHrUsuario" msdata:Caption="H7" msprop:Generator_ColumnVarNameInTable="columnCantXHrUsuario" msprop:Generator_ColumnPropNameInRow="CantXHrUsuario" msprop:Generator_ColumnPropNameInTable="CantXHrUsuarioColumn" msprop:Generator_UserColumnName="CantXHrUsuario" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Operario" msprop:Generator_ColumnVarNameInTable="columnOperario" msprop:Generator_ColumnPropNameInRow="Operario" msprop:Generator_ColumnPropNameInTable="OperarioColumn" msprop:Generator_UserColumnName="Operario" type="xs:string" minOccurs="0" />
+              <xs:element name="H7" msprop:Generator_ColumnVarNameInTable="columnH7" msprop:Generator_ColumnPropNameInRow="H7" msprop:Generator_ColumnPropNameInTable="H7Column" msprop:Generator_UserColumnName="H7" type="xs:int" minOccurs="0" />
+              <xs:element name="H8" msprop:Generator_ColumnVarNameInTable="columnH8" msprop:Generator_ColumnPropNameInRow="H8" msprop:Generator_ColumnPropNameInTable="H8Column" msprop:Generator_UserColumnName="H8" type="xs:int" minOccurs="0" />
+              <xs:element name="H9" msprop:Generator_ColumnVarNameInTable="columnH9" msprop:Generator_ColumnPropNameInRow="H9" msprop:Generator_ColumnPropNameInTable="H9Column" msprop:Generator_UserColumnName="H9" type="xs:int" minOccurs="0" />
+              <xs:element name="H10" msprop:Generator_ColumnVarNameInTable="columnH10" msprop:Generator_ColumnPropNameInRow="H10" msprop:Generator_ColumnPropNameInTable="H10Column" msprop:Generator_UserColumnName="H10" type="xs:int" minOccurs="0" />
+              <xs:element name="H11" msprop:Generator_ColumnVarNameInTable="columnH11" msprop:Generator_ColumnPropNameInRow="H11" msprop:Generator_ColumnPropNameInTable="H11Column" msprop:Generator_UserColumnName="H11" type="xs:int" minOccurs="0" />
+              <xs:element name="H12" msprop:Generator_ColumnVarNameInTable="columnH12" msprop:Generator_ColumnPropNameInRow="H12" msprop:Generator_ColumnPropNameInTable="H12Column" msprop:Generator_UserColumnName="H12" type="xs:int" minOccurs="0" />
+              <xs:element name="H13" msprop:Generator_ColumnVarNameInTable="columnH13" msprop:Generator_ColumnPropNameInRow="H13" msprop:Generator_ColumnPropNameInTable="H13Column" msprop:Generator_UserColumnName="H13" type="xs:int" minOccurs="0" />
+              <xs:element name="H14" msprop:Generator_ColumnVarNameInTable="columnH14" msprop:Generator_ColumnPropNameInRow="H14" msprop:Generator_ColumnPropNameInTable="H14Column" msprop:Generator_UserColumnName="H14" type="xs:int" minOccurs="0" />
+              <xs:element name="H15" msprop:Generator_ColumnVarNameInTable="columnH15" msprop:Generator_ColumnPropNameInRow="H15" msprop:Generator_ColumnPropNameInTable="H15Column" msprop:Generator_UserColumnName="H15" type="xs:int" minOccurs="0" />
+              <xs:element name="H16" msprop:Generator_ColumnVarNameInTable="columnH16" msprop:Generator_ColumnPropNameInRow="H16" msprop:Generator_ColumnPropNameInTable="H16Column" msprop:Generator_UserColumnName="H16" type="xs:int" minOccurs="0" />
+              <xs:element name="H17" msprop:Generator_ColumnVarNameInTable="columnH17" msprop:Generator_ColumnPropNameInRow="H17" msprop:Generator_ColumnPropNameInTable="H17Column" msprop:Generator_UserColumnName="H17" type="xs:int" minOccurs="0" />
+              <xs:element name="H18" msprop:Generator_ColumnVarNameInTable="columnH18" msprop:Generator_ColumnPropNameInRow="H18" msprop:Generator_ColumnPropNameInTable="H18Column" msprop:Generator_UserColumnName="H18" type="xs:int" minOccurs="0" />
+              <xs:element name="H19" msprop:Generator_ColumnVarNameInTable="columnH19" msprop:Generator_ColumnPropNameInRow="H19" msprop:Generator_ColumnPropNameInTable="H19Column" msprop:Generator_UserColumnName="H19" type="xs:int" minOccurs="0" />
+              <xs:element name="H20" msprop:Generator_ColumnVarNameInTable="columnH20" msprop:Generator_ColumnPropNameInRow="H20" msprop:Generator_ColumnPropNameInTable="H20Column" msprop:Generator_UserColumnName="H20" type="xs:int" minOccurs="0" />
+              <xs:element name="H21" msprop:Generator_ColumnVarNameInTable="columnH21" msprop:Generator_ColumnPropNameInRow="H21" msprop:Generator_ColumnPropNameInTable="H21Column" msprop:Generator_UserColumnName="H21" type="xs:int" minOccurs="0" />
+              <xs:element name="H22" msprop:Generator_ColumnVarNameInTable="columnH22" msprop:Generator_ColumnPropNameInRow="H22" msprop:Generator_ColumnPropNameInTable="H22Column" msprop:Generator_UserColumnName="H22" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PlanesCajasCompletas" />
+      <xs:field xpath="mstns:IdPlanSurtido" />
+      <xs:field xpath="mstns:IdGrupoAreaSurtido" />
+      <xs:field xpath="mstns:IdAreaSurtido" />
+      <xs:field xpath="mstns:UsuarioAsignado" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

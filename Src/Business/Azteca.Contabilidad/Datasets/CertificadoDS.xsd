@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CertificadoDS" targetNamespace="http://tempuri.org/CertificadoDS.xsd" xmlns:mstns="http://tempuri.org/CertificadoDS.xsd" xmlns="http://tempuri.org/CertificadoDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CertificadoDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="CertificadoDS" msprop:Generator_UserDSName="CertificadoDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Series" msprop:Generator_TableClassName="SeriesDataTable" msprop:Generator_TableVarName="tableSeries" msprop:Generator_TablePropName="Series" msprop:Generator_RowDeletingName="SeriesRowDeleting" msprop:Generator_UserTableName="Series" msprop:Generator_RowChangingName="SeriesRowChanging" msprop:Generator_RowEvHandlerName="SeriesRowChangeEventHandler" msprop:Generator_RowDeletedName="SeriesRowDeleted" msprop:Generator_RowEvArgName="SeriesRowChangeEvent" msprop:Generator_RowChangedName="SeriesRowChanged" msprop:Generator_RowClassName="SeriesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdCFDSerie" msprop:Generator_ColumnVarNameInTable="columnIdCFDSerie" msprop:Generator_ColumnPropNameInRow="IdCFDSerie" msprop:Generator_ColumnPropNameInTable="IdCFDSerieColumn" msprop:Generator_UserColumnName="IdCFDSerie" type="xs:int" />
+              <xs:element name="Codigo" msprop:Generator_ColumnVarNameInTable="columnCodigo" msprop:Generator_ColumnPropNameInRow="Codigo" msprop:Generator_ColumnPropNameInTable="CodigoColumn" msprop:Generator_UserColumnName="Codigo" type="xs:string" minOccurs="0" />
+              <xs:element name="Serie" msprop:Generator_ColumnVarNameInTable="columnSerie" msprop:Generator_ColumnPropNameInRow="Serie" msprop:Generator_ColumnPropNameInTable="SerieColumn" msprop:Generator_UserColumnName="Serie" type="xs:string" default="" />
+              <xs:element name="UltimoFolio" msprop:Generator_ColumnVarNameInTable="columnUltimoFolio" msprop:Generator_ColumnPropNameInRow="UltimoFolio" msprop:Generator_ColumnPropNameInTable="UltimoFolioColumn" msprop:Generator_UserColumnName="UltimoFolio" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="FolioLimite" msprop:Generator_ColumnVarNameInTable="columnFolioLimite" msprop:Generator_ColumnPropNameInRow="FolioLimite" msprop:Generator_ColumnPropNameInTable="FolioLimiteColumn" msprop:Generator_UserColumnName="FolioLimite" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="Estatus" msprop:Generator_ColumnVarNameInTable="columnEstatus" msprop:Generator_ColumnPropNameInRow="Estatus" msprop:Generator_ColumnPropNameInTable="EstatusColumn" msprop:Generator_UserColumnName="Estatus" type="xs:string" default="" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Folios" msprop:Generator_TableClassName="FoliosDataTable" msprop:Generator_TableVarName="tableFolios" msprop:Generator_TablePropName="Folios" msprop:Generator_RowDeletingName="FoliosRowDeleting" msprop:Generator_UserTableName="Folios" msprop:Generator_RowChangingName="FoliosRowChanging" msprop:Generator_RowEvHandlerName="FoliosRowChangeEventHandler" msprop:Generator_RowDeletedName="FoliosRowDeleted" msprop:Generator_RowEvArgName="FoliosRowChangeEvent" msprop:Generator_RowChangedName="FoliosRowChanged" msprop:Generator_RowClassName="FoliosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_UserColumnName="Fecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NumAprobacion" msprop:Generator_ColumnVarNameInTable="columnNumAprobacion" msprop:Generator_ColumnPropNameInRow="NumAprobacion" msprop:Generator_ColumnPropNameInTable="NumAprobacionColumn" msprop:Generator_UserColumnName="NumAprobacion" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="AnioAprobacion" msprop:Generator_ColumnVarNameInTable="columnAnioAprobacion" msprop:Generator_ColumnPropNameInRow="AnioAprobacion" msprop:Generator_ColumnPropNameInTable="AnioAprobacionColumn" msprop:Generator_UserColumnName="AnioAprobacion" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="FolioInicial" msprop:Generator_ColumnVarNameInTable="columnFolioInicial" msprop:Generator_ColumnPropNameInRow="FolioInicial" msprop:Generator_ColumnPropNameInTable="FolioInicialColumn" msprop:Generator_UserColumnName="FolioInicial" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="FolioFinal" msprop:Generator_ColumnVarNameInTable="columnFolioFinal" msprop:Generator_ColumnPropNameInRow="FolioFinal" msprop:Generator_ColumnPropNameInTable="FolioFinalColumn" msprop:Generator_UserColumnName="FolioFinal" type="xs:int" default="0" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Series" />
+      <xs:field xpath="mstns:IdCFDSerie" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

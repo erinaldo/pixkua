@@ -1,0 +1,566 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{988B4DE7-7860-436C-B869-E63789FC9367}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Azteca.Web</RootNamespace>
+    <AssemblyName>MedicalWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>MedicalWeb.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>MedicalWeb.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>MedicalWeb.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\MedicalWeb.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>MedicalWeb.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\MedicalWeb.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Azteca.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0bd42f9ebf43d5a0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Bin\Azteca.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Azteca.Kernel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2f0e2a7189bd23d5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Bin\Azteca.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Azteca.Business.Medicina" />
+    <Import Include="Azteca.Web.Services.Kernel" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Newtonsoft.Json" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.ServiceModel" />
+    <Import Include="System.ServiceModel.Web" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Forms\AccesoDenegado.aspx" />
+    <Content Include="Forms\Main.aspx" />
+    <Content Include="Forms\Medical\AgendaSalas.aspx" />
+    <Content Include="Forms\Medical\Doctores.aspx" />
+    <Content Include="Forms\Medical\Expedientes.aspx" />
+    <Content Include="Forms\Medical\Pacientes.aspx" />
+    <Content Include="Forms\Medical\Salas.aspx" />
+    <Content Include="Forms\Security\AdminSeguridad.aspx" />
+    <Content Include="Forms\Security\Usuarios.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\Compras.png" />
+    <Content Include="Images\Contabilidad.png" />
+    <Content Include="Images\ControlPanel.png" />
+    <Content Include="Images\Distribucion.png" />
+    <Content Include="Images\General\calendar_16.png" />
+    <Content Include="Images\General\AddItem_32.png" />
+    <Content Include="Images\General\AddItem_64.png" />
+    <Content Include="Images\General\CheckList_32.png" />
+    <Content Include="Images\General\CheckList_64.png" />
+    <Content Include="Images\General\Close_32.png" />
+    <Content Include="Images\General\Close_64.png" />
+    <Content Include="Images\General\cross_16.png" />
+    <Content Include="Images\General\Cross_24.png" />
+    <Content Include="Images\General\Cross_32.png" />
+    <Content Include="Images\General\Cross_64.png" />
+    <Content Include="Images\General\DeleteItem_16.png" />
+    <Content Include="Images\General\DeleteItem_32.png" />
+    <Content Include="Images\General\diagnostic_16.png" />
+    <Content Include="Images\General\Disable_16.png" />
+    <Content Include="Images\General\DownArrowShort_Blue_32.png" />
+    <Content Include="Images\General\EditItem_16.png" />
+    <Content Include="Images\General\EditItem_32.png" />
+    <Content Include="Images\General\printer_32.png" />
+    <Content Include="Images\General\View_16.png" />
+    <Content Include="Images\General\Find_16.png" />
+    <Content Include="Images\General\Find_32.png" />
+    <Content Include="Images\General\Indent_Left_32.png" />
+    <Content Include="Images\General\Indent_Right_32.png" />
+    <Content Include="Images\General\Info_64.png" />
+    <Content Include="Images\General\OK_16.png" />
+    <Content Include="Images\General\OK_32.png" />
+    <Content Include="Images\General\OK_64.png" />
+    <Content Include="Images\General\Question_64.png" />
+    <Content Include="Images\General\Save_32.png" />
+    <Content Include="Images\General\Save_64.png" />
+    <Content Include="Images\General\Trash_16.png" />
+    <Content Include="Images\General\Trash_32.png" />
+    <Content Include="Images\General\Trash_64.png" />
+    <Content Include="Images\General\UpArrowShort_Blue_32.png" />
+    <Content Include="Images\Inventario.png" />
+    <Content Include="Images\LogoAGA.gif" />
+    <Content Include="Images\Mantenimiento.png" />
+    <Content Include="Images\Medical\ambulance_128.png" />
+    <Content Include="Images\Medical\antibiotic_128.png" />
+    <Content Include="Images\Medical\appointment_128.png" />
+    <Content Include="Images\Medical\appointment_scheduler_128.png" />
+    <Content Include="Images\Medical\doctor_128.png" />
+    <Content Include="Images\Medical\hospital_bed_128.png" />
+    <Content Include="Images\Medical\laboratory_128.png" />
+    <Content Include="Images\Medical\medical_history_128.png" />
+    <Content Include="Images\Medical\nurse_128.png" />
+    <Content Include="Images\Medical\operating_room_128.png" />
+    <Content Include="Images\Medical\ophthalmology_128.png" />
+    <Content Include="Images\Medical\optometrist_128.png" />
+    <Content Include="Images\Medical\patient_128.png" />
+    <Content Include="Images\Medical\patient_information_128.png" />
+    <Content Include="Images\Medical\patient_room_128.png" />
+    <Content Include="Images\Medical\pharmacy_128.png" />
+    <Content Include="Images\Medical\prescription_128.png" />
+    <Content Include="Images\Medical\surgeon_128.png" />
+    <Content Include="Images\Nomina.png" />
+    <Content Include="Images\Produccion.png" />
+    <Content Include="Images\RH.png" />
+    <Content Include="Images\Security.png" />
+    <Content Include="Images\Security\Keys128.png" />
+    <Content Include="Images\Security\user_128.png" />
+    <Content Include="Images\Tesoreria.png" />
+    <Content Include="Images\Ventas.png" />
+    <Content Include="Images\Working.gif" />
+    <Content Include="Login.aspx" />
+    <Content Include="Reports\ExpedientePrint.aspx" />
+    <Content Include="Reports\RecetaPrint.aspx" />
+    <Content Include="Scripts\cultures\globalize.culture.en-US.js" />
+    <Content Include="Scripts\cultures\globalize.culture.es-MX.js" />
+    <Content Include="Scripts\cultures\globalize.culture.es-US.js" />
+    <Content Include="Scripts\cultures\globalize.culture.es.js" />
+    <Content Include="Scripts\cultures\globalize.cultures.js" />
+    <Content Include="Scripts\globalize.js" />
+    <Content Include="Scripts\JQueryUI\jquery-ui-1.8.21.custom.min.js" />
+    <Content Include="Scripts\JQueryUI\jquery-ui-azteca-kernel.js" />
+    <Content Include="Scripts\JQueryUI\jquery-ui-azteca-medicina.js" />
+    <Content Include="Scripts\JQueryUI\jquery-ui-vsdoc.js" />
+    <Content Include="Scripts\JQueryUI\jquery-ui-widgets.js" />
+    <Content Include="Scripts\JQuery\jquery-1.7.2-vsdoc.js" />
+    <Content Include="Scripts\JQuery\jquery-1.7.2.js" />
+    <Content Include="Scripts\JQuery\jquery-1.7.2.min.js" />
+    <Content Include="Scripts\JQuery\jquery-azteca-inventario.js" />
+    <Content Include="Scripts\JQuery\jquery-azteca-kernel.js" />
+    <Content Include="Scripts\JQuery\jquery-azteca-mantenimiento.js" />
+    <Content Include="Scripts\JQuery\jquery-azteca-medicina.js" />
+    <Content Include="Scripts\JQuery\jquery-azteca-ventas.js" />
+    <Content Include="Scripts\JQuery\jquery.cookie.js" />
+    <Content Include="Scripts\JQuery\jquery.form.js" />
+    <Content Include="Scripts\JQuery\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\JQuery\jquery.validate.js" />
+    <Content Include="Scripts\JQuery\jquery.validate.min.js" />
+    <Content Include="Scripts\JQuery\purl.js" />
+    <Content Include="Scripts\Json\json.js" />
+    <Content Include="Scripts\Json\json2.js" />
+    <Content Include="Scripts\Json\json_parse.js" />
+    <Content Include="Scripts\Json\json_parse_state.js" />
+    <Content Include="Scripts\Knockout\knockout-2.2.1.js" />
+    <Content Include="Services\Kernel\General\Poblacion.svc" />
+    <Content Include="Services\Kernel\Usuario.svc" />
+    <Content Include="Services\Medicina\Doctor.svc" />
+    <Content Include="Services\Medicina\Paciente.svc" />
+    <Content Include="Services\Medicina\Sala.svc" />
+    <Content Include="Styles\images\ui-bg_glass_55_b3c4d8_500x100.png" />
+    <Content Include="Styles\images\ui-bg_glass_75_fef1bd_1x400.png" />
+    <Content Include="Styles\images\ui-bg_glass_85_dae6f4_1x400.png" />
+    <Content Include="Styles\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Styles\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="Styles\images\ui-bg_inset-hard_100_ffe475_1x100.png" />
+    <Content Include="Styles\images\ui-icons_6e6c56_256x240.png" />
+    <Content Include="Styles\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Styles\jquery-ui-form.css" />
+    <Content Include="Styles\jquery-ui-widgets.css" />
+    <Content Include="Styles\jquery-ui.css" />
+    <Content Include="Styles\MainConsole.css" />
+    <Content Include="Styles\redmond\images\animated-overlay.gif" />
+    <Content Include="Styles\redmond\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Styles\redmond\images\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="Styles\redmond\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="Styles\redmond\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="Styles\redmond\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Styles\redmond\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="Styles\redmond\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="Styles\redmond\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="Styles\redmond\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="Styles\redmond\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Styles\redmond\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="Styles\redmond\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="Styles\redmond\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Styles\redmond\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="Styles\redmond\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="Styles\redmond\jquery-ui-1.10.3.custom.css" />
+    <Content Include="Styles\redmond\jquery-ui-1.10.3.custom.min.css" />
+    <Content Include="Styles\redmond\jquery-ui-1.9.2.custom.css" />
+    <Content Include="Styles\redmond\jquery-ui-1.9.2.custom.min.css" />
+    <Content Include="Styles\south-street\images\animated-overlay.gif" />
+    <Content Include="Styles\south-street\images\ui-bg_glass_55_fcf0ba_1x400.png" />
+    <Content Include="Styles\south-street\images\ui-bg_gloss-wave_100_ece8da_500x100.png" />
+    <Content Include="Styles\south-street\images\ui-bg_highlight-hard_100_f5f3e5_1x100.png" />
+    <Content Include="Styles\south-street\images\ui-bg_highlight-hard_100_fafaf4_1x100.png" />
+    <Content Include="Styles\south-street\images\ui-bg_highlight-hard_15_459e00_1x100.png" />
+    <Content Include="Styles\south-street\images\ui-bg_highlight-hard_95_cccccc_1x100.png" />
+    <Content Include="Styles\south-street\images\ui-bg_highlight-soft_25_67b021_1x100.png" />
+    <Content Include="Styles\south-street\images\ui-bg_highlight-soft_95_ffedad_1x100.png" />
+    <Content Include="Styles\south-street\images\ui-bg_inset-soft_15_2b2922_1x100.png" />
+    <Content Include="Styles\south-street\images\ui-icons_808080_256x240.png" />
+    <Content Include="Styles\south-street\images\ui-icons_847e71_256x240.png" />
+    <Content Include="Styles\south-street\images\ui-icons_8DC262_256x240.png" />
+    <Content Include="Styles\south-street\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Styles\south-street\images\ui-icons_eeeeee_256x240.png" />
+    <Content Include="Styles\south-street\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Styles\south-street\jquery-ui-1.10.3.custom.css" />
+    <Content Include="Styles\south-street\jquery-ui-1.10.3.custom.min.css" />
+    <Content Include="Styles\south-street\jquery-ui-1.9.2.custom.css" />
+    <Content Include="Styles\south-street\jquery-ui-1.9.2.custom.min.css" />
+    <Content Include="Styles\wijaccordion.css" />
+    <Content Include="Styles\wijdropdown.css" />
+    <Content Include="Styles\wijgrid.css" />
+    <Content Include="Styles\wijtabs.css" />
+    <Content Include="Styles\wijtextbox.css" />
+    <Content Include="Styles\wijtree.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\AccesoDenegado.aspx.designer.vb">
+      <DependentUpon>AccesoDenegado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AccesoDenegado.aspx.vb">
+      <DependentUpon>AccesoDenegado.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\AppInfo.vb" />
+    <Compile Include="Forms\BasePage.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Main.aspx.designer.vb">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Main.aspx.vb">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Medical\AgendaSalas.aspx.designer.vb">
+      <DependentUpon>AgendaSalas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Medical\AgendaSalas.aspx.vb">
+      <DependentUpon>AgendaSalas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Medical\Doctores.aspx.designer.vb">
+      <DependentUpon>Doctores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Medical\Doctores.aspx.vb">
+      <DependentUpon>Doctores.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Medical\Expedientes.aspx.designer.vb">
+      <DependentUpon>Expedientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Medical\Expedientes.aspx.vb">
+      <DependentUpon>Expedientes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Medical\Pacientes.aspx.designer.vb">
+      <DependentUpon>Pacientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Medical\Pacientes.aspx.vb">
+      <DependentUpon>Pacientes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Medical\Salas.aspx.designer.vb">
+      <DependentUpon>Salas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Medical\Salas.aspx.vb">
+      <DependentUpon>Salas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Security\AdminSeguridad.aspx.designer.vb">
+      <DependentUpon>AdminSeguridad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Security\AdminSeguridad.aspx.vb">
+      <DependentUpon>AdminSeguridad.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Security\Usuarios.aspx.designer.vb">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Security\Usuarios.aspx.vb">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reports\ExpedientePrint.aspx.designer.vb">
+      <DependentUpon>ExpedientePrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ExpedientePrint.aspx.vb">
+      <DependentUpon>ExpedientePrint.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reports\InformesDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InformesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\RecetaPrint.aspx.designer.vb">
+      <DependentUpon>RecetaPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\RecetaPrint.aspx.vb">
+      <DependentUpon>RecetaPrint.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Services\Kernel\ErrorHandler.vb" />
+    <Compile Include="Services\Kernel\General\IPoblacion.vb" />
+    <Compile Include="Services\Kernel\General\Poblacion.svc.vb">
+      <DependentUpon>Poblacion.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Kernel\ICatalogWebService.vb" />
+    <Compile Include="Services\Kernel\IUsuario.vb" />
+    <Compile Include="Services\Kernel\SearchResult.vb" />
+    <Compile Include="Services\Kernel\SortOrder.vb" />
+    <Compile Include="Services\Kernel\SortOrderCollection.vb" />
+    <Compile Include="Services\Kernel\SortOrderConverter.vb" />
+    <Compile Include="Services\Kernel\Usuario.svc.vb">
+      <DependentUpon>Usuario.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Medicina\Doctor.svc.vb">
+      <DependentUpon>Doctor.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Medicina\IDoctor.vb" />
+    <Compile Include="Services\Medicina\IPaciente.vb" />
+    <Compile Include="Services\Medicina\ISala.vb" />
+    <Compile Include="Services\Medicina\Paciente.svc.vb">
+      <DependentUpon>Paciente.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Medicina\Sala.svc.vb">
+      <DependentUpon>Sala.svc</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Expediente.rdlc" />
+    <EmbeddedResource Include="Reports\Receta.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Forms\Web.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reports\InformesDS.xsc">
+      <DependentUpon>InformesDS.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\InformesDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InformesDS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reports\InformesDS.xss">
+      <DependentUpon>InformesDS.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\Business\Azteca.Medicina\Azteca.Medicina.vbproj">
+      <Project>{7AA4AE5E-61FE-4F26-A913-3CBCBCCF0C98}</Project>
+      <Name>Azteca.Medicina</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business\Azteca.Ventas\Azteca.Ventas.vbproj">
+      <Project>{E0EEADE3-DCD4-494A-BAE0-061E925E5FA6}</Project>
+      <Name>Azteca.Ventas</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>12674</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

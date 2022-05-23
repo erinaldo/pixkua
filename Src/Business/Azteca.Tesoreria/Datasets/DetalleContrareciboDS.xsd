@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DetalleContrareciboDS" targetNamespace="http://tempuri.org/ContrarecibosDS.xsd" xmlns:mstns="http://tempuri.org/ContrarecibosDS.xsd" xmlns="http://tempuri.org/ContrarecibosDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="SQL2008R2_314978_pixkuaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SQL2008R2_314978_pixkuaConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Azteca.Business.Tesoreria.My.MySettings.GlobalReference.Default.SQL2008R2_314978_pixkuaConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DetalleContrareciboDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DetalleContrareciboDS" msprop:Generator_UserDSName="DetalleContrareciboDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Detalle" msprop:Generator_TableClassName="DetalleDataTable" msprop:Generator_TableVarName="tableDetalle" msprop:Generator_TablePropName="Detalle" msprop:Generator_RowDeletingName="DetalleRowDeleting" msprop:Generator_UserTableName="Detalle" msprop:Generator_RowChangingName="DetalleRowChanging" msprop:Generator_RowEvHandlerName="DetalleRowChangeEventHandler" msprop:Generator_RowDeletedName="DetalleRowDeleted" msprop:Generator_RowEvArgName="DetalleRowChangeEvent" msprop:Generator_RowChangedName="DetalleRowChanged" msprop:Generator_RowClassName="DetalleRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodigoConcepto" msprop:Generator_ColumnVarNameInTable="columnCodigoConcepto" msprop:Generator_ColumnPropNameInRow="CodigoConcepto" msprop:Generator_ColumnPropNameInTable="CodigoConceptoColumn" msprop:Generator_UserColumnName="CodigoConcepto" type="xs:string" default="" />
+              <xs:element name="DescripcionConcepto" msprop:Generator_ColumnVarNameInTable="columnDescripcionConcepto" msprop:Generator_ColumnPropNameInRow="DescripcionConcepto" msprop:Generator_ColumnPropNameInTable="DescripcionConceptoColumn" msprop:Generator_UserColumnName="DescripcionConcepto" type="xs:string" default="" />
+              <xs:element name="IdCuenta" msprop:Generator_ColumnVarNameInTable="columnIdCuenta" msprop:Generator_ColumnPropNameInRow="IdCuenta" msprop:Generator_ColumnPropNameInTable="IdCuentaColumn" msprop:Generator_UserColumnName="IdCuenta" type="xs:int" default="0" />
+              <xs:element name="IdDepartamento" msprop:Generator_ColumnVarNameInTable="columnIdDepartamento" msprop:Generator_ColumnPropNameInRow="IdDepartamento" msprop:Generator_ColumnPropNameInTable="IdDepartamentoColumn" msprop:Generator_UserColumnName="IdDepartamento" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="Monto" msprop:Generator_ColumnVarNameInTable="columnMonto" msprop:Generator_ColumnPropNameInRow="Monto" msprop:Generator_ColumnPropNameInTable="MontoColumn" msprop:Generator_UserColumnName="Monto" type="xs:decimal" default="0" />
+              <xs:element name="IdImpuesto1" msprop:Generator_ColumnVarNameInTable="columnIdImpuesto1" msprop:Generator_ColumnPropNameInRow="IdImpuesto1" msprop:Generator_ColumnPropNameInTable="IdImpuesto1Column" msprop:Generator_UserColumnName="IdImpuesto1" type="xs:int" default="0" />
+              <xs:element name="IdImpuesto2" msprop:Generator_ColumnVarNameInTable="columnIdImpuesto2" msprop:Generator_ColumnPropNameInRow="IdImpuesto2" msprop:Generator_ColumnPropNameInTable="IdImpuesto2Column" msprop:Generator_UserColumnName="IdImpuesto2" type="xs:int" default="0" />
+              <xs:element name="IdImpuesto3" msprop:Generator_ColumnVarNameInTable="columnIdImpuesto3" msprop:Generator_ColumnPropNameInRow="IdImpuesto3" msprop:Generator_ColumnPropNameInTable="IdImpuesto3Column" msprop:Generator_UserColumnName="IdImpuesto3" type="xs:int" default="0" />
+              <xs:element name="IdImpuesto4" msprop:Generator_ColumnVarNameInTable="columnIdImpuesto4" msprop:Generator_ColumnPropNameInRow="IdImpuesto4" msprop:Generator_ColumnPropNameInTable="IdImpuesto4Column" msprop:Generator_UserColumnName="IdImpuesto4" type="xs:int" default="0" />
+              <xs:element name="IdImpuesto5" msprop:Generator_ColumnVarNameInTable="columnIdImpuesto5" msprop:Generator_ColumnPropNameInRow="IdImpuesto5" msprop:Generator_ColumnPropNameInTable="IdImpuesto5Column" msprop:Generator_UserColumnName="IdImpuesto5" type="xs:int" default="0" />
+              <xs:element name="PorcImpTras1" msprop:Generator_ColumnVarNameInTable="columnPorcImpTras1" msprop:Generator_ColumnPropNameInRow="PorcImpTras1" msprop:Generator_ColumnPropNameInTable="PorcImpTras1Column" msprop:Generator_UserColumnName="PorcImpTras1" type="xs:decimal" default="0" />
+              <xs:element name="PorcImpTras2" msprop:Generator_ColumnVarNameInTable="columnPorcImpTras2" msprop:Generator_ColumnPropNameInRow="PorcImpTras2" msprop:Generator_ColumnPropNameInTable="PorcImpTras2Column" msprop:Generator_UserColumnName="PorcImpTras2" type="xs:decimal" default="0" />
+              <xs:element name="PorcImpTras3" msprop:Generator_ColumnVarNameInTable="columnPorcImpTras3" msprop:Generator_ColumnPropNameInRow="PorcImpTras3" msprop:Generator_ColumnPropNameInTable="PorcImpTras3Column" msprop:Generator_UserColumnName="PorcImpTras3" type="xs:decimal" default="0" />
+              <xs:element name="PorcImpTras4" msprop:Generator_ColumnVarNameInTable="columnPorcImpTras4" msprop:Generator_ColumnPropNameInRow="PorcImpTras4" msprop:Generator_ColumnPropNameInTable="PorcImpTras4Column" msprop:Generator_UserColumnName="PorcImpTras4" type="xs:decimal" default="0" />
+              <xs:element name="PorcImpTras5" msprop:Generator_ColumnVarNameInTable="columnPorcImpTras5" msprop:Generator_ColumnPropNameInRow="PorcImpTras5" msprop:Generator_ColumnPropNameInTable="PorcImpTras5Column" msprop:Generator_UserColumnName="PorcImpTras5" type="xs:decimal" default="0" />
+              <xs:element name="MontoImpTras1" msprop:Generator_ColumnVarNameInTable="columnMontoImpTras1" msprop:Generator_ColumnPropNameInRow="MontoImpTras1" msprop:Generator_ColumnPropNameInTable="MontoImpTras1Column" msprop:Generator_UserColumnName="MontoImpTras1" type="xs:decimal" default="0" />
+              <xs:element name="MontoImpTras2" msprop:Generator_ColumnVarNameInTable="columnMontoImpTras2" msprop:Generator_ColumnPropNameInRow="MontoImpTras2" msprop:Generator_ColumnPropNameInTable="MontoImpTras2Column" msprop:Generator_UserColumnName="MontoImpTras2" type="xs:decimal" default="0" />
+              <xs:element name="MontoImpTras3" msprop:Generator_ColumnVarNameInTable="columnMontoImpTras3" msprop:Generator_ColumnPropNameInRow="MontoImpTras3" msprop:Generator_ColumnPropNameInTable="MontoImpTras3Column" msprop:Generator_UserColumnName="MontoImpTras3" type="xs:decimal" default="0" />
+              <xs:element name="MontoImpTras4" msprop:Generator_ColumnVarNameInTable="columnMontoImpTras4" msprop:Generator_ColumnPropNameInRow="MontoImpTras4" msprop:Generator_ColumnPropNameInTable="MontoImpTras4Column" msprop:Generator_UserColumnName="MontoImpTras4" type="xs:decimal" default="0" />
+              <xs:element name="MontoImpTras5" msprop:Generator_ColumnVarNameInTable="columnMontoImpTras5" msprop:Generator_ColumnPropNameInRow="MontoImpTras5" msprop:Generator_ColumnPropNameInTable="MontoImpTras5Column" msprop:Generator_UserColumnName="MontoImpTras5" type="xs:decimal" default="0" />
+              <xs:element name="IdRetencion1" msprop:Generator_ColumnVarNameInTable="columnIdRetencion1" msprop:Generator_ColumnPropNameInRow="IdRetencion1" msprop:Generator_ColumnPropNameInTable="IdRetencion1Column" msprop:Generator_UserColumnName="IdRetencion1" type="xs:int" default="0" />
+              <xs:element name="IdRetencion2" msprop:Generator_ColumnVarNameInTable="columnIdRetencion2" msprop:Generator_ColumnPropNameInRow="IdRetencion2" msprop:Generator_ColumnPropNameInTable="IdRetencion2Column" msprop:Generator_UserColumnName="IdRetencion2" type="xs:int" default="0" />
+              <xs:element name="IdRetencion3" msprop:Generator_ColumnVarNameInTable="columnIdRetencion3" msprop:Generator_ColumnPropNameInRow="IdRetencion3" msprop:Generator_ColumnPropNameInTable="IdRetencion3Column" msprop:Generator_UserColumnName="IdRetencion3" type="xs:int" default="0" />
+              <xs:element name="IdRetencion4" msprop:Generator_ColumnVarNameInTable="columnIdRetencion4" msprop:Generator_ColumnPropNameInRow="IdRetencion4" msprop:Generator_ColumnPropNameInTable="IdRetencion4Column" msprop:Generator_UserColumnName="IdRetencion4" type="xs:int" default="0" />
+              <xs:element name="IdRetencion5" msprop:Generator_ColumnVarNameInTable="columnIdRetencion5" msprop:Generator_ColumnPropNameInRow="IdRetencion5" msprop:Generator_ColumnPropNameInTable="IdRetencion5Column" msprop:Generator_UserColumnName="IdRetencion5" type="xs:int" default="0" />
+              <xs:element name="PorcImpRet1" msprop:Generator_ColumnVarNameInTable="columnPorcImpRet1" msprop:Generator_ColumnPropNameInRow="PorcImpRet1" msprop:Generator_ColumnPropNameInTable="PorcImpRet1Column" msprop:Generator_UserColumnName="PorcImpRet1" type="xs:decimal" default="0" />
+              <xs:element name="PorcImpRet2" msprop:Generator_ColumnVarNameInTable="columnPorcImpRet2" msprop:Generator_ColumnPropNameInRow="PorcImpRet2" msprop:Generator_ColumnPropNameInTable="PorcImpRet2Column" msprop:Generator_UserColumnName="PorcImpRet2" type="xs:decimal" />
+              <xs:element name="PorcImpRet3" msprop:Generator_ColumnVarNameInTable="columnPorcImpRet3" msprop:Generator_ColumnPropNameInRow="PorcImpRet3" msprop:Generator_ColumnPropNameInTable="PorcImpRet3Column" msprop:Generator_UserColumnName="PorcImpRet3" type="xs:decimal" default="0" />
+              <xs:element name="PorcImpRet4" msprop:Generator_ColumnVarNameInTable="columnPorcImpRet4" msprop:Generator_ColumnPropNameInRow="PorcImpRet4" msprop:Generator_ColumnPropNameInTable="PorcImpRet4Column" msprop:Generator_UserColumnName="PorcImpRet4" type="xs:decimal" default="0" />
+              <xs:element name="PorcImpRet5" msprop:Generator_ColumnVarNameInTable="columnPorcImpRet5" msprop:Generator_ColumnPropNameInRow="PorcImpRet5" msprop:Generator_ColumnPropNameInTable="PorcImpRet5Column" msprop:Generator_UserColumnName="PorcImpRet5" type="xs:decimal" default="0" />
+              <xs:element name="MontoImpRet1" msprop:Generator_ColumnVarNameInTable="columnMontoImpRet1" msprop:Generator_ColumnPropNameInRow="MontoImpRet1" msprop:Generator_ColumnPropNameInTable="MontoImpRet1Column" msprop:Generator_UserColumnName="MontoImpRet1" type="xs:decimal" default="0" />
+              <xs:element name="MontoImpRet2" msprop:Generator_ColumnVarNameInTable="columnMontoImpRet2" msprop:Generator_ColumnPropNameInRow="MontoImpRet2" msprop:Generator_ColumnPropNameInTable="MontoImpRet2Column" msprop:Generator_UserColumnName="MontoImpRet2" type="xs:decimal" default="0" />
+              <xs:element name="MontoImpRet3" msprop:Generator_ColumnVarNameInTable="columnMontoImpRet3" msprop:Generator_ColumnPropNameInRow="MontoImpRet3" msprop:Generator_ColumnPropNameInTable="MontoImpRet3Column" msprop:Generator_UserColumnName="MontoImpRet3" type="xs:decimal" default="0" />
+              <xs:element name="MontoImpRet4" msprop:Generator_ColumnVarNameInTable="columnMontoImpRet4" msprop:Generator_ColumnPropNameInRow="MontoImpRet4" msprop:Generator_ColumnPropNameInTable="MontoImpRet4Column" msprop:Generator_UserColumnName="MontoImpRet4" type="xs:decimal" default="0" />
+              <xs:element name="MontoImpRet5" msprop:Generator_ColumnVarNameInTable="columnMontoImpRet5" msprop:Generator_ColumnPropNameInRow="MontoImpRet5" msprop:Generator_ColumnPropNameInTable="MontoImpRet5Column" msprop:Generator_UserColumnName="MontoImpRet5" type="xs:decimal" default="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Detalle" />
+      <xs:field xpath="mstns:CodigoConcepto" />
+      <xs:field xpath="mstns:DescripcionConcepto" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

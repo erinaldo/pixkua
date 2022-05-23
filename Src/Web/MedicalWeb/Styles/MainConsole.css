@@ -1,0 +1,67 @@
+﻿body {
+}
+
+.PanelOptionImage
+{
+    vertical-align: middle;
+    text-align: center;
+}
+
+.PanelOptionImage img
+{
+    width: 72px;
+    height: 72px;
+}
+
+.PanelOptionText
+{
+    text-align:center;
+}
+
+.PanelOptionText a:link
+{    
+    text-decoration: none;
+}
+
+td.OptionsList
+{
+    width:1000px;
+    vertical-align:top;
+}
+
+td.PanelInfo
+{
+    width:250px;
+}
+
+div.OptionsGroup
+{
+    text-align:center;
+    font-size:14px;
+}
+
+a.OptionLink
+{
+    font-size:12px;
+    text-decoration:none;
+    padding:5px;
+}
+
+.SessionLabel
+{
+    font-weight:bold;
+    font-size:12px;    
+}
+
+.SessionValue
+{
+    font-size:12px;
+}
+
+.ModuleTitle
+{
+    border-bottom:1px solid #C0C0C0; 
+    padding:5px; 
+    margin-left:5px; 
+    margin-right:5px;    
+}

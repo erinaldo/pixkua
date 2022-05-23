@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="49398224-4afe-47a8-bd06-2226b8908051" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://cancelacion.facturaelectronica.sat.gob.mx/Cancelacion/CancelaCFDService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CancelaCFDService.xsd" MetadataType="Schema" ID="70264bca-c5b4-4400-9e2d-4b62db96326f" SourceId="1" SourceUrl="https://cancelacion.facturaelectronica.sat.gob.mx/Cancelacion/CancelaCFDService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CancelaCFDService1.xsd" MetadataType="Schema" ID="9c547e8e-8d60-407d-b832-3d07c9d6a613" SourceId="1" SourceUrl="https://cancelacion.facturaelectronica.sat.gob.mx/Cancelacion/CancelaCFDService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CancelaCFDService.disco" MetadataType="Disco" ID="786f5ced-5f5f-4c06-9a80-dea6775a142d" SourceId="1" SourceUrl="https://cancelacion.facturaelectronica.sat.gob.mx/Cancelacion/CancelaCFDService.svc?disco" />
+    <MetadataFile FileName="CancelaCFDService.wsdl" MetadataType="Wsdl" ID="3afc2ddf-9819-4f45-91bb-84cb8c8d9345" SourceId="1" SourceUrl="https://cancelacion.facturaelectronica.sat.gob.mx/Cancelacion/CancelaCFDService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
