@@ -19,7 +19,7 @@
 
         Select Case numberMonth
             Case 1
-                NameMonth = "Enero"
+                NameMonth = "ENERO"
             Case 2
                 NameMonth = "FEBRERO"
             Case 3
